@@ -1,6 +1,6 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
+#include "workingwindow.h"
 #include "includes.h"
 
 namespace Ui {
@@ -20,6 +20,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    workingwindow *editor;
 };
 
 #endif // MAINWINDOW_H

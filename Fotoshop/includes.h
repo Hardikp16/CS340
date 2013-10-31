@@ -11,6 +11,8 @@
 #include <QFileDialog>
 #include <stdio.h>
 #include <iostream>
+#include <QMessageBox>
+
 
 extern int opened;
 
