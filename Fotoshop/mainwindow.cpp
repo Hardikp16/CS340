@@ -18,7 +18,7 @@ void MainWindow::on_pushButton_clicked()
 {
     QString fileName = QFileDialog::getOpenFileName(this,
                        tr("Choose an Image"),"",tr("Images (*.jpg);;All Files (*)"));
-
+    filename = fileName;
     editor = new workingwindow(this);
     editor->show();
 }

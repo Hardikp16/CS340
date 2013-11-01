@@ -2,6 +2,7 @@
 #include "workingwindow.h"
 
 int opened = 0;
+QString filename;
 
 int main(int argc, char *argv[])
 {

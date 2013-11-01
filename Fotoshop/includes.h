@@ -12,8 +12,10 @@
 #include <stdio.h>
 #include <iostream>
 #include <QMessageBox>
-
+#include <QLabel>
+#include <string>
 
 extern int opened;
+extern QString filename;
 
 #endif // INCLUDES_H

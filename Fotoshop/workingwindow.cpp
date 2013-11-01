@@ -6,6 +6,10 @@ workingwindow::workingwindow(QWidget *parent) :
     ui(new Ui::workingwindow)
 {
     ui->setupUi(this);
+    QImage image(filename);
+    ui->imageLabel->setPixmap(QPixmap::fromImage(image));
+    ui->imageLabel->isVisible();
+    std::cout<<"HELLO WORLD";
 }
 
 workingwindow::~workingwindow()

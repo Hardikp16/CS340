@@ -21,6 +21,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
     workingwindow *editor;
+
 };
 
 #endif // MAINWINDOW_H
