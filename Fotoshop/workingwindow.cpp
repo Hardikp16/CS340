@@ -6,10 +6,18 @@ workingwindow::workingwindow(QWidget *parent) :
     ui(new Ui::workingwindow)
 {
     ui->setupUi(this);
+    /*! creating a proxy to edit with */
     QImage image(filename);
-    ui->imageLabel->setPixmap(QPixmap::fromImage(image));
-    ui->imageLabel->isVisible();
-    std::cout<<"HELLO WORLD";
+    loadedImage = image;
+    int newheight = screenheight - 300;
+    int newwidth = screenwidth - 300;
+    std::cout<<newheight<<newwidth<<std::endl;
+    /*! \brief formatting for full screen displays dynamically */
+    loadedImage = loadedImage.scaled(newwidth, newheight, Qt::KeepAspectRatio, Qt::FastTransformation);
+    ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
+    ui->quitButton->adjustSize();
+    ui->imageLabel->adjustSize();
+
 }
 
 workingwindow::~workingwindow()
@@ -17,38 +25,52 @@ workingwindow::~workingwindow()
     delete ui;
 }
 
-void workingwindow::on_pushButton_clicked()
+
+void workingwindow::on_quitButton_clicked()
 {
-
-
+    exit (EXIT_SUCCESS);
 }
 
-void workingwindow::on_pushButton_2_clicked()
+void workingwindow::on_greyScale_clicked()
 {
+    QColor oldColor;
+    loadedImage;
+    for (int i = 0; i < loadedImage.width(); i++)
+    {
+        for (int j = 0; j < loadedImage.height(); j++)
+        {
+            oldColor = QColor(loadedImage.pixel(i,j));
+            int averagevalue = (oldColor.red() + oldColor.green() + oldColor.blue())/3;
+            loadedImage.setPixel(i,j,qRgb(averagevalue,averagevalue,averagevalue));
+        }
+    }
 
-
+    ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
+    repaint();
 }
 
-void workingwindow::on_pushButton_3_clicked()
+
+void workingwindow::on_PencilSketch_clicked()
 {
+    QColor oldColor;
+    loadedImage;
+    for (int i = 0; i < loadedImage.width(); i++)
+    {
+        for (int j = 0; j < loadedImage.height(); j++)
+        {
+            oldColor = QColor(loadedImage.pixel(i,j));
+            int averagevalue = (oldColor.red() + oldColor.green() + oldColor.blue())/3;
+            if (averagevalue <= 127)
+            {
+                loadedImage.setPixel(i,j,qRgb(0,0,0));
+            }
+            else if (averagevalue >= 128)
+            {
+                loadedImage.setPixel(i,j,qRgb(255,255,255));
+            }
+        }
+    }
 
-
-}
-
-void workingwindow::on_pushButton_4_clicked()
-{
-
-
-}
-
-void workingwindow::on_pushButton_5_clicked()
-{
-
-
-}
-
-void workingwindow::on_pushButton_6_clicked()
-{
-
-
+    ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
+    repaint();
 }

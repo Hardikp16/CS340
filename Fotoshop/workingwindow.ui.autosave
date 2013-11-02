@@ -90,7 +90,7 @@
        <item>
         <widget class="QPushButton" name="PencilSketch">
          <property name="text">
-          <string>BlackandWhite</string>
+          <string>PencilSketch</string>
          </property>
         </widget>
        </item>

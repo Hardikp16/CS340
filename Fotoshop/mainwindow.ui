@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>321</width>
-    <height>291</height>
+    <height>469</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,12 +16,21 @@
   <property name="windowOpacity">
    <double>0.500000000000000</double>
   </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow 
+{
+rgb(84, 255, 241)
+}</string>
+  </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>30</y>
+      <y>200</y>
       <width>281</width>
       <height>81</height>
      </rect>
@@ -34,13 +43,32 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>130</y>
+      <y>320</y>
       <width>281</width>
       <height>81</height>
      </rect>
     </property>
     <property name="text">
      <string>Exit</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>281</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QMainWindow 
+{
+background black;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
     </property>
    </widget>
   </widget>

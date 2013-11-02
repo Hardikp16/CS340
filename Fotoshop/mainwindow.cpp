@@ -19,8 +19,18 @@ void MainWindow::on_pushButton_clicked()
     QString fileName = QFileDialog::getOpenFileName(this,
                        tr("Choose an Image"),"",tr("Images (*.jpg);;All Files (*)"));
     filename = fileName;
+    QDesktopWidget* desktop = qApp->desktop();
+    QRect screenGeometry = desktop->screenGeometry();
+    screenwidth = screenGeometry.width();
+    screenheight = screenGeometry.height();
+
     editor = new workingwindow(this);
-    editor->show();
+
+    std::cout<<screenwidth<<screenheight<<std::endl;
+    editor->setMinimumHeight(screenheight);
+    editor->setMinimumWidth(screenwidth);
+    editor->showFullScreen();
+    this->update();
 }
 
 void MainWindow::on_pushButton_2_clicked()

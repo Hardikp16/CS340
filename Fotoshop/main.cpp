@@ -3,6 +3,9 @@
 
 int opened = 0;
 QString filename;
+int screenheight;
+int screenwidth;
+QImage loadedImage;
 
 int main(int argc, char *argv[])
 {
