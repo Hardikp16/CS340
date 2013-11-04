@@ -17,6 +17,7 @@ workingwindow::workingwindow(QWidget *parent) :
     ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
     ui->imageLabel->adjustSize();
 
+
 }
 
 workingwindow::~workingwindow()
@@ -315,7 +316,36 @@ void workingwindow::on_ContrastBoost_clicked()
     repaint();
 }
 
+
+void workingwindow::on_ZoomIn_clicked()
+{
+    picsize = picsize + .25;
+    scaledImage = loadedImage.scaled(picsize * loadedImage.width(), picsize * loadedImage.height(), Qt::KeepAspectRatio, Qt::FastTransformation);
+    ui->imageLabel->setPixmap(QPixmap::fromImage(scaledImage));
+    repaint();
+
+}
+
+void workingwindow::on_pushButton_clicked()
+{
+    picsize = picsize - 0.25;
+    if (picsize <= 0)
+            {
+                picsize = 0.25;
+            }
+    scaledImage = loadedImage.scaled(picsize * loadedImage.width(), picsize * loadedImage.height(), Qt::KeepAspectRatio, Qt::FastTransformation);
+    ui->imageLabel->setPixmap(QPixmap::fromImage(scaledImage));
+    repaint();
+}
+
 void workingwindow::on_Save_clicked()
 {
+    QString saveName = QFileDialog::getSaveFileName(this,
+            tr("Save Image"), "",
+            tr("Image file (*.jpg);;All Files (*)"));
+    QFile save(saveName);
+    QDataStream out(&save);
+    out.setVersion(QDataStream::Qt_5_1);
+    out << loadedImage;
 
 }

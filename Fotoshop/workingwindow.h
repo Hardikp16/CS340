@@ -38,6 +38,10 @@ private slots:
 
     void on_ContrastBoost_clicked();
 
+    void on_ZoomIn_clicked();
+
+    void on_pushButton_clicked();
+
     void on_Save_clicked();
 
 private:

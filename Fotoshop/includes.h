@@ -25,5 +25,7 @@ extern QString filename;
 extern int screenheight;
 extern int screenwidth;
 extern QImage loadedImage;
+extern QImage scaledImage;
+extern double picsize;
 
 #endif // INCLUDES_H
