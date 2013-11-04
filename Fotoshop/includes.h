@@ -18,6 +18,7 @@
 #include <QDesktopWidget>
 #include <QStyle>
 #include <Qt>
+#include <QtMath>
 
 extern int opened;
 extern QString filename;

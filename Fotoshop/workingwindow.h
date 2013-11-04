@@ -24,6 +24,22 @@ private slots:
 
     void on_PencilSketch_clicked();
 
+    void on_WarmifyButton_clicked();
+
+    void on_coolButton_clicked();
+
+    void on_saturateButton_clicked();
+
+    void on_DesaturateButton_clicked();
+
+    void on_overExposeButton_clicked();
+
+    void on_underExposeButton_clicked();
+
+    void on_ContrastBoost_clicked();
+
+    void on_Save_clicked();
+
 private:
     Ui::workingwindow *ui;
 };

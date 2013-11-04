@@ -90,63 +90,63 @@
        <item>
         <widget class="QPushButton" name="PencilSketch">
          <property name="text">
-          <string>BlackandWhite</string>
+          <string>PencilSketch</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="SharpenButton">
-         <property name="text">
-          <string>Sharpen</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_6">
+        <widget class="QPushButton" name="WarmifyButton">
          <property name="text">
           <string>Warmify</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_9">
+        <widget class="QPushButton" name="coolButton">
          <property name="text">
           <string>Cool</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_10">
+        <widget class="QPushButton" name="saturateButton">
          <property name="text">
           <string>Saturate</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_11">
+        <widget class="QPushButton" name="DesaturateButton">
          <property name="text">
-          <string>Cross Process</string>
+          <string>Desaturate</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_12">
+        <widget class="QPushButton" name="overExposeButton">
          <property name="text">
-          <string>Lomo</string>
+          <string>Overexpose</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_13">
+        <widget class="QPushButton" name="underExposeButton">
          <property name="text">
-          <string>Dragan</string>
+          <string>Underexpose</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_14">
+        <widget class="QPushButton" name="ContrastBoost">
          <property name="text">
-          <string>Toy Camera</string>
+          <string>Contrast Boost</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Save">
+         <property name="text">
+          <string>Save</string>
          </property>
         </widget>
        </item>
