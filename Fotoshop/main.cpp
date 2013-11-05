@@ -20,3 +20,15 @@ int main(int argc, char *argv[])
 
     return a.exec();
 }
+
+/* to do
+ * crop
+ * eraser
+ * brush
+ * hdr
+ * dragan
+ * sharpen
+ * blur
+ * glass
+ *
+*/

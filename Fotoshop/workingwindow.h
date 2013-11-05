@@ -48,6 +48,8 @@ private slots:
 
     void on_Undo_clicked();
 
+    void on_SepiaButton_clicked();
+
 private:
     Ui::workingwindow *ui;
 };

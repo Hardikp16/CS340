@@ -22,8 +22,6 @@ workingwindow::workingwindow(QWidget *parent) :
 
 }
 
-
-
 workingwindow::~workingwindow()
 {
     delete ui;
@@ -394,4 +392,29 @@ void workingwindow::on_Undo_clicked()
         {
             currentImageNumber = 1;
         }
+}
+
+void workingwindow::on_SepiaButton_clicked()
+{
+    QColor oldColor;
+    loadedImage;
+    int sepia, blue;
+    for (int i = 0; i < loadedImage.width(); i++)
+    {
+        for (int j = 0; j < loadedImage.height(); j++)
+        {
+            oldColor = QColor(loadedImage.pixel(i,j));
+            int averagevalue = (oldColor.red() + oldColor.green() + oldColor.blue())/3;
+            sepia = averagevalue + 50;
+            sepia = qBound(0, sepia, 255);
+            blue = averagevalue - 50;
+            blue = qBound(0, averagevalue, 255);
+            loadedImage.setPixel(i,j,qRgb(sepia , sepia - 20 , blue));
+        }
+    }
+
+    ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
+    repaint();
+
+    undofunc[currentImageNumber].push(loadedImage);
 }

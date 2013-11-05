@@ -76,6 +76,13 @@
         </widget>
        </item>
        <item>
+        <widget class="QPushButton" name="SepiaButton">
+         <property name="text">
+          <string>Sepia Tone</string>
+         </property>
+        </widget>
+       </item>
+       <item>
         <widget class="QPushButton" name="PencilSketch">
          <property name="text">
           <string>PencilSketch</string>
