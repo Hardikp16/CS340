@@ -14,7 +14,8 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    workingwindow.cpp
+    workingwindow.cpp \
+    UndoArray.cpp
 
 HEADERS  += mainwindow.h \
     workingwindow.h \

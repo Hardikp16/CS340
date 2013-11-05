@@ -27,5 +27,18 @@ extern int screenwidth;
 extern QImage loadedImage;
 extern QImage scaledImage;
 extern double picsize;
+extern int currentImageNumber;
+
+class undoArr
+{
+
+public:
+    QImage currImg;
+    bool hasPic;
+    void push(QImage file);
+    void pop();
+
+};
+
 
 #endif // INCLUDES_H

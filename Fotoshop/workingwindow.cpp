@@ -5,6 +5,7 @@ workingwindow::workingwindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::workingwindow)
 {
+
     ui->setupUi(this);
     /*! creating a proxy to edit with */
     QImage image(filename);
@@ -17,8 +18,11 @@ workingwindow::workingwindow(QWidget *parent) :
     ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
     ui->imageLabel->adjustSize();
 
+    undofunc[0].push(loadedImage);
 
 }
+
+
 
 workingwindow::~workingwindow()
 {
@@ -47,6 +51,8 @@ void workingwindow::on_greyScale_clicked()
 
     ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
     repaint();
+
+    undofunc[currentImageNumber].push(loadedImage);
 }
 
 
@@ -73,6 +79,8 @@ void workingwindow::on_PencilSketch_clicked()
 
     ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
     repaint();
+
+    undofunc[currentImageNumber].push(loadedImage);
 }
 
 
@@ -103,6 +111,8 @@ void workingwindow::on_WarmifyButton_clicked()
 
     ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
     repaint();
+
+    undofunc[currentImageNumber].push(loadedImage);
 }
 
 void workingwindow::on_coolButton_clicked()
@@ -127,6 +137,8 @@ void workingwindow::on_coolButton_clicked()
 
     ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
     repaint();
+
+    undofunc[currentImageNumber].push(loadedImage);
 }
 
 
@@ -163,6 +175,8 @@ void workingwindow::on_saturateButton_clicked()
 
     ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
     repaint();
+
+    undofunc[currentImageNumber].push(loadedImage);
 }
 
 void workingwindow::on_DesaturateButton_clicked()
@@ -199,6 +213,8 @@ void workingwindow::on_DesaturateButton_clicked()
 
     ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
     repaint();
+
+    undofunc[currentImageNumber].push(loadedImage);
 }
 
 void workingwindow::on_overExposeButton_clicked()
@@ -235,6 +251,8 @@ void workingwindow::on_overExposeButton_clicked()
 
     ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
     repaint();
+
+    undofunc[currentImageNumber].push(loadedImage);
 }
 
 void workingwindow::on_underExposeButton_clicked()
@@ -270,6 +288,8 @@ void workingwindow::on_underExposeButton_clicked()
 
     ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
     repaint();
+
+    undofunc[currentImageNumber].push(loadedImage);
 }
 
 void workingwindow::on_ContrastBoost_clicked()
@@ -314,6 +334,8 @@ void workingwindow::on_ContrastBoost_clicked()
 
     ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
     repaint();
+
+    undofunc[currentImageNumber].push(loadedImage);
 }
 
 
@@ -326,7 +348,7 @@ void workingwindow::on_ZoomIn_clicked()
 
 }
 
-void workingwindow::on_pushButton_clicked()
+void workingwindow::on_ZoomOut_clicked()
 {
     picsize = picsize - 0.25;
     if (picsize <= 0)
@@ -348,4 +370,28 @@ void workingwindow::on_Save_clicked()
     out.setVersion(QDataStream::Qt_5_1);
     out << loadedImage;
 
+}
+
+void workingwindow::on_Undo_clicked()
+{
+
+   if (undofunc[currentImageNumber].hasPic == false)
+    {
+        currentImageNumber =currentImageNumber - 1;
+    }
+
+   currentImageNumber = currentImageNumber - 1;
+
+    if(currentImageNumber <= 0)
+        {
+            currentImageNumber = 0;
+        }
+
+    ui->imageLabel->setPixmap(QPixmap::fromImage(undofunc[currentImageNumber].currImg));
+    repaint();
+    loadedImage = undofunc[currentImageNumber].currImg;
+    if(currentImageNumber == 0)
+        {
+            currentImageNumber = 1;
+        }
 }

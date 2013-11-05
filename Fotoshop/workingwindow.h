@@ -3,6 +3,8 @@
 
 #include "includes.h"
 
+extern undoArr undofunc[256];
+
 namespace Ui {
 class workingwindow;
 }
@@ -40,9 +42,11 @@ private slots:
 
     void on_ZoomIn_clicked();
 
-    void on_pushButton_clicked();
-
     void on_Save_clicked();
+
+    void on_ZoomOut_clicked();
+
+    void on_Undo_clicked();
 
 private:
     Ui::workingwindow *ui;

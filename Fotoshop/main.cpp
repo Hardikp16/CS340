@@ -8,6 +8,8 @@ int screenwidth;
 QImage loadedImage;
 QImage scaledImage;
 double picsize;
+undoArr undofunc[256];
+int currentImageNumber = 0;
 
 int main(int argc, char *argv[])
 {
