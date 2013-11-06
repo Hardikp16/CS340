@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>blank.jpg</file>
+    </qresource>
+    <qresource prefix="/Icon"/>
+    <qresource prefix="/Stickers"/>
+</RCC>

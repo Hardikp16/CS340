@@ -14,6 +14,23 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void MainWindow::on_pushButton_3_clicked(){
+    QString fileName = "://blank.jpg"; // gets the image from Resources
+    filename = fileName;
+    QDesktopWidget* desktop = qApp->desktop();
+    QRect screenGeometry = desktop->screenGeometry();
+    screenwidth = screenGeometry.width();
+    screenheight = screenGeometry.height();
+
+    editor = new workingwindow(this);
+
+    std::cout<<screenwidth<<screenheight<<std::endl;
+    editor->setMinimumHeight(screenheight);
+    editor->setMinimumWidth(screenwidth);
+    editor->showFullScreen();
+    this->update();
+}
+
 void MainWindow::on_pushButton_clicked()
 {
     QString fileName = QFileDialog::getOpenFileName(this,

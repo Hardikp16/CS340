@@ -23,3 +23,7 @@ HEADERS  += mainwindow.h \
 
 FORMS    += mainwindow.ui \
     workingwindow.ui
+
+RESOURCES += \
+    Images/Images.qrc
+    Images/blank.jpg
