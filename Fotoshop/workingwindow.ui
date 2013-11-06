@@ -129,6 +129,12 @@
     </item>
     <item row="0" column="1" rowspan="3" alignment="Qt::AlignRight">
      <widget class="QGroupBox" name="horizontalGroupBox">
+      <property name="maximumSize">
+       <size>
+        <width>290</width>
+        <height>16777215</height>
+       </size>
+      </property>
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
         <widget class="QTabWidget" name="tabWidget">
