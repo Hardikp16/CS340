@@ -28,6 +28,7 @@ extern QImage loadedImage;
 extern QImage scaledImage;
 extern double picsize;
 extern int currentImageNumber;
+extern int isblank;
 
 class undoArr
 {

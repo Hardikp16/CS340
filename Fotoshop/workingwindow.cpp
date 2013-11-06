@@ -8,8 +8,17 @@ workingwindow::workingwindow(QWidget *parent) :
 
     ui->setupUi(this);
     /*! creating a proxy to edit with */
-    QImage image(filename);
-    loadedImage = image;
+    if (isblank == 1)
+        {
+        QImage image(1920, 1080, QImage::Format_RGB32);
+            image.fill(Qt::white);
+            loadedImage = image;
+        }
+    else
+    {
+        QImage image(filename);
+        loadedImage = image;
+    }
     int newheight = screenheight ;
     int newwidth = screenwidth ;
     std::cout<<newheight<<newwidth<<std::endl;

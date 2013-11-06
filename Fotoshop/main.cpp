@@ -10,6 +10,7 @@ QImage scaledImage;
 double picsize;
 undoArr undofunc[256];
 int currentImageNumber = 0;
+int isblank;
 
 int main(int argc, char *argv[])
 {

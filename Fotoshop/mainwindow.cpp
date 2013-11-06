@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "workingwindow.h"
+#include <direct.h>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -15,9 +16,10 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::on_pushButton_3_clicked(){
-    QString fileName = "://blank.jpg"; // gets the image from Resources
-    filename = fileName;
+
+    isblank = 1;
     QDesktopWidget* desktop = qApp->desktop();
+
     QRect screenGeometry = desktop->screenGeometry();
     screenwidth = screenGeometry.width();
     screenheight = screenGeometry.height();
@@ -33,6 +35,7 @@ void MainWindow::on_pushButton_3_clicked(){
 
 void MainWindow::on_pushButton_clicked()
 {
+    isblank = 0;
     QString fileName = QFileDialog::getOpenFileName(this,
                        tr("Choose an Image"),"",tr("Images (*.jpg);;All Files (*)"));
     filename = fileName;
