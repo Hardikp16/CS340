@@ -36,19 +36,6 @@
         </property>
        </widget>
       </item>
-      <item row="0" column="2" rowspan="2">
-       <spacer name="horizontalSpacer">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>13</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
       <item row="0" column="3" rowspan="2">
        <widget class="QScrollBar" name="verticalScrollBar">
         <property name="orientation">
@@ -62,6 +49,19 @@
          <enum>Qt::Horizontal</enum>
         </property>
        </widget>
+      </item>
+      <item row="0" column="2" rowspan="2">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>13</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
       </item>
      </layout>
     </item>
@@ -317,6 +317,11 @@
            </item>
           </layout>
          </widget>
+         <widget class="QWidget" name="Brushes">
+          <attribute name="title">
+           <string>Brushes</string>
+          </attribute>
+         </widget>
         </widget>
        </item>
        <item>
@@ -339,9 +344,6 @@
    </layout>
    <zorder>horizontalGroupBox</zorder>
    <zorder></zorder>
-   <zorder>ZoomOut</zorder>
-   <zorder>ZoomIn</zorder>
-   <zorder>label</zorder>
    <zorder></zorder>
   </widget>
  </widget>
