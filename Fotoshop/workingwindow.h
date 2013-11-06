@@ -50,6 +50,8 @@ private slots:
 
     void on_SepiaButton_clicked();
 
+    void on_PixelateButton_clicked();
+
 private:
     Ui::workingwindow *ui;
 };

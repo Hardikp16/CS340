@@ -19,8 +19,8 @@ workingwindow::workingwindow(QWidget *parent) :
         QImage image(filename);
         loadedImage = image;
     }
-    int newheight = screenheight ;
-    int newwidth = screenwidth ;
+    int newheight = screenheight-200 ;
+    int newwidth = screenwidth-200 ;
     std::cout<<newheight<<newwidth<<std::endl;
     /*! \brief formatting for full screen displays dynamically */
     loadedImage = loadedImage.scaled(newwidth, newheight, Qt::KeepAspectRatio, Qt::FastTransformation);
@@ -426,4 +426,15 @@ void workingwindow::on_SepiaButton_clicked()
     repaint();
 
     undofunc[currentImageNumber].push(loadedImage);
+}
+
+void workingwindow::on_PixelateButton_clicked()
+{
+    loadedImage = loadedImage.scaled(0.125 * loadedImage.width(), 0.125 * loadedImage.height(), Qt::KeepAspectRatio, Qt::FastTransformation);
+    loadedImage = loadedImage.scaled(8 * loadedImage.width(), 8 * loadedImage.height(), Qt::KeepAspectRatio, Qt::FastTransformation);
+    ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
+    repaint();
+
+    undofunc[currentImageNumber].push(loadedImage);
+
 }

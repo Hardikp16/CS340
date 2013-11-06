@@ -129,6 +129,12 @@
     </item>
     <item row="0" column="1" rowspan="3" alignment="Qt::AlignRight">
      <widget class="QGroupBox" name="horizontalGroupBox">
+      <property name="minimumSize">
+       <size>
+        <width>290</width>
+        <height>0</height>
+       </size>
+      </property>
       <property name="maximumSize">
        <size>
         <width>290</width>
@@ -139,7 +145,7 @@
        <item>
         <widget class="QTabWidget" name="tabWidget">
          <property name="currentIndex">
-          <number>0</number>
+          <number>1</number>
          </property>
          <widget class="QWidget" name="darkroom">
           <attribute name="title">
@@ -151,7 +157,7 @@
              <item>
               <widget class="QLabel" name="label_2">
                <property name="text">
-                <string>Color Temperature</string>
+                <string>Color Temp</string>
                </property>
               </widget>
              </item>
@@ -305,6 +311,13 @@
             <widget class="QPushButton" name="ContrastBoost">
              <property name="text">
               <string>Contrast Boost</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="PixelateButton">
+             <property name="text">
+              <string>Pixelate</string>
              </property>
             </widget>
            </item>
