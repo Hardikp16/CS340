@@ -438,3 +438,87 @@ void workingwindow::on_PixelateButton_clicked()
     undofunc[currentImageNumber].push(loadedImage);
 
 }
+
+void workingwindow::on_Rotate_clicked()
+{
+    QColor oldColor;
+    loadedImage;
+    QImage image(loadedImage.height(), loadedImage.width(), QImage::Format_RGB32);
+    image.fill(Qt::white);
+    for (int i = 0; i < loadedImage.width(); i++)
+    {
+        for (int j = 0; j < loadedImage.height(); j++)
+        {
+                    oldColor = QColor(loadedImage.pixel(i, j));
+                    image.setPixel(j,i,qRgb(oldColor.red(), oldColor.green(), oldColor.blue()));
+
+        }
+    }
+    loadedImage = image;
+    ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
+    repaint();
+
+    undofunc[currentImageNumber].push(loadedImage);
+}
+
+void workingwindow::on_updown_clicked()
+{
+    QColor oldColor;
+    QImage proxy = loadedImage;
+    for (int i = 0; i < proxy.width(); i++)
+    {
+        for (int j = 0; j < proxy.height(); j++)
+        {
+                    oldColor = QColor(proxy.pixel(i, j));
+                    loadedImage.setPixel(i, loadedImage.height() - 1 - j,qRgb(oldColor.red(), oldColor.green(), oldColor.blue()));
+
+        }
+    }
+    ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
+    repaint();
+
+    undofunc[currentImageNumber].push(loadedImage);
+}
+
+void workingwindow::on_leftright_clicked()
+{
+    QColor oldColor;
+    QImage proxy = loadedImage;
+    for (int i = 0; i < proxy.width(); i++)
+    {
+        for (int j = 0; j < proxy.height(); j++)
+        {
+                    oldColor = QColor(proxy.pixel(i, j));
+                    loadedImage.setPixel(loadedImage.width() - 1 - i, j,qRgb(oldColor.red(), oldColor.green(), oldColor.blue()));
+
+        }
+    }
+    ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
+    repaint();
+
+    undofunc[currentImageNumber].push(loadedImage);
+}
+
+void workingwindow::on_Picaso_clicked()
+{
+    QColor oldColor;
+    QImage proxy = loadedImage;
+    int newpos1, newpos2;
+    for (int i = 0; i < proxy.width(); i++)
+    {
+        for (int j = 0; j < proxy.height(); j++)
+        {
+                    newpos1 = i - rand();
+                    newpos2 = j - rand();
+                    qBound(0, i, proxy.width());
+                    qBound(0 , j, proxy.height());
+                    oldColor = QColor(proxy.pixel(i, j));
+                    loadedImage.setPixel(newpos1, newpos2,qRgb(oldColor.red(), oldColor.green(), oldColor.blue()));
+
+        }
+    }
+    ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
+    repaint();
+
+    undofunc[currentImageNumber].push(loadedImage);
+}

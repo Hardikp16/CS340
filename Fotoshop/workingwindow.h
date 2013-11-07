@@ -52,6 +52,14 @@ private slots:
 
     void on_PixelateButton_clicked();
 
+    void on_Rotate_clicked();
+
+    void on_updown_clicked();
+
+    void on_leftright_clicked();
+
+    void on_Picaso_clicked();
+
 private:
     Ui::workingwindow *ui;
 };

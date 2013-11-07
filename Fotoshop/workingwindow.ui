@@ -70,7 +70,7 @@
       <item>
        <widget class="QPushButton" name="Undo">
         <property name="text">
-         <string>Undo</string>
+         <string>↶ Undo</string>
         </property>
        </widget>
       </item>
@@ -99,6 +99,34 @@
          </size>
         </property>
        </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Rotate</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Rotate">
+        <property name="text">
+         <string>↻</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="updown">
+        <property name="text">
+         <string>↓ ↑</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="leftright">
+        <property name="text">
+         <string>← →</string>
+        </property>
+       </widget>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -318,6 +346,13 @@
             <widget class="QPushButton" name="PixelateButton">
              <property name="text">
               <string>Pixelate</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="Picaso">
+             <property name="text">
+              <string>Pcaso</string>
              </property>
             </widget>
            </item>
