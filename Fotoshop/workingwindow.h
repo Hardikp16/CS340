@@ -58,7 +58,7 @@ private slots:
 
     void on_leftright_clicked();
 
-    void on_Picaso_clicked();
+    void on_edges_clicked();
 
 private:
     Ui::workingwindow *ui;

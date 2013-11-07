@@ -499,22 +499,30 @@ void workingwindow::on_leftright_clicked()
     undofunc[currentImageNumber].push(loadedImage);
 }
 
-void workingwindow::on_Picaso_clicked()
-{
-    QColor oldColor;
-    QImage proxy = loadedImage;
-    int newpos1, newpos2;
-    for (int i = 0; i < proxy.width(); i++)
-    {
-        for (int j = 0; j < proxy.height(); j++)
-        {
-                    newpos1 = i - rand();
-                    newpos2 = j - rand();
-                    qBound(0, i, proxy.width());
-                    qBound(0 , j, proxy.height());
-                    oldColor = QColor(proxy.pixel(i, j));
-                    loadedImage.setPixel(newpos1, newpos2,qRgb(oldColor.red(), oldColor.green(), oldColor.blue()));
 
+void workingwindow::on_edges_clicked()
+{
+    QColor oldColor, oldColor2;
+    QImage proxy = loadedImage;
+    int diff, avg, avg2;
+    for (int i = 0; i < proxy.width() -1 ; i++)
+    {
+        for (int j = 0; j < proxy.height() -1; j++)
+        {
+                    oldColor = QColor(proxy.pixel(i, j));
+                    oldColor2 = QColor(proxy.pixel(i + 1, j + 1));
+                    avg = (oldColor.red() + oldColor.green() + oldColor.blue()) / 3;
+                    avg2 = (oldColor2.red() + oldColor2.blue() + oldColor2.green()) /3;
+                    diff = avg - avg2;
+                    diff = qAbs(diff);
+                    if (diff >= 30)
+                    {
+                        loadedImage.setPixel(i, j,qRgb(230, 230, 230));
+                    }
+                    else
+                    {
+                        loadedImage.setPixel(i,j,qRgb(0, 0, 0));
+                    }
         }
     }
     ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
