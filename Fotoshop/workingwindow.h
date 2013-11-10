@@ -60,7 +60,7 @@ private slots:
 
     void on_edges_clicked();
 
-    void on_Pen_clicked();
+    void on_PenButton_toggled(bool checked);
 
 private:
     Ui::workingwindow *ui;

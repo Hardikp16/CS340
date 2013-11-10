@@ -531,7 +531,17 @@ void workingwindow::on_edges_clicked()
     undofunc[currentImageNumber].push(loadedImage);
 }
 
-void workingwindow::on_Pen_clicked()
+void workingwindow::on_PenButton_toggled(bool checked)
 {
-
+    //bool Pen; // will need to make a global Pen/brush/ect tools...
+    if (checked)
+    {
+        //Pen = TRUE;
+        std::cout<<"on"<<std::endl;
+    }
+    else
+    {
+        //Pen = FALSE;
+        std::cout<<"off"<<std::endl;
+    }
 }

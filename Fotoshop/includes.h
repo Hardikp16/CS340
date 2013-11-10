@@ -20,6 +20,8 @@
 #include <Qt>
 #include <QtMath>
 
+#define TRUE 1
+#define FALSE 0
 extern int opened;
 extern QString filename;
 extern int screenheight;

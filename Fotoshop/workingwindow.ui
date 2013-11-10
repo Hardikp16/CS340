@@ -372,7 +372,7 @@
           <attribute name="title">
            <string>Brushes</string>
           </attribute>
-          <widget class="QPushButton" name="Pen">
+          <widget class="QPushButton" name="PenButton">
            <property name="geometry">
             <rect>
              <x>20</x>
@@ -383,6 +383,9 @@
            </property>
            <property name="text">
             <string>Pen</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
            </property>
           </widget>
          </widget>
