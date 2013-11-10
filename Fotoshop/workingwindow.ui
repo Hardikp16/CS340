@@ -170,7 +170,7 @@
        <item>
         <widget class="QTabWidget" name="tabWidget">
          <property name="currentIndex">
-          <number>1</number>
+          <number>2</number>
          </property>
          <widget class="QWidget" name="darkroom">
           <attribute name="title">
@@ -372,6 +372,19 @@
           <attribute name="title">
            <string>Brushes</string>
           </attribute>
+          <widget class="QPushButton" name="Pen">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>20</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Pen</string>
+           </property>
+          </widget>
          </widget>
         </widget>
        </item>

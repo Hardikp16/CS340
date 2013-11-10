@@ -530,3 +530,8 @@ void workingwindow::on_edges_clicked()
 
     undofunc[currentImageNumber].push(loadedImage);
 }
+
+void workingwindow::on_Pen_clicked()
+{
+
+}

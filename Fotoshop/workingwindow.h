@@ -60,6 +60,8 @@ private slots:
 
     void on_edges_clicked();
 
+    void on_Pen_clicked();
+
 private:
     Ui::workingwindow *ui;
 };

@@ -15,7 +15,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_pushButton_3_clicked(){
+void MainWindow::on_NewImageButton_clicked(){
 
     isblank = 1;
     QDesktopWidget* desktop = qApp->desktop();
@@ -33,7 +33,7 @@ void MainWindow::on_pushButton_3_clicked(){
     this->update();
 }
 
-void MainWindow::on_pushButton_clicked()
+void MainWindow::on_OpenImageButton_clicked()
 {
     isblank = 0;
     QString fileName = QFileDialog::getOpenFileName(this,
@@ -53,7 +53,7 @@ void MainWindow::on_pushButton_clicked()
     this->update();
 }
 
-void MainWindow::on_pushButton_2_clicked()
+void MainWindow::on_ExitButton_clicked()
 {
     exit (EXIT_SUCCESS);
 }
