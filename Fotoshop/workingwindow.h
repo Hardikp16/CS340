@@ -62,6 +62,12 @@ private slots:
 
     void on_PenButton_toggled(bool checked);
 
+    void mousePressEvent(QMouseEvent *event);
+
+    void mouseMoveEvent(QMouseEvent *event);
+
+    void mouseReleaseEvent(QMouseEvent *event);
+
 private:
     Ui::workingwindow *ui;
 };

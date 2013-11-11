@@ -19,6 +19,13 @@
 #include <QStyle>
 #include <Qt>
 #include <QtMath>
+#include <QEvent>
+#include <QMouseEvent>
+#include <QPaintEvent>
+#include <QPen>
+#include <QBrush>
+#include <QColor>
+
 
 #define TRUE 1
 #define FALSE 0

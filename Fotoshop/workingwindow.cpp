@@ -545,3 +545,20 @@ void workingwindow::on_PenButton_toggled(bool checked)
         std::cout<<"off"<<std::endl;
     }
 }
+
+
+
+void workingwindow::mousePressEvent(QMouseEvent *event)
+{
+    //if(event->button() == QT::LeftButton){   }
+}
+
+void workingwindow::mouseMoveEvent(QMouseEvent *event)
+{
+
+}
+
+void workingwindow::mouseReleaseEvent(QMouseEvent *event)
+{
+
+}
