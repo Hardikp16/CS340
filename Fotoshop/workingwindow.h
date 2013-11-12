@@ -68,6 +68,8 @@ private slots:
 
     void mouseReleaseEvent(QMouseEvent *event);
 
+    void on_Redo_clicked();
+
 private:
     Ui::workingwindow *ui;
 };

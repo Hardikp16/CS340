@@ -27,6 +27,11 @@ workingwindow::workingwindow(QWidget *parent) :
     ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
     ui->imageLabel->adjustSize();
 
+    //ui->scrollArea = new QScrollArea;
+    ui->scrollArea->setBackgroundRole(QPalette::Dark);
+    //ui->scrollArea->setWidget(ui->imageLabel);
+    //setCentralWidget(ui->scrollArea);
+
     undofunc[0].push(loadedImage);
 
 }
@@ -565,4 +570,14 @@ void workingwindow::mouseReleaseEvent(QMouseEvent *event)
 {
     std::cout<< "mouse button released" <<std::endl;
 
+}
+
+void workingwindow::on_Redo_clicked()
+{
+    if (undofunc[currentImageNumber + 1].hasPic == true)
+        {
+        ui->imageLabel->setPixmap(QPixmap::fromImage(undofunc[currentImageNumber + 1].currImg));
+        repaint();
+        currentImageNumber++;
+        }
 }
