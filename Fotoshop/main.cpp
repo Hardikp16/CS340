@@ -11,7 +11,14 @@ double picsize;
 undoArr undofunc[256];
 int currentImageNumber = 0;
 int isblank;
-
+bool pen = FALSE;
+bool drawing = FALSE;
+bool eraser = FALSE;
+bool brush = FALSE;
+bool text = FALSE;
+QPoint pointxy;
+QPoint pointxy2;
+//QPixmap buffer;
 int main(int argc, char *argv[])
 {
     picsize = 1;

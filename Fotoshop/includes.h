@@ -25,6 +25,7 @@
 #include <QPen>
 #include <QBrush>
 #include <QColor>
+#include <QPoint>
 
 
 #define TRUE 1
@@ -38,7 +39,14 @@ extern QImage scaledImage;
 extern double picsize;
 extern int currentImageNumber;
 extern int isblank;
-
+extern bool pen;
+extern bool eraser;
+extern bool brush;
+extern bool text;
+extern bool drawing;
+extern QPoint pointxy;
+extern QPoint pointxy2;
+//extern QPixmap buffer;
 class undoArr
 {
 

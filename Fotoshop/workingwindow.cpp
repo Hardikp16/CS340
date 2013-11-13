@@ -538,35 +538,102 @@ void workingwindow::on_PenButton_toggled(bool checked)
     //bool Pen; // will need to make a global Pen/brush/ect tools...
     if (checked)
     {
-        //Pen = TRUE;
+        pen = TRUE;
         std::cout<<"on"<<std::endl;
     }
     else
     {
-        //Pen = FALSE;
+        pen = FALSE;
         std::cout<<"off"<<std::endl;
     }
 }
 
+void workingwindow::on_EraserButton_toggled(bool checked)
+{
+    if (checked)
+    {
+        eraser = TRUE;
+        std::cout<<"on"<<std::endl;
+    }
+    else
+    {
+        eraser = FALSE;
+        std::cout<<"off"<<std::endl;
+    }
+}
+
+void workingwindow::on_BrushButton_toggled(bool checked)
+{
+    if (checked)
+    {
+        brush = TRUE;
+        std::cout<<"on"<<std::endl;
+    }
+    else
+    {
+        brush = FALSE;
+        std::cout<<"off"<<std::endl;
+    }
+}
+
+void workingwindow::on_TextButton_toggled(bool checked)
+{
+    if (checked)
+    {
+        text = TRUE;
+        std::cout<<"on"<<std::endl;
+    }
+    else
+    {
+        text = FALSE;
+        std::cout<<"off"<<std::endl;
+    }
+}
 
 
 void workingwindow::mousePressEvent(QMouseEvent *event)
 {
     if(event->button() == Qt::LeftButton)
         {
-        std::cout << "left button clicked" <<std::endl;
+            int pointx,pointy;
+            if(pen == TRUE)
+            {
+                std::cout<< "Paint is on and now going to track the mouse and start drawing" <<std::endl;
+                pointxy = event->pos();
+                pointx = pointxy.x();
+                pointy = pointxy.y();
+                std::cout << pointx;
+                std::cout << " " << pointy << std::endl;
+                drawing = TRUE;
+            }
         }
 }
 
 void workingwindow::mouseMoveEvent(QMouseEvent *event)
 {
-
+    if(event->button() == Qt::LeftButton && drawing == TRUE)
+        {
+            std::cout<< "I can paint & move" <<std::endl;
+        }
 }
 
 void workingwindow::mouseReleaseEvent(QMouseEvent *event)
 {
-    std::cout<< "mouse button released" <<std::endl;
+    drawing = FALSE; //
+    pointxy2 = event->pos();
+    std::cout<< "mouse button released and stop drawing" <<std::endl;
 
+}
+
+void workingwindow::paintEvent(QPaintEvent *event){ // gives 3 errors Painter not active, Paintengine should be called,
+    if(pen == TRUE){
+        QPainter painter(ui->imageLabel);
+        //painter.drawPixmap(screenheight,screenwidth,*buffer);
+        QPen pendraw(Qt::black);
+        painter.setPen(pendraw);
+        painter.drawLine(pointxy,pointxy2);
+
+    }
 }
 
 void workingwindow::on_Redo_clicked()

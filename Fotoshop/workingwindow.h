@@ -62,11 +62,19 @@ private slots:
 
     void on_PenButton_toggled(bool checked);
 
+    void on_EraserButton_toggled(bool checked);
+
+    void on_BrushButton_toggled(bool checked);
+
+    void on_TextButton_toggled(bool checked);
+
     void mousePressEvent(QMouseEvent *event);
 
     void mouseMoveEvent(QMouseEvent *event);
 
     void mouseReleaseEvent(QMouseEvent *event);
+
+    void paintEvent(QPaintEvent *event);
 
     void on_Redo_clicked();
 
