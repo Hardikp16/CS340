@@ -601,4 +601,5 @@ void workingwindow::on_Negative_clicked()
     repaint();
 
     undofunc[currentImageNumber].push(loadedImage);
+
 }
