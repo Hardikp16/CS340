@@ -46,45 +46,15 @@
            <height>433</height>
           </rect>
          </property>
-         <widget class="QLabel" name="imageLabel">
-          <property name="geometry">
-           <rect>
-            <x>90</x>
-            <y>80</y>
-            <width>211</width>
-            <height>251</height>
-           </rect>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-         </widget>
-         <widget class="QScrollBar" name="verticalScrollBar">
-          <property name="geometry">
-           <rect>
-            <x>900</x>
-            <y>0</y>
-            <width>17</width>
-            <height>412</height>
-           </rect>
-          </property>
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-         </widget>
-         <widget class="QScrollBar" name="horizontalScrollBar">
-          <property name="geometry">
-           <rect>
-            <x>80</x>
-            <y>400</y>
-            <width>801</width>
-            <height>17</height>
-           </rect>
-          </property>
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-         </widget>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QLabel" name="imageLabel">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </widget>
        </widget>
       </item>
