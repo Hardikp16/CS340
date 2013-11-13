@@ -1,5 +1,7 @@
 #include "workingwindow.h"
 #include "ui_workingwindow.h"
+#include "filters.h"
+#include "darkroom.h"
 
 workingwindow::workingwindow(QWidget *parent) :
     QMainWindow(parent),
@@ -46,77 +48,30 @@ void workingwindow::on_quitButton_clicked()
 
 void workingwindow::on_greyScale_clicked()
 {
-    QColor oldColor;
-    loadedImage;
-    for (int i = 0; i < loadedImage.width(); i++)
-    {
-        for (int j = 0; j < loadedImage.height(); j++)
-        {
-            oldColor = QColor(loadedImage.pixel(i,j));
-            int averagevalue = (oldColor.red() + oldColor.green() + oldColor.blue())/3;
-            loadedImage.setPixel(i,j,qRgb(averagevalue,averagevalue,averagevalue));
-        }
-    }
+    QImage grey = greyscale(loadedImage);
 
-    ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
+    ui->imageLabel->setPixmap(QPixmap::fromImage(grey));
     repaint();
 
-    undofunc[currentImageNumber].push(loadedImage);
+    undofunc[currentImageNumber].push(grey);
 }
 
 
 void workingwindow::on_PencilSketch_clicked()
 {
-    QColor oldColor;
-    loadedImage;
-    for (int i = 0; i < loadedImage.width(); i++)
-    {
-        for (int j = 0; j < loadedImage.height(); j++)
-        {
-            oldColor = QColor(loadedImage.pixel(i,j));
-            int averagevalue = (oldColor.red() + oldColor.green() + oldColor.blue())/3;
-            if (averagevalue <= 127)
-            {
-                loadedImage.setPixel(i,j,qRgb(0,0,0));
-            }
-            else if (averagevalue >= 128)
-            {
-                loadedImage.setPixel(i,j,qRgb(255,255,255));
-            }
-        }
-    }
 
-    ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
+    QImage pencilSketch = pencil(loadedImage);
+
+    ui->imageLabel->setPixmap(QPixmap::fromImage(pencilSketch));
     repaint();
 
-    undofunc[currentImageNumber].push(loadedImage);
+    undofunc[currentImageNumber].push(pencilSketch);
 }
 
 
 void workingwindow::on_WarmifyButton_clicked()
 {
-    QColor oldColor;
-    int red, green;
-    loadedImage;
-    for (int i = 0; i < loadedImage.width(); i++)
-    {
-        for (int j = 0; j < loadedImage.height(); j++)
-        {
-            oldColor = QColor(loadedImage.pixel(i,j));
-            red = oldColor.red();
-            green = oldColor.green();
-            if (oldColor.red() <= 215)
-                {
-                red = oldColor.red() + 7;
-                }
-            if (oldColor.green() <= 215)
-                {
-                green = oldColor.green() + 7;
-                }
-            loadedImage.setPixel(i,j,qRgb(red, green ,oldColor.blue()));
-
-        }
-    }
+    warm();
 
     ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
     repaint();
@@ -126,23 +81,7 @@ void workingwindow::on_WarmifyButton_clicked()
 
 void workingwindow::on_coolButton_clicked()
 {
-    QColor oldColor;
-    int blue;
-    loadedImage;
-    for (int i = 0; i < loadedImage.width(); i++)
-    {
-        for (int j = 0; j < loadedImage.height(); j++)
-        {
-            oldColor = QColor(loadedImage.pixel(i,j));
-            blue = oldColor.blue();
-            if (oldColor.blue() <= 215)
-                {
-                blue = oldColor.blue() + 7;
-                }
-            loadedImage.setPixel(i,j,qRgb(oldColor.red(), oldColor.green(), blue));
-
-        }
-    }
+    cool();
 
     ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
     repaint();
@@ -153,34 +92,8 @@ void workingwindow::on_coolButton_clicked()
 
 void workingwindow::on_saturateButton_clicked()
 {
-    QColor oldColor;
-    QColor huesatlit;
-    loadedImage;
-    int saturation, hue, lightness;
-    for (int i = 0; i < loadedImage.width(); i++)
-    {
-        for (int j = 0; j < loadedImage.height(); j++)
-        {
-            oldColor = QColor(loadedImage.pixel(i,j));
-            huesatlit = oldColor.toHsl();
-            saturation = huesatlit.saturation();
-            hue = huesatlit.hue();
-            lightness = huesatlit.lightness();
 
-            if (saturation < 240)
-                {
-                    saturation = saturation + 15;
-                }
-            else
-                {
-                    saturation = 255;
-                }
-
-            huesatlit.setHsl(hue, saturation, lightness);
-
-            loadedImage.setPixel(i,j,qRgb(huesatlit.red(), huesatlit.green() ,huesatlit.blue()));
-        }
-    }
+    saturate();
 
     ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
     repaint();
@@ -190,35 +103,8 @@ void workingwindow::on_saturateButton_clicked()
 
 void workingwindow::on_DesaturateButton_clicked()
 {
-    QColor oldColor;
-    QColor huesatlit;
-    loadedImage;
-    int saturation, hue, lightness;
-    for (int i = 0; i < loadedImage.width(); i++)
-    {
-        for (int j = 0; j < loadedImage.height(); j++)
-        {
-            oldColor = QColor(loadedImage.pixel(i,j));
-            huesatlit = oldColor.toHsl();
-            saturation = huesatlit.saturation();
-            hue = huesatlit.hue();
-            lightness = huesatlit.lightness();
 
-            if (saturation > 15)
-                {
-                    saturation = saturation - 15;
-                }
-            else
-                {
-                    saturation = 0;
-                }
-
-            huesatlit.setHsl(hue, saturation, lightness);
-
-            loadedImage.setPixel(i,j,qRgb(huesatlit.red(), huesatlit.green() ,huesatlit.blue()));
-
-        }
-    }
+    desaturate();
 
     ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
     repaint();
@@ -228,35 +114,8 @@ void workingwindow::on_DesaturateButton_clicked()
 
 void workingwindow::on_overExposeButton_clicked()
 {
-    QColor oldColor;
-    QColor huesatlit;
-    loadedImage;
-    int saturation, hue, lightness;
-    for (int i = 0; i < loadedImage.width(); i++)
-    {
-        for (int j = 0; j < loadedImage.height(); j++)
-        {
-            oldColor = QColor(loadedImage.pixel(i,j));
-            huesatlit = oldColor.toHsl();
-            saturation = huesatlit.saturation();
-            hue = huesatlit.hue();
-            lightness = huesatlit.lightness();
 
-            if (lightness < 240)
-                {
-                    lightness = lightness + 15;
-                }
-            else
-                {
-                    lightness = 255;
-                }
-
-            huesatlit.setHsl(hue, saturation, lightness);
-
-            loadedImage.setPixel(i,j,qRgb(huesatlit.red(), huesatlit.green() ,huesatlit.blue()));
-
-        }
-    }
+    overExpose();
 
     ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
     repaint();
@@ -266,34 +125,7 @@ void workingwindow::on_overExposeButton_clicked()
 
 void workingwindow::on_underExposeButton_clicked()
 {
-    QColor oldColor;
-    QColor huesatlit;
-    loadedImage;
-    int saturation, hue, lightness;
-    for (int i = 0; i < loadedImage.width(); i++)
-    {
-        for (int j = 0; j < loadedImage.height(); j++)
-        {
-            oldColor = QColor(loadedImage.pixel(i,j));
-            huesatlit = oldColor.toHsl();
-            saturation = huesatlit.saturation();
-            hue = huesatlit.hue();
-            lightness = huesatlit.lightness();
-
-            if (lightness > 15)
-                {
-                    lightness = lightness - 15;
-                }
-            else
-                {
-                    lightness = 0;
-                }
-            huesatlit.setHsl(hue, saturation, lightness);
-
-            loadedImage.setPixel(i,j,qRgb(huesatlit.red(), huesatlit.green() ,huesatlit.blue()));
-
-        }
-    }
+    underExpose();
 
     ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
     repaint();
@@ -303,48 +135,13 @@ void workingwindow::on_underExposeButton_clicked()
 
 void workingwindow::on_ContrastBoost_clicked()
 {
-    QColor oldColor;
-    loadedImage;
-    int red, green, blue, average;
-    for (int i = 0; i < loadedImage.width(); i++)
-    {
-        for (int j = 0; j < loadedImage.height(); j++)
-        {
-            oldColor = QColor(loadedImage.pixel(i,j));
-            red = oldColor.red();
-            green = oldColor.green();
-            blue = oldColor.blue();
-            average = (red + green + blue) / 3;
-            if (average > 125)
-            {
-                red = oldColor.red() + 10;
-                blue = oldColor.blue() + 10;
-                green = oldColor.green() + 10;
 
-                red = qBound(0, red, 255);
-                green = qBound(0, green, 255);
-                blue = qBound(0, blue, 255);
-            }
+    QImage modded = Boost(loadedImage);
 
-            else if (average <= 125)
-            {
-                red = oldColor.red() - 10;
-                blue = oldColor.blue() - 10;
-                green = oldColor.green() - 10;
-
-                red = qBound(0, red, 255);
-                green = qBound(0, green, 255);
-                blue = qBound(0, blue, 255);
-            }
-            loadedImage.setPixel(i,j,qRgb(red, green ,blue));
-
-        }
-    }
-
-    ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
+    ui->imageLabel->setPixmap(QPixmap::fromImage(modded));
     repaint();
 
-    undofunc[currentImageNumber].push(loadedImage);
+    undofunc[currentImageNumber].push(modded);
 }
 
 
@@ -407,37 +204,21 @@ void workingwindow::on_Undo_clicked()
 
 void workingwindow::on_SepiaButton_clicked()
 {
-    QColor oldColor;
-    loadedImage;
-    int sepia, blue;
-    for (int i = 0; i < loadedImage.width(); i++)
-    {
-        for (int j = 0; j < loadedImage.height(); j++)
-        {
-            oldColor = QColor(loadedImage.pixel(i,j));
-            int averagevalue = (oldColor.red() + oldColor.green() + oldColor.blue())/3;
-            sepia = averagevalue + 50;
-            sepia = qBound(0, sepia, 255);
-            blue = averagevalue - 50;
-            blue = qBound(0, averagevalue, 255);
-            loadedImage.setPixel(i,j,qRgb(sepia , sepia - 20 , blue));
-        }
-    }
+    QImage modded = sepia (loadedImage);
 
-    ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
+    ui->imageLabel->setPixmap(QPixmap::fromImage(modded));
     repaint();
 
-    undofunc[currentImageNumber].push(loadedImage);
+    undofunc[currentImageNumber].push(modded);
 }
 
 void workingwindow::on_PixelateButton_clicked()
 {
-    loadedImage = loadedImage.scaled(0.125 * loadedImage.width(), 0.125 * loadedImage.height(), Qt::KeepAspectRatio, Qt::FastTransformation);
-    loadedImage = loadedImage.scaled(8 * loadedImage.width(), 8 * loadedImage.height(), Qt::KeepAspectRatio, Qt::FastTransformation);
-    ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
+    QImage modded = pixelate(loadedImage);
+    ui->imageLabel->setPixmap(QPixmap::fromImage(modded));
     repaint();
 
-    undofunc[currentImageNumber].push(loadedImage);
+    undofunc[currentImageNumber].push(modded);
 
 }
 
@@ -504,33 +285,11 @@ void workingwindow::on_leftright_clicked()
 
 void workingwindow::on_edges_clicked()
 {
-    QColor oldColor, oldColor2;
-    QImage proxy = loadedImage;
-    int diff, avg, avg2;
-    for (int i = 0; i < proxy.width() -1 ; i++)
-    {
-        for (int j = 0; j < proxy.height() -1; j++)
-        {
-                    oldColor = QColor(proxy.pixel(i, j));
-                    oldColor2 = QColor(proxy.pixel(i + 1, j + 1));
-                    avg = (oldColor.red() + oldColor.green() + oldColor.blue()) / 3;
-                    avg2 = (oldColor2.red() + oldColor2.blue() + oldColor2.green()) /3;
-                    diff = avg - avg2;
-                    diff = qAbs(diff);
-                    if (diff >= 30)
-                    {
-                        loadedImage.setPixel(i, j,qRgb(230, 230, 230));
-                    }
-                    else
-                    {
-                        loadedImage.setPixel(i,j,qRgb(0, 0, 0));
-                    }
-        }
-    }
-    ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
+    QImage modded = edgeDetect(loadedImage);
+    ui->imageLabel->setPixmap(QPixmap::fromImage(modded));
     repaint();
 
-    undofunc[currentImageNumber].push(loadedImage);
+    undofunc[currentImageNumber].push(modded);
 }
 
 void workingwindow::on_PenButton_toggled(bool checked)
@@ -648,25 +407,11 @@ void workingwindow::on_Redo_clicked()
 
 void workingwindow::on_Negative_clicked()
 {
-    QColor oldColor;
-    loadedImage;
-    int r,g,b;
-    for (int i = 0; i < loadedImage.width(); i++)
-    {
-        for (int j = 0; j < loadedImage.height(); j++)
-        {
+    QImage modded = negative(loadedImage);
 
-            oldColor = QColor(loadedImage.pixel(i,j));
-            r = oldColor.red() * -1;
-            g = oldColor.green() * -1;
-            b = oldColor.blue() * -1;
-            loadedImage.setPixel(i,j,qRgb(r,g,b));
-        }
-    }
-
-    ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
+    ui->imageLabel->setPixmap(QPixmap::fromImage(modded));
     repaint();
 
-    undofunc[currentImageNumber].push(loadedImage);
+    undofunc[currentImageNumber].push(modded);
 
 }

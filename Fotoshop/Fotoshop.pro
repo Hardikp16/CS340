@@ -15,11 +15,15 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     workingwindow.cpp \
-    UndoArray.cpp
+    UndoArray.cpp \
+    filters.cpp \
+    darkroom.cpp
 
 HEADERS  += mainwindow.h \
     workingwindow.h \
-    includes.h
+    includes.h \
+    filters.h \
+    darkroom.h
 
 FORMS    += mainwindow.ui \
     workingwindow.ui

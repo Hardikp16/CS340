@@ -47,6 +47,8 @@ extern bool drawing;
 extern QPoint pointxy;
 extern QPoint pointxy2;
 //extern QPixmap buffer;
+
+
 class undoArr
 {
 
