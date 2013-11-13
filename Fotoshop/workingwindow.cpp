@@ -27,10 +27,7 @@ workingwindow::workingwindow(QWidget *parent) :
     ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
     ui->imageLabel->adjustSize();
 
-    //ui->scrollArea = new QScrollArea;
     ui->scrollArea->setBackgroundRole(QPalette::Dark);
-    //ui->scrollArea->setWidget(ui->imageLabel);
-    //setCentralWidget(ui->scrollArea);
 
     undofunc[0].push(loadedImage);
 
@@ -580,4 +577,28 @@ void workingwindow::on_Redo_clicked()
         repaint();
         currentImageNumber++;
         }
+}
+
+void workingwindow::on_Negative_clicked()
+{
+    QColor oldColor;
+    loadedImage;
+    int r,g,b;
+    for (int i = 0; i < loadedImage.width(); i++)
+    {
+        for (int j = 0; j < loadedImage.height(); j++)
+        {
+
+            oldColor = QColor(loadedImage.pixel(i,j));
+            r = oldColor.red() * -1;
+            g = oldColor.green() * -1;
+            b = oldColor.blue() * -1;
+            loadedImage.setPixel(i,j,qRgb(r,g,b));
+        }
+    }
+
+    ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
+    repaint();
+
+    undofunc[currentImageNumber].push(loadedImage);
 }

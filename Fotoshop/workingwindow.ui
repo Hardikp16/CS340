@@ -72,7 +72,7 @@
       <item>
        <widget class="QPushButton" name="Redo">
         <property name="text">
-         <string>Redo</string>
+         <string>Redo↷</string>
         </property>
        </widget>
       </item>
@@ -352,6 +352,13 @@
             <widget class="QPushButton" name="edges">
              <property name="text">
               <string>Edge Detection</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="Negative">
+             <property name="text">
+              <string>Negative</string>
              </property>
             </widget>
            </item>

@@ -70,6 +70,8 @@ private slots:
 
     void on_Redo_clicked();
 
+    void on_Negative_clicked();
+
 private:
     Ui::workingwindow *ui;
 };
