@@ -32,6 +32,8 @@ workingwindow::workingwindow(QWidget *parent) :
     ui->imageLabel->adjustSize();
 
     undofunc[0].push(loadedImage);
+    undoVector.push_back(loadedImage);
+
 
 }
 
@@ -421,8 +423,8 @@ void workingwindow::on_OpenNew_clicked()
 {
     QString openNew = QFileDialog::getOpenFileName(this,
                        tr("Choose an Image"),"",tr("Images (*.jpg);;All Files (*)"));
-    QImage image(filename);
-    loadedImage = image;
+    QImage newImage(openNew);
+    loadedImage = newImage;
 
     ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
     repaint();

@@ -18,6 +18,8 @@ bool text = FALSE;
 undoArr *undofunc;
 QPoint pointxy;
 QPoint pointxy2;
+
+std::vector<QImage> undoVector;
 //QPixmap buffer;
 
 

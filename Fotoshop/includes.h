@@ -26,6 +26,7 @@
 #include <QBrush>
 #include <QColor>
 #include <QPoint>
+#include <vector>
 
 
 #define TRUE 1

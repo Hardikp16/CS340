@@ -5,6 +5,8 @@
 
 extern undoArr *undofunc;
 
+extern std::vector<QImage> undoVector;
+
 namespace Ui {
 class workingwindow;
 }
