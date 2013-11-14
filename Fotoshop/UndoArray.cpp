@@ -8,5 +8,10 @@ void undoArr::push(QImage file)
     currentImageNumber = currentImageNumber + 1;
     undofunc[currentImageNumber].hasPic = false;
 
+    if (currentImageNumber == 254)
+    {
+        currentImageNumber = 128;
+    }
+
     }
 

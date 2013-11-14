@@ -57,7 +57,7 @@ public:
     bool hasPic;
     void push(QImage file);
     void pop();
-
+    int size;
 };
 
 

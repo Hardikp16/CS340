@@ -9,6 +9,7 @@ workingwindow::workingwindow(QWidget *parent) :
 {
 
     ui->setupUi(this);
+    undofunc = new undoArr[256];
 
     /*! creating a proxy to edit with */
     if (isblank == 1)
@@ -44,29 +45,30 @@ workingwindow::~workingwindow()
 
 void workingwindow::on_quitButton_clicked()
 {
+    delete [] undofunc;
     exit (EXIT_SUCCESS);
 }
 
 void workingwindow::on_greyScale_clicked()
 {
-    QImage grey = greyscale(loadedImage);
+    loadedImage = greyscale(loadedImage);
 
-    ui->imageLabel->setPixmap(QPixmap::fromImage(grey));
+    ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
     repaint();
 
-    undofunc[currentImageNumber].push(grey);
+    undofunc[currentImageNumber].push(loadedImage);
 }
 
 
 void workingwindow::on_PencilSketch_clicked()
 {
 
-    QImage pencilSketch = pencil(loadedImage);
+    loadedImage = pencil(loadedImage);
 
-    ui->imageLabel->setPixmap(QPixmap::fromImage(pencilSketch));
+    ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
     repaint();
 
-    undofunc[currentImageNumber].push(pencilSketch);
+    undofunc[currentImageNumber].push(loadedImage);
 }
 
 
@@ -175,7 +177,7 @@ void workingwindow::on_Save_clicked()
     QFile save(saveName);
     QDataStream out(&save);
     out.setVersion(QDataStream::Qt_5_1);
-    out << undofunc[currentImageNumber - 1].currImg;
+    out << loadedImage;
 
 }
 
@@ -205,28 +207,27 @@ void workingwindow::on_Undo_clicked()
 
 void workingwindow::on_SepiaButton_clicked()
 {
-    QImage modded = sepia (loadedImage);
+    loadedImage = sepia (loadedImage);
 
-    ui->imageLabel->setPixmap(QPixmap::fromImage(modded));
+    ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
     repaint();
 
-    undofunc[currentImageNumber].push(modded);
+    undofunc[currentImageNumber].push(loadedImage);
 }
 
 void workingwindow::on_PixelateButton_clicked()
 {
-    QImage modded = pixelate(loadedImage);
-    ui->imageLabel->setPixmap(QPixmap::fromImage(modded));
+    loadedImage = pixelate(loadedImage);
+    ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
     repaint();
 
-    undofunc[currentImageNumber].push(modded);
+    undofunc[currentImageNumber].push(loadedImage);
 
 }
 
 void workingwindow::on_Rotate_clicked()
 {
     QColor oldColor;
-    loadedImage;
     QImage image(loadedImage.height(), loadedImage.width(), QImage::Format_RGB32);
     image.fill(Qt::white);
     for (int i = 0; i < loadedImage.width(); i++)
@@ -286,11 +287,11 @@ void workingwindow::on_leftright_clicked()
 
 void workingwindow::on_edges_clicked()
 {
-    QImage modded = edgeDetect(loadedImage);
-    ui->imageLabel->setPixmap(QPixmap::fromImage(modded));
+    loadedImage = edgeDetect(loadedImage);
+    ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
     repaint();
 
-    undofunc[currentImageNumber].push(modded);
+    undofunc[currentImageNumber].push(loadedImage);
 }
 
 void workingwindow::on_PenButton_toggled(bool checked)
@@ -408,11 +409,11 @@ void workingwindow::on_Redo_clicked()
 
 void workingwindow::on_Negative_clicked()
 {
-    QImage modded = negative(loadedImage);
+    loadedImage = negative(loadedImage);
 
-    ui->imageLabel->setPixmap(QPixmap::fromImage(modded));
+    ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
     repaint();
 
-    undofunc[currentImageNumber].push(modded);
+    undofunc[currentImageNumber].push(loadedImage);
 
 }

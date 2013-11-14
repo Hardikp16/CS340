@@ -3,7 +3,7 @@
 
 #include "includes.h"
 
-extern undoArr undofunc[256];
+extern undoArr *undofunc;
 
 namespace Ui {
 class workingwindow;

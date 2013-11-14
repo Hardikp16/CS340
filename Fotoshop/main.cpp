@@ -8,7 +8,6 @@ int screenwidth;
 QImage loadedImage;
 QImage scaledImage;
 double picsize;
-undoArr undofunc[256];
 int currentImageNumber = 0;
 int isblank;
 bool pen = FALSE;
@@ -16,9 +15,12 @@ bool drawing = FALSE;
 bool eraser = FALSE;
 bool brush = FALSE;
 bool text = FALSE;
+undoArr *undofunc;
 QPoint pointxy;
 QPoint pointxy2;
 //QPixmap buffer;
+
+
 int main(int argc, char *argv[])
 {
 
@@ -30,14 +32,3 @@ int main(int argc, char *argv[])
     return a.exec();
 }
 
-/* to do
- * crop
- * eraser
- * brush
- * hdr
- * dragan
- * sharpen
- * blur
- * glass
- *
-*/
