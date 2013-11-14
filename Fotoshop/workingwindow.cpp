@@ -9,6 +9,7 @@ workingwindow::workingwindow(QWidget *parent) :
 {
 
     ui->setupUi(this);
+
     /*! creating a proxy to edit with */
     if (isblank == 1)
         {
@@ -174,7 +175,7 @@ void workingwindow::on_Save_clicked()
     QFile save(saveName);
     QDataStream out(&save);
     out.setVersion(QDataStream::Qt_5_1);
-    out << loadedImage;
+    out << undofunc[currentImageNumber - 1].currImg;
 
 }
 

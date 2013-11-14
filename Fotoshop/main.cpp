@@ -21,6 +21,7 @@ QPoint pointxy2;
 //QPixmap buffer;
 int main(int argc, char *argv[])
 {
+
     picsize = 1;
     QApplication a(argc, argv);
     MainWindow w;

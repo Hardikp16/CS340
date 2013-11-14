@@ -2,7 +2,17 @@
     <qresource prefix="/">
         <file>blank.jpg</file>
         <file>Logo.png</file>
+        <file>blooddragon2.png</file>
     </qresource>
-    <qresource prefix="/Icon"/>
+    <qresource prefix="/Icon">
+        <file>Boost.png</file>
+        <file>censored.png</file>
+        <file>edges.png</file>
+        <file>grey.png</file>
+        <file>robot.jpg</file>
+        <file>sepia.png</file>
+        <file>sketch.png</file>
+        <file>robotNeg.png</file>
+    </qresource>
     <qresource prefix="/Stickers"/>
 </RCC>
