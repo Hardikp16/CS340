@@ -80,6 +80,8 @@ private slots:
 
     void on_Negative_clicked();
 
+    void on_OpenNew_clicked();
+
 private:
     Ui::workingwindow *ui;
 };

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1175</width>
-    <height>1042</height>
+    <height>1080</height>
    </rect>
   </property>
   <property name="maximumSize">
@@ -435,7 +435,11 @@
    <bool>true</bool>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>FOTOSHOP</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Images/Images.qrc">
+    <normaloff>:/Icon/fs.png</normaloff>:/Icon/fs.png</iconset>
   </property>
   <property name="windowOpacity">
    <double>0.500000000000000</double>
@@ -448,62 +452,29 @@
     <string notr="true">background-color: rgb(70, 70, 70);</string>
    </property>
    <layout class="QGridLayout" name="gridLayout_3">
-    <item row="1" column="0" rowspan="2">
-     <layout class="QGridLayout" name="gridLayout_2">
-      <item row="0" column="0">
-       <widget class="QScrollArea" name="scrollArea">
-        <property name="styleSheet">
-         <string notr="true">QScrollArea 
-{
-	
-	alternate-background-color: rgb(26, 255, 190);
-	
-	border-color: rgb(255, 0, 4);
-	
-	gridline-color: rgb(255, 170, 0);
-	
-	selection-color: rgb(0, 255, 0);
-	background-color: rgb(0, 0, 0);
-}</string>
-        </property>
-        <property name="widgetResizable">
-         <bool>true</bool>
-        </property>
-        <widget class="QWidget" name="scrollAreaWidgetContents">
-         <property name="geometry">
-          <rect>
-           <x>0</x>
-           <y>0</y>
-           <width>857</width>
-           <height>674</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(38, 38, 38);</string>
-         </property>
-         <layout class="QGridLayout" name="gridLayout">
-          <item row="0" column="0">
-           <widget class="QLabel" name="imageLabel">
-            <property name="text">
-             <string/>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-       </widget>
-      </item>
-     </layout>
-    </item>
     <item row="0" column="0">
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
        <layout class="QVBoxLayout" name="verticalLayout_5">
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <item>
+           <widget class="QPushButton" name="OpenNew">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {image: url(:/Icon/fs.png);}
+QPushButton {border-style: outset; border-width: 0px;}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
           <item>
            <layout class="QVBoxLayout" name="verticalLayout_7">
             <item>
@@ -536,13 +507,6 @@
               </property>
               <property name="text">
                <string>↶ Undo</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QPushButton" name="pushButton_4">
-              <property name="text">
-               <string>PushButton</string>
               </property>
              </widget>
             </item>
@@ -583,13 +547,6 @@
               </property>
              </widget>
             </item>
-            <item>
-             <widget class="QPushButton" name="pushButton_5">
-              <property name="text">
-               <string>PushButton</string>
-              </property>
-             </widget>
-            </item>
            </layout>
           </item>
          </layout>
@@ -598,6 +555,29 @@
       </item>
       <item>
        <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Images/Images.qrc">:/blooddragon2.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_5">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
@@ -808,6 +788,56 @@ font: 75 8pt &quot;System&quot;;</string>
       </item>
      </layout>
     </item>
+    <item row="1" column="0" rowspan="2">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QScrollArea" name="scrollArea">
+        <property name="styleSheet">
+         <string notr="true">QScrollArea 
+{
+	
+	alternate-background-color: rgb(26, 255, 190);
+	
+	border-color: rgb(255, 0, 4);
+	
+	gridline-color: rgb(255, 170, 0);
+	
+	selection-color: rgb(0, 255, 0);
+	background-color: rgb(0, 0, 0);
+}</string>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>857</width>
+           <height>700</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(38, 38, 38);</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QLabel" name="imageLabel">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
     <item row="0" column="1" rowspan="3" alignment="Qt::AlignRight">
      <widget class="QGroupBox" name="horizontalGroupBox">
       <property name="minimumSize">
@@ -837,7 +867,7 @@ background-color: rgb(70, 70, 70);
         <widget class="QTabWidget" name="tabWidget">
          <property name="minimumSize">
           <size>
-           <width>71</width>
+           <width>80</width>
            <height>0</height>
           </size>
          </property>
@@ -865,7 +895,7 @@ QTabBar:tab:selected, QTabBar:tab:hover {
  }</string>
          </property>
          <property name="currentIndex">
-          <number>2</number>
+          <number>1</number>
          </property>
          <widget class="QWidget" name="darkroom">
           <property name="minimumSize">
@@ -1210,141 +1240,160 @@ alternate-background-color: rgb(255, 0, 255);</string>
           </attribute>
           <layout class="QVBoxLayout" name="verticalLayout_4">
            <item>
-            <widget class="QPushButton" name="greyScale">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>125</height>
-              </size>
+            <widget class="QScrollArea" name="scrollArea_2">
+             <property name="widgetResizable">
+              <bool>true</bool>
              </property>
-             <property name="maximumSize">
-              <size>
-               <width>16777215</width>
-               <height>16777215</height>
-              </size>
-             </property>
-             <property name="cursor">
-              <cursorShape>ArrowCursor</cursorShape>
-             </property>
-             <property name="focusPolicy">
-              <enum>Qt::StrongFocus</enum>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">QPushButton {image: url(:/Icon/grey.png);}
+             <widget class="QWidget" name="scrollAreaWidgetContents_2">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>231</width>
+                <height>929</height>
+               </rect>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_8">
+               <item>
+                <widget class="QPushButton" name="greyScale">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>125</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>ArrowCursor</cursorShape>
+                 </property>
+                 <property name="focusPolicy">
+                  <enum>Qt::StrongFocus</enum>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {image: url(:/Icon/grey.png);}
 QPushButton {border-style: outset; border-width: 0px;}
 </string>
-             </property>
-             <property name="text">
-              <string/>
-             </property>
-             <property name="iconSize">
-              <size>
-               <width>150</width>
-               <height>150</height>
-              </size>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="SepiaButton">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>125</height>
-              </size>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">QPushButton {image: url(:/Icon/sepia.png);}
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>150</width>
+                   <height>150</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="SepiaButton">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>125</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {image: url(:/Icon/sepia.png);}
 QPushButton {border-style: outset; border-width: 0px;}</string>
-             </property>
-             <property name="text">
-              <string/>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="PencilSketch">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>125</height>
-              </size>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">QPushButton {image: url(:/Icon/sketch.png);}
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="Negative">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>125</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {image: url(:/Icon/robotNeg.png);}
 QPushButton {border-style: outset; border-width: 0px;}</string>
-             </property>
-             <property name="text">
-              <string/>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="ContrastBoost">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>125</height>
-              </size>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">QPushButton {image: url(:/Icon/Boost.png);}
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="PixelateButton">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>125</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {image: url(:/Icon/censored.png);}
 QPushButton {border-style: outset; border-width: 0px;}</string>
-             </property>
-             <property name="text">
-              <string/>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="PixelateButton">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>125</height>
-              </size>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">QPushButton {image: url(:/Icon/censored.png);}
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="PencilSketch">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>125</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {image: url(:/Icon/sketch.png);}
 QPushButton {border-style: outset; border-width: 0px;}</string>
-             </property>
-             <property name="text">
-              <string/>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="edges">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>125</height>
-              </size>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">QPushButton {image: url(:/Icon/edges.png);}
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="ContrastBoost">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>125</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {image: url(:/Icon/Boost.png);}
 QPushButton {border-style: outset; border-width: 0px;}</string>
-             </property>
-             <property name="text">
-              <string/>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="Negative">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>125</height>
-              </size>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">QPushButton {image: url(:/Icon/robotNeg.png);}
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="edges">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>125</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {image: url(:/Icon/edges.png);}
 QPushButton {border-style: outset; border-width: 0px;}</string>
-             </property>
-             <property name="text">
-              <string/>
-             </property>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
             </widget>
            </item>
           </layout>
@@ -1507,6 +1556,8 @@ alternate-background-color: rgb(255, 0, 255);</string>
    <zorder></zorder>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="Images/Images.qrc"/>
+ </resources>
  <connections/>
 </ui>

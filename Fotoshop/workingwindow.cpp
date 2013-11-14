@@ -31,8 +31,6 @@ workingwindow::workingwindow(QWidget *parent) :
     ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
     ui->imageLabel->adjustSize();
 
-    ui->scrollArea->setBackgroundRole(QPalette::Dark);
-
     undofunc[0].push(loadedImage);
 
 }
@@ -416,4 +414,18 @@ void workingwindow::on_Negative_clicked()
 
     undofunc[currentImageNumber].push(loadedImage);
 
+}
+
+
+void workingwindow::on_OpenNew_clicked()
+{
+    QString openNew = QFileDialog::getOpenFileName(this,
+                       tr("Choose an Image"),"",tr("Images (*.jpg);;All Files (*)"));
+    QImage image(filename);
+    loadedImage = image;
+
+    ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
+    repaint();
+
+    undofunc[currentImageNumber].push(loadedImage);
 }

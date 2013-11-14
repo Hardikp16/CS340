@@ -2,6 +2,9 @@
 <ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -101,14 +104,28 @@
     </disabled>
    </palette>
   </property>
+  <property name="font">
+   <font>
+    <family>System</family>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
   <property name="windowTitle">
-   <string>Fotoshop v 0.03</string>
+   <string>Fotoshop v 0.5</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Images/Images.qrc">
+    <normaloff>:/Icon/fs.png</normaloff>:/Icon/fs.png</iconset>
   </property>
   <property name="windowOpacity">
-   <double>0.500000000000000</double>
+   <double>1.000000000000000</double>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::RightToLeft</enum>
   </property>
   <property name="autoFillBackground">
-   <bool>false</bool>
+   <bool>true</bool>
   </property>
   <property name="styleSheet">
    <string notr="true">QMainWindow 

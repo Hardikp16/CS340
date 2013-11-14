@@ -13,6 +13,7 @@
         <file>sepia.png</file>
         <file>sketch.png</file>
         <file>robotNeg.png</file>
+        <file>fs.png</file>
     </qresource>
     <qresource prefix="/Stickers"/>
 </RCC>
