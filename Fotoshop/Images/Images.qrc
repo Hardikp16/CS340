@@ -14,6 +14,7 @@
         <file>sketch.png</file>
         <file>robotNeg.png</file>
         <file>fs.png</file>
+        <file>toolbox.png</file>
     </qresource>
     <qresource prefix="/Stickers"/>
 </RCC>

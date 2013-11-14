@@ -895,7 +895,7 @@ QTabBar:tab:selected, QTabBar:tab:hover {
  }</string>
          </property>
          <property name="currentIndex">
-          <number>1</number>
+          <number>0</number>
          </property>
          <widget class="QWidget" name="darkroom">
           <property name="minimumSize">
@@ -1207,7 +1207,43 @@ font: 75 8pt &quot;System&quot;;</string>
             </layout>
            </item>
            <item>
-            <spacer name="verticalSpacer_2">
+            <layout class="QHBoxLayout" name="horizontalLayout_11">
+             <item>
+              <widget class="QLabel" name="label_7">
+               <property name="styleSheet">
+                <string notr="true">Color: rgb(255,32,203);
+
+font: 75 8pt &quot;System&quot;;</string>
+               </property>
+               <property name="text">
+                <string>RESIZE</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_6">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit">
+               <property name="styleSheet">
+                <string notr="true">font: 75 8pt &quot;System&quot;;</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="verticalSpacer">
              <property name="orientation">
               <enum>Qt::Vertical</enum>
              </property>

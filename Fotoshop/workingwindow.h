@@ -7,6 +7,8 @@ extern undoArr *undofunc;
 
 extern std::vector<QImage> undoVector;
 
+extern double myInputSize;
+
 namespace Ui {
 class workingwindow;
 }
@@ -83,6 +85,10 @@ private slots:
     void on_Negative_clicked();
 
     void on_OpenNew_clicked();
+
+    void on_lineEdit_returnPressed();
+
+    void on_lineEdit_textEdited(const QString &arg1);
 
 private:
     Ui::workingwindow *ui;

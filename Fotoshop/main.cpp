@@ -19,6 +19,8 @@ undoArr *undofunc;
 QPoint pointxy;
 QPoint pointxy2;
 
+double myInputSize;
+
 std::vector<QImage> undoVector;
 //QPixmap buffer;
 

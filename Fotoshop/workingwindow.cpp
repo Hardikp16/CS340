@@ -23,11 +23,7 @@ workingwindow::workingwindow(QWidget *parent) :
         QImage image(filename);
         loadedImage = image;
     }
-    int newheight = screenheight-200 ;
-    int newwidth = screenwidth-200 ;
-    std::cout<<newheight<<newwidth<<std::endl;
-    /*! \brief formatting for full screen displays dynamically */
-    loadedImage = loadedImage.scaled(newwidth, newheight, Qt::KeepAspectRatio, Qt::FastTransformation);
+
     ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
     ui->imageLabel->adjustSize();
 
@@ -399,9 +395,9 @@ void workingwindow::paintEvent(QPaintEvent *event){ // gives 3 errors Painter no
 
 void workingwindow::on_Redo_clicked()
 {
-    if (undofunc[currentImageNumber + 1].hasPic == true)
+    if (undofunc[currentImageNumber].hasPic == true)
         {
-        ui->imageLabel->setPixmap(QPixmap::fromImage(undofunc[currentImageNumber + 1].currImg));
+        ui->imageLabel->setPixmap(QPixmap::fromImage(undofunc[currentImageNumber].currImg));
         repaint();
         currentImageNumber++;
         }
@@ -430,4 +426,19 @@ void workingwindow::on_OpenNew_clicked()
     repaint();
 
     undofunc[currentImageNumber].push(loadedImage);
+}
+
+void workingwindow::on_lineEdit_returnPressed()
+{
+    loadedImage = loadedImage.scaled(myInputSize * loadedImage.width(), myInputSize * loadedImage.height(), Qt::KeepAspectRatio, Qt::FastTransformation);
+    ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
+    repaint();
+}
+
+void workingwindow::on_lineEdit_textEdited(const QString &arg1)
+
+{
+    bool worked;
+    myInputSize = arg1.toInt(&worked);
+    myInputSize = myInputSize / 100;
 }
