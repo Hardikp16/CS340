@@ -350,6 +350,7 @@ void workingwindow::on_TextButton_toggled(bool checked)
 
 void workingwindow::mousePressEvent(QMouseEvent *event)
 {
+    //this->paintArea(event->x(), event->y());
     if(event->button() == Qt::LeftButton)
         {
             int pointx,pointy;
@@ -364,22 +365,28 @@ void workingwindow::mousePressEvent(QMouseEvent *event)
                 drawing = TRUE;
             }
         }
+
 }
 
 void workingwindow::mouseMoveEvent(QMouseEvent *event)
 {
     if(event->button() == Qt::LeftButton && drawing == TRUE)
         {
-            std::cout<< "I can paint & move" <<std::endl;
+            //this->paintArea(event->x(), event->y());
+            drawLine(event->pos());
+            //std::cout<< "I can paint & move" <<std::endl;
         }
 }
 
 void workingwindow::mouseReleaseEvent(QMouseEvent *event)
 {
-    drawing = FALSE; //
-    pointxy2 = event->pos();
-    std::cout<< "mouse button released and stop drawing" <<std::endl;
-
+    if(event->button() == Qt::LeftButton && drawing == TRUE){
+        //this->paintArea(event->x(), event->y());
+        //pointxy2 = event->pos();
+        drawLine(event->pos());
+        drawing = FALSE;
+        //std::cout<< "mouse button released and stop drawing" <<std::endl;
+    }
 }
 
 void workingwindow::paintEvent(QPaintEvent *event){ // gives 3 errors Painter not active, Paintengine should be called,
@@ -393,6 +400,18 @@ void workingwindow::paintEvent(QPaintEvent *event){ // gives 3 errors Painter no
     }
 }
 
+void workingwindow::drawLine(QPoint &lastpoint)
+{
+    if(drawing == TRUE)
+    {
+        QPainter PixPaint(&loadedImage);
+        QBrush brush(Qt::black, Qt::SolidPattern);
+        PixPaint.setBrush(brush);
+        PixPaint.drawLine(pointxy,lastpoint);
+    }
+    repaint();
+
+}
 void workingwindow::on_Redo_clicked()
 {
     if (undofunc[currentImageNumber].hasPic == true)

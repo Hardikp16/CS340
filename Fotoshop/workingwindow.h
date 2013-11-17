@@ -80,6 +80,8 @@ private slots:
 
     void paintEvent(QPaintEvent *event);
 
+    void drawLine(QPoint &lastpoint);
+
     void on_Redo_clicked();
 
     void on_Negative_clicked();
