@@ -78,8 +78,6 @@ private slots:
 
     void mouseReleaseEvent(QMouseEvent *event);
 
-    void paintEvent(QPaintEvent *event);
-
     void drawLine(QPoint &lastpoint);
 
     void on_Redo_clicked();
