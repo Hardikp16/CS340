@@ -375,6 +375,7 @@ void workingwindow::mouseMoveEvent(QMouseEvent *event)
             //this->paintArea(event->x(), event->y());
             drawLine(event->pos());
             //std::cout<< "I can paint & move" <<std::endl;
+
         }
 }
 
@@ -386,6 +387,8 @@ void workingwindow::mouseReleaseEvent(QMouseEvent *event)
         drawLine(event->pos());
         drawing = FALSE;
         //std::cout<< "mouse button released and stop drawing" <<std::endl;
+        ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
+        repaint();
     }
 }
 
