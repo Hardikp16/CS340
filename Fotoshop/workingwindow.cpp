@@ -7,8 +7,8 @@ workingwindow::workingwindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::workingwindow)
 {
-
     ui->setupUi(this);
+    ui->imageLabel->installEventFilter(this);
     undofunc = new undoArr[256];
 
     /*! creating a proxy to edit with */
@@ -29,8 +29,6 @@ workingwindow::workingwindow(QWidget *parent) :
 
     undofunc[0].push(loadedImage);
     undoVector.push_back(loadedImage);
-
-
 }
 
 workingwindow::~workingwindow()
@@ -347,7 +345,6 @@ void workingwindow::on_TextButton_toggled(bool checked)
     }
 }
 
-
 void workingwindow::mousePressEvent(QMouseEvent *event)
 {
     //this->paintArea(event->x(), event->y());
@@ -357,9 +354,8 @@ void workingwindow::mousePressEvent(QMouseEvent *event)
             if(pen == TRUE)
             {
                 std::cout<< "Paint is on and now going to track the mouse and start drawing" <<std::endl;
-                pointxy = event->pos();
-                pointx = pointxy.x();
-                pointy = pointxy.y();
+                pointxy = ui->imageLabel->mapFromGlobal(this->mapToGlobal(event->pos()));
+                //pointx = pointxy.x(); pointy = pointxy.y();
                 std::cout << pointx;
                 std::cout << " " << pointy << std::endl;
                 drawing = TRUE;
@@ -373,13 +369,15 @@ void workingwindow::mouseMoveEvent(QMouseEvent *event)
     if(drawing == TRUE)
         {
 
-        pointxy2 = event->pos();
+        //pointxy2 = event->pos();
+        pointxy2 = ui->imageLabel->mapFromGlobal(this->mapToGlobal(event->pos()));
         theBrush.setColor(Qt::black);
         drawLine(pointxy2);
 
         ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
         repaint();
-        pointxy = event->pos();
+        //pointxy = event->pos();
+        pointxy = ui->imageLabel->mapFromGlobal(this->mapToGlobal(event->pos()));
 
         }
 }
@@ -387,9 +385,7 @@ void workingwindow::mouseMoveEvent(QMouseEvent *event)
 void workingwindow::mouseReleaseEvent(QMouseEvent *event)
 {
     if(event->button() == Qt::LeftButton && drawing == TRUE){
-
         drawing = FALSE;
-
     }
 }
 
