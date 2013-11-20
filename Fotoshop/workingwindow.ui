@@ -895,7 +895,7 @@ QTabBar:tab:selected, QTabBar:tab:hover {
  }</string>
          </property>
          <property name="currentIndex">
-          <number>0</number>
+          <number>2</number>
          </property>
          <widget class="QWidget" name="darkroom">
           <property name="minimumSize">
@@ -1456,6 +1456,36 @@ alternate-background-color: rgb(255, 0, 255);</string>
             <layout class="QHBoxLayout" name="horizontalLayout_7">
              <item>
               <widget class="QPushButton" name="PenButton">
+               <property name="autoFillBackground">
+                <bool>false</bool>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+	color: rgb(255, 32, 203);
+	font: 75 8pt &quot;System&quot;;
+
+     border-style: outset;
+	 
+	 border-color: rgb(255, 32, 203);
+	 background-color: rgb(38, 38, 38);
+	 border-width: 1px;
+}
+
+ QPushButton:hover{
+ 
+	border-width: 4px;
+	border-color: rgb(25, 205, 255);
+	color: rgb(25,205,255);
+
+ }
+ QPushButton::checked{
+ 
+	border-width: 4px;
+	border-color: rgb(25, 205, 255);
+	color: rgb(25,205,255);
+
+ }</string>
+               </property>
                <property name="text">
                 <string>Pen</string>
                </property>
@@ -1466,6 +1496,33 @@ alternate-background-color: rgb(255, 0, 255);</string>
              </item>
              <item>
               <widget class="QPushButton" name="EraserButton">
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+	color: rgb(255, 32, 203);
+	font: 75 8pt &quot;System&quot;;
+
+     border-style: outset;
+	 
+	 border-color: rgb(255, 32, 203);
+	 background-color: rgb(38, 38, 38);
+	 border-width: 1px;
+}
+
+ QPushButton:hover{
+ 
+	border-width: 4px;
+	border-color: rgb(25, 205, 255);
+	color: rgb(25,205,255);
+
+ }
+ QPushButton::checked{
+ 
+	border-width: 4px;
+	border-color: rgb(25, 205, 255);
+	color: rgb(25,205,255);
+
+ }</string>
+               </property>
                <property name="text">
                 <string>Eraser</string>
                </property>
@@ -1480,6 +1537,33 @@ alternate-background-color: rgb(255, 0, 255);</string>
             <layout class="QHBoxLayout" name="horizontalLayout_9">
              <item>
               <widget class="QPushButton" name="BrushButton">
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+	color: rgb(255, 32, 203);
+	font: 75 8pt &quot;System&quot;;
+
+     border-style: outset;
+	 
+	 border-color: rgb(255, 32, 203);
+	 background-color: rgb(38, 38, 38);
+	 border-width: 1px;
+}
+
+ QPushButton:hover{
+ 
+	border-width: 4px;
+	border-color: rgb(25, 205, 255);
+	color: rgb(25,205,255);
+
+ }
+ QPushButton::checked{
+ 
+	border-width: 4px;
+	border-color: rgb(25, 205, 255);
+	color: rgb(25,205,255);
+
+ }</string>
+               </property>
                <property name="text">
                 <string>Brush</string>
                </property>
@@ -1490,6 +1574,33 @@ alternate-background-color: rgb(255, 0, 255);</string>
              </item>
              <item>
               <widget class="QPushButton" name="TextButton">
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+	color: rgb(255, 32, 203);
+	font: 75 8pt &quot;System&quot;;
+
+     border-style: outset;
+	 
+	 border-color: rgb(255, 32, 203);
+	 background-color: rgb(38, 38, 38);
+	 border-width: 1px;
+}
+
+ QPushButton:hover{
+ 
+	border-width: 4px;
+	border-color: rgb(25, 205, 255);
+	color: rgb(25,205,255);
+
+ }
+ QPushButton::checked{
+ 
+	border-width: 4px;
+	border-color: rgb(25, 205, 255);
+	color: rgb(25,205,255);
+
+ }</string>
+               </property>
                <property name="text">
                 <string>Text</string>
                </property>

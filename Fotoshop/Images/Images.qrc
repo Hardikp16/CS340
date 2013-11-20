@@ -15,6 +15,18 @@
         <file>robotNeg.png</file>
         <file>fs.png</file>
         <file>toolbox.png</file>
+        <file>brush.png</file>
+        <file>brush1.png</file>
+        <file>bucket.png</file>
+        <file>bucket1.png</file>
+        <file>eraser.png</file>
+        <file>eraser1.png</file>
+        <file>pen.png</file>
+        <file>pen1.png</file>
+        <file>zoom_in.png</file>
+        <file>zoom_in1.png</file>
+        <file>zoom_out.png</file>
+        <file>zoom_out1.png</file>
     </qresource>
     <qresource prefix="/Stickers"/>
 </RCC>
