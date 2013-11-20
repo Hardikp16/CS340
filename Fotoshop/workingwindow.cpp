@@ -305,6 +305,10 @@ void workingwindow::on_PenButton_toggled(bool checked)
 
 void workingwindow::on_EraserButton_toggled(bool checked)
 {
+
+    ui->PenButton->setChecked(FALSE);
+    ui->BrushButton->setChecked(FALSE);
+    ui->TextButton->setChecked(FALSE);
     if (checked)
     {
         eraser = TRUE;
@@ -319,6 +323,9 @@ void workingwindow::on_EraserButton_toggled(bool checked)
 
 void workingwindow::on_BrushButton_toggled(bool checked)
 {
+    ui->PenButton->setChecked(FALSE);
+    ui->TextButton->setChecked(FALSE);
+    ui->EraserButton->setChecked(FALSE);
     if (checked)
     {
         brush = TRUE;
@@ -333,6 +340,9 @@ void workingwindow::on_BrushButton_toggled(bool checked)
 
 void workingwindow::on_TextButton_toggled(bool checked)
 {
+    ui->PenButton->setChecked(FALSE);
+    ui->BrushButton->setChecked(FALSE);
+    ui->EraserButton->setChecked(FALSE);
     if (checked)
     {
         text = TRUE;
@@ -350,14 +360,14 @@ void workingwindow::mousePressEvent(QMouseEvent *event)
     //this->paintArea(event->x(), event->y());
     if(event->button() == Qt::LeftButton)
         {
-            int pointx,pointy;
+            //int pointx,pointy;
             if(pen == TRUE)
             {
                 std::cout<< "Paint is on and now going to track the mouse and start drawing" <<std::endl;
                 pointxy = ui->imageLabel->mapFromGlobal(this->mapToGlobal(event->pos()));
                 //pointx = pointxy.x(); pointy = pointxy.y();
-                std::cout << pointx;
-                std::cout << " " << pointy << std::endl;
+                //std::cout << pointx;
+                //std::cout << " " << pointy << std::endl;
                 drawing = TRUE;
             }
         }
