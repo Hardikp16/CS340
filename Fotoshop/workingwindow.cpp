@@ -23,6 +23,7 @@ workingwindow::workingwindow(QWidget *parent) :
         QImage image(filename);
         loadedImage = image;
     }
+    ui->horizontalSlider->setValue(25);
     QPixmap colorWheel(":/Icon/color_wheel1.png");
     colorWheel = colorWheel.scaled(screenwidth / 4, screenheight / 4, Qt::KeepAspectRatio, Qt::FastTransformation);
     ui->colorWheel->setPixmap(colorWheel);
@@ -469,4 +470,28 @@ void workingwindow::on_lineEdit_textEdited(const QString &arg1)
     bool worked;
     myInputSize = arg1.toInt(&worked);
     myInputSize = myInputSize / 100;
+}
+
+void workingwindow::on_horizontalSlider_valueChanged(int value)
+{
+    thePen.setWidth(value);
+
+}
+
+void workingwindow::on_REDDIAL_valueChanged(int value)
+{
+    QColor RED;
+    int red;
+    for (int i = 0; i < loadedImage.width(); i++)
+    {
+        for (int j = 0; j < loadedImage.height(); j++)
+        {
+            RED = QColor(loadedImage.pixel(i,j));
+            red = RED.red() + value;
+            red = qBound(0, red , 255);
+            loadedImage.setPixel(i,j,qRgb(red,RED.green(),RED.blue()));
+        }
+    }
+    ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
+    repaint();
 }

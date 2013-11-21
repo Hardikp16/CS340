@@ -90,6 +90,10 @@ private slots:
 
     void on_lineEdit_textEdited(const QString &arg1);
 
+    void on_horizontalSlider_valueChanged(int value);
+
+    void on_REDDIAL_valueChanged(int value);
+
 private:
     Ui::workingwindow *ui;
 };

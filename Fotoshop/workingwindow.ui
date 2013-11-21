@@ -1508,6 +1508,64 @@ alternate-background-color: rgb(255, 0, 255);</string>
            </item>
            <item>
             <widget class="QSlider" name="horizontalSlider">
+             <property name="styleSheet">
+              <string notr="true">QSlider::groove:horizontal {
+border: 1px solid #FF20CB;
+background:rgb(255, 32, 203);
+height: 10px;
+border-radius: 4px;
+}
+
+QSlider::sub-page:horizontal {
+background: qlineargradient(x1: 0, y1: 0,    x2: 0, y2: 1,
+    stop: 0 #19CDFF, stop: 1 #19CDFF);
+background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1,
+    stop: 0 #19CDFF, stop: 1 #19CDFF);
+border: 1px solid #19CDFF;
+height: 10px;
+border-radius: 4px;
+}
+
+QSlider::add-page:horizontal {
+background: #FF20CB;
+border: 1px solid #FF20CB;
+height: 10px;
+border-radius: 4px;
+}
+
+QSlider::handle:horizontal {
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+    stop:0 #eee, stop:1 #19CDFF);
+border: 1px solid #19CDFF;
+width: 13px;
+margin-top: -2px;
+margin-bottom: -2px;
+border-radius: 4px;
+}
+
+QSlider::handle:horizontal:hover {
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+    stop:0 #19CDFF, stop:1 #FF20CB);
+border: 1px solid #444;
+border-radius: 4px;
+}
+
+QSlider::sub-page:horizontal:disabled {
+background: #bbb;
+border-color: #999;
+}
+
+QSlider::add-page:horizontal:disabled {
+background: #eee;
+border-color: #999;
+}
+
+QSlider::handle:horizontal:disabled {
+background: #eee;
+border: 1px solid #aaa;
+border-radius: 4px;
+}</string>
+             </property>
              <property name="orientation">
               <enum>Qt::Horizontal</enum>
              </property>
@@ -1520,7 +1578,7 @@ alternate-background-color: rgb(255, 0, 255);</string>
 	font: 75 8pt &quot;System&quot;;</string>
              </property>
              <property name="text">
-              <string>TRI-TONE CORRECTION</string>
+              <string>RGB FINE TUNING</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>
@@ -1532,17 +1590,75 @@ alternate-background-color: rgb(255, 0, 255);</string>
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_9">
                <item>
-                <widget class="QDial" name="dial_3">
+                <widget class="QDial" name="REDDIAL">
                  <property name="minimumSize">
                   <size>
                    <width>115</width>
                    <height>115</height>
                   </size>
                  </property>
+                 <property name="styleSheet">
+                  <string notr="true">QSlider::groove:horizontal {
+border: 1px solid #FF20CB;
+background:rgb(255, 32, 203);
+height: 10px;
+border-radius: 4px;
+}
+
+QSlider::sub-page:horizontal {
+background: qlineargradient(x1: 0, y1: 0,    x2: 0, y2: 1,
+    stop: 0 #19CDFF, stop: 1 #19CDFF);
+background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1,
+    stop: 0 #19CDFF, stop: 1 #19CDFF);
+border: 1px solid #19CDFF;
+height: 10px;
+border-radius: 4px;
+}
+
+QSlider::add-page:horizontal {
+background: #FF20CB;
+border: 1px solid #FF20CB;
+height: 10px;
+border-radius: 4px;
+}
+
+QSlider::handle:horizontal {
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+    stop:0 #eee, stop:1 #19CDFF);
+border: 1px solid #19CDFF;
+width: 13px;
+margin-top: -2px;
+margin-bottom: -2px;
+border-radius: 4px;
+}
+
+QSlider::handle:horizontal:hover {
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+    stop:0 #19CDFF, stop:1 #FF20CB);
+border: 1px solid #444;
+border-radius: 4px;
+}
+
+QSlider::sub-page:horizontal:disabled {
+background: #bbb;
+border-color: #999;
+}
+
+QSlider::add-page:horizontal:disabled {
+background: #eee;
+border-color: #999;
+}
+
+QSlider::handle:horizontal:disabled {
+background: #eee;
+border: 1px solid #aaa;
+border-radius: 4px;
+}</string>
+                 </property>
                 </widget>
                </item>
                <item>
-                <widget class="QDial" name="dial_2">
+                <widget class="QDial" name="GREENDIAL">
                  <property name="minimumSize">
                   <size>
                    <width>115</width>
@@ -1556,11 +1672,17 @@ alternate-background-color: rgb(255, 0, 255);</string>
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_10">
                <item>
-                <widget class="QDial" name="dial">
-                 <property name="maximumSize">
+                <widget class="QDial" name="BLUEDIAL">
+                 <property name="minimumSize">
                   <size>
                    <width>115</width>
                    <height>115</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>111111</width>
+                   <height>1111111</height>
                   </size>
                  </property>
                  <property name="layoutDirection">
@@ -1832,7 +1954,6 @@ QPushButton {border-style: outset; border-width: 0px;}
    <zorder>horizontalGroupBox</zorder>
    <zorder></zorder>
    <zorder></zorder>
-   <zorder>verticalLayoutWidget</zorder>
   </widget>
  </widget>
  <resources>
