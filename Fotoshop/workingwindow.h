@@ -21,6 +21,10 @@ public:
     explicit workingwindow(QWidget *parent = 0);
     ~workingwindow();
 
+    QImage ColorWheel;
+
+    bool colorSampler;
+
 private slots:
 
 
@@ -92,7 +96,7 @@ private slots:
 
     void on_horizontalSlider_valueChanged(int value);
 
-    void on_REDDIAL_valueChanged(int value);
+    void on_colorSample_toggled(bool checked);
 
 private:
     Ui::workingwindow *ui;

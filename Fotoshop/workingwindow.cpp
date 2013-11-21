@@ -24,6 +24,8 @@ workingwindow::workingwindow(QWidget *parent) :
         loadedImage = image;
     }
     ui->horizontalSlider->setValue(25);
+    QImage temp(":/Icon/color_wheel1.png");
+    ColorWheel = temp;
     QPixmap colorWheel(":/Icon/color_wheel1.png");
     colorWheel = colorWheel.scaled(screenwidth / 4, screenheight / 4, Qt::KeepAspectRatio, Qt::FastTransformation);
     ui->colorWheel->setPixmap(colorWheel);
@@ -293,74 +295,56 @@ void workingwindow::on_edges_clicked()
 
 void workingwindow::on_PenButton_toggled(bool checked)
 {
-    ui->BrushButton->setChecked(FALSE);
-    ui->TextButton->setChecked(FALSE);
-    ui->EraserButton->setChecked(FALSE);
+
     //bool Pen; // will need to make a global Pen/brush/ect tools...
     if (checked)
     {
         pen = TRUE;
-        thePen.setColor(Qt::black);
-        std::cout<<"on"<<std::endl;
     }
     else
     {
         pen = FALSE;
-        std::cout<<"off"<<std::endl;
     }
 }
 
 void workingwindow::on_EraserButton_toggled(bool checked)
 {
 
-    ui->PenButton->setChecked(FALSE);
-    ui->BrushButton->setChecked(FALSE);
-    ui->TextButton->setChecked(FALSE);
+
     if (checked)
     {
         eraser = TRUE;
         thePen.setColor(Qt::white);
-        thePen.setWidth(5);
-        std::cout<<"on"<<std::endl;
     }
     else
     {
         eraser = FALSE;
-        std::cout<<"off"<<std::endl;
     }
 }
 
 void workingwindow::on_BrushButton_toggled(bool checked)
 {
-    ui->PenButton->setChecked(FALSE);
-    ui->TextButton->setChecked(FALSE);
-    ui->EraserButton->setChecked(FALSE);
+
     if (checked)
     {
         brush = TRUE;
-        std::cout<<"on"<<std::endl;
     }
     else
     {
         brush = FALSE;
-        std::cout<<"off"<<std::endl;
     }
 }
 
 void workingwindow::on_TextButton_toggled(bool checked)
 {
-    ui->PenButton->setChecked(FALSE);
-    ui->BrushButton->setChecked(FALSE);
-    ui->EraserButton->setChecked(FALSE);
+
     if (checked)
     {
         text = TRUE;
-        std::cout<<"on"<<std::endl;
     }
     else
     {
         text = FALSE;
-        std::cout<<"off"<<std::endl;
     }
 }
 
@@ -372,7 +356,6 @@ void workingwindow::mousePressEvent(QMouseEvent *event)
             //int pointx,pointy;
             if(pen == TRUE)
             {
-                std::cout<< "Paint is on and now going to track the mouse and start drawing" <<std::endl;
                 pointxy = ui->imageLabel->mapFromGlobal(this->mapToGlobal(event->pos()));
                 drawing = TRUE;
             }
@@ -381,6 +364,19 @@ void workingwindow::mousePressEvent(QMouseEvent *event)
                 pointxy = ui->imageLabel->mapFromGlobal(this->mapToGlobal(event->pos()));
                 drawing = TRUE;
 
+            }
+            if(colorSampler == TRUE)
+            {
+
+                QPoint colorPoint = ui->imageLabel->mapFromGlobal(this->mapToGlobal(event->pos()));
+                int x,y;
+                x = colorPoint.x();
+                y = colorPoint.y();
+                x = qBound(0,x, loadedImage.width());
+                y = qBound(0,y, loadedImage.height());
+                std::cout << x << y << std:: endl;
+                QColor Sample = QColor(loadedImage.pixel(x,y));
+                thePen.setColor(Sample);
             }
         }
 
@@ -417,7 +413,6 @@ void workingwindow::drawLine(QPoint &lastpoint)
         //QBrush brush(Qt::black, Qt::SolidPattern);
         PixPaint.setPen(thePen);
         PixPaint.drawLine(pointxy,lastpoint);
-
     }
     repaint();
 
@@ -475,23 +470,16 @@ void workingwindow::on_lineEdit_textEdited(const QString &arg1)
 void workingwindow::on_horizontalSlider_valueChanged(int value)
 {
     thePen.setWidth(value);
-
 }
 
-void workingwindow::on_REDDIAL_valueChanged(int value)
+void workingwindow::on_colorSample_toggled(bool checked)
 {
-    QColor RED;
-    int red;
-    for (int i = 0; i < loadedImage.width(); i++)
+    if (checked)
     {
-        for (int j = 0; j < loadedImage.height(); j++)
-        {
-            RED = QColor(loadedImage.pixel(i,j));
-            red = RED.red() + value;
-            red = qBound(0, red , 255);
-            loadedImage.setPixel(i,j,qRgb(red,RED.green(),RED.blue()));
-        }
+        colorSampler = TRUE;
     }
-    ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
-    repaint();
+    else
+    {
+        colorSampler = FALSE;
+    }
 }

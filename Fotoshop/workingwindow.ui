@@ -821,7 +821,7 @@ font: 75 8pt &quot;System&quot;;</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>784</width>
+           <width>774</width>
            <height>946</height>
           </rect>
          </property>
@@ -1831,6 +1831,9 @@ QPushButton {border-style: outset; border-width: 0px;}
         <property name="checkable">
          <bool>true</bool>
         </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
        </widget>
       </item>
       <item>
@@ -1863,6 +1866,9 @@ QPushButton {border-style: outset; border-width: 0px;}
          <string/>
         </property>
         <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
          <bool>true</bool>
         </property>
        </widget>
@@ -1899,6 +1905,9 @@ QPushButton {border-style: outset; border-width: 0px;}
         <property name="checkable">
          <bool>true</bool>
         </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
        </widget>
       </item>
       <item>
@@ -1931,6 +1940,22 @@ QPushButton {border-style: outset; border-width: 0px;}
          <string/>
         </property>
         <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="colorSample">
+        <property name="text">
+         <string>colorSample</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
          <bool>true</bool>
         </property>
        </widget>
