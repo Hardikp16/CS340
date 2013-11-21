@@ -18,7 +18,7 @@ bool text = FALSE;
 undoArr *undofunc;
 QPoint pointxy;
 QPoint pointxy2;
-QBrush theBrush;
+QPen thePen;
 
 double myInputSize;
 

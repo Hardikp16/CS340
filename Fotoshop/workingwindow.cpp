@@ -23,7 +23,9 @@ workingwindow::workingwindow(QWidget *parent) :
         QImage image(filename);
         loadedImage = image;
     }
-
+    QPixmap colorWheel(":/Icon/color_wheel1.png");
+    colorWheel = colorWheel.scaled(screenwidth / 4, screenheight / 4, Qt::KeepAspectRatio, Qt::FastTransformation);
+    ui->colorWheel->setPixmap(colorWheel);
     ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
     ui->imageLabel->adjustSize();
 
@@ -290,10 +292,14 @@ void workingwindow::on_edges_clicked()
 
 void workingwindow::on_PenButton_toggled(bool checked)
 {
+    ui->BrushButton->setChecked(FALSE);
+    ui->TextButton->setChecked(FALSE);
+    ui->EraserButton->setChecked(FALSE);
     //bool Pen; // will need to make a global Pen/brush/ect tools...
     if (checked)
     {
         pen = TRUE;
+        thePen.setColor(Qt::black);
         std::cout<<"on"<<std::endl;
     }
     else
@@ -312,6 +318,8 @@ void workingwindow::on_EraserButton_toggled(bool checked)
     if (checked)
     {
         eraser = TRUE;
+        thePen.setColor(Qt::white);
+        thePen.setWidth(5);
         std::cout<<"on"<<std::endl;
     }
     else
@@ -365,10 +373,13 @@ void workingwindow::mousePressEvent(QMouseEvent *event)
             {
                 std::cout<< "Paint is on and now going to track the mouse and start drawing" <<std::endl;
                 pointxy = ui->imageLabel->mapFromGlobal(this->mapToGlobal(event->pos()));
-                //pointx = pointxy.x(); pointy = pointxy.y();
-                //std::cout << pointx;
-                //std::cout << " " << pointy << std::endl;
                 drawing = TRUE;
+            }
+            if(eraser == TRUE)
+            {
+                pointxy = ui->imageLabel->mapFromGlobal(this->mapToGlobal(event->pos()));
+                drawing = TRUE;
+
             }
         }
 
@@ -381,9 +392,7 @@ void workingwindow::mouseMoveEvent(QMouseEvent *event)
 
         //pointxy2 = event->pos();
         pointxy2 = ui->imageLabel->mapFromGlobal(this->mapToGlobal(event->pos()));
-        theBrush.setColor(Qt::black);
         drawLine(pointxy2);
-
         ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
         repaint();
         //pointxy = event->pos();
@@ -405,7 +414,7 @@ void workingwindow::drawLine(QPoint &lastpoint)
     {
         QPainter PixPaint(&loadedImage);
         //QBrush brush(Qt::black, Qt::SolidPattern);
-        PixPaint.setBrush(theBrush);
+        PixPaint.setPen(thePen);
         PixPaint.drawLine(pointxy,lastpoint);
 
     }

@@ -47,7 +47,7 @@ extern bool text;
 extern bool drawing;
 extern QPoint pointxy;
 extern QPoint pointxy2;
-extern QBrush theBrush;
+extern QPen thePen;
 
 
 class undoArr

@@ -27,6 +27,7 @@
         <file>zoom_in1.png</file>
         <file>zoom_out.png</file>
         <file>zoom_out1.png</file>
+        <file>color_wheel1.png</file>
     </qresource>
     <qresource prefix="/Stickers"/>
 </RCC>
