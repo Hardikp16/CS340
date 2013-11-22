@@ -25,6 +25,13 @@ public:
 
     bool colorSampler;
 
+    double colorFactor;
+
+    QColor customColor;
+
+    QImage colorPreview;
+
+
 private slots:
 
 
@@ -97,6 +104,12 @@ private slots:
     void on_horizontalSlider_valueChanged(int value);
 
     void on_colorSample_toggled(bool checked);
+
+    void on_redSlider_valueChanged(int value);
+
+    void on_greenSlider_valueChanged(int value);
+
+    void on_blueSlider_valueChanged(int value);
 
 private:
     Ui::workingwindow *ui;

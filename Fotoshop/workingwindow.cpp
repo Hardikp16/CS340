@@ -23,12 +23,20 @@ workingwindow::workingwindow(QWidget *parent) :
         QImage image(filename);
         loadedImage = image;
     }
+    QImage temp2(270, 115, QImage::Format_RGB32);
+    temp2.fill(Qt::black);
+    colorPreview = temp2;
+    ui->COLORPREVIEW->setPixmap(QPixmap::fromImage(colorPreview));
+
+
+    colorFactor = 2.55;
+
     ui->horizontalSlider->setValue(25);
     QImage temp(":/Icon/color_wheel1.png");
     ColorWheel = temp;
-    QPixmap colorWheel(":/Icon/color_wheel1.png");
-    colorWheel = colorWheel.scaled(screenwidth / 4, screenheight / 4, Qt::KeepAspectRatio, Qt::FastTransformation);
-    ui->colorWheel->setPixmap(colorWheel);
+    ColorWheel = ColorWheel.scaled(screenwidth / 4, screenheight / 4, Qt::KeepAspectRatio, Qt::FastTransformation);
+
+    ui->colorWheel->setPixmap(QPixmap::fromImage(ColorWheel));
     ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
     ui->imageLabel->adjustSize();
 
@@ -374,10 +382,23 @@ void workingwindow::mousePressEvent(QMouseEvent *event)
                 y = colorPoint.y();
                 x = qBound(0,x, loadedImage.width());
                 y = qBound(0,y, loadedImage.height());
-                std::cout << x << y << std:: endl;
                 QColor Sample = QColor(loadedImage.pixel(x,y));
                 thePen.setColor(Sample);
             }
+            if (brush = TRUE)
+            {
+              /*  std::cout << "ENTERED COLOR CHOOSER MODE!";
+                //enter color chooser mode.
+                QPoint colorPoint = ui->colorWheel->mapFromGlobal(this->mapToGlobal(event->pos()));
+                int x,y;
+                x = colorPoint.x();
+                y = colorPoint.y();
+                x = qBound(0,x, ColorWheel.width());
+                y = qBound(0,y, ColorWheel.height());
+                QColor ChooseColor = QColor(ColorWheel.pixel(x,y));
+                thePen.setColor(ChooseColor);
+                */
+              }
         }
 
 }
@@ -396,6 +417,7 @@ void workingwindow::mouseMoveEvent(QMouseEvent *event)
         pointxy = ui->imageLabel->mapFromGlobal(this->mapToGlobal(event->pos()));
 
         }
+
 }
 
 void workingwindow::mouseReleaseEvent(QMouseEvent *event)
@@ -482,4 +504,32 @@ void workingwindow::on_colorSample_toggled(bool checked)
     {
         colorSampler = FALSE;
     }
+}
+
+void workingwindow::on_redSlider_valueChanged(int value)
+{
+    int red = value * colorFactor;
+    customColor.setRed(red);
+    colorPreview.fill(customColor);
+    ui->COLORPREVIEW->setPixmap(QPixmap::fromImage(colorPreview));
+    thePen.setColor(customColor);
+}
+
+void workingwindow::on_greenSlider_valueChanged(int value)
+{
+    int green = value * colorFactor;
+    customColor.setGreen(green);
+    colorPreview.fill(customColor);
+    ui->COLORPREVIEW->setPixmap(QPixmap::fromImage(colorPreview));
+    thePen.setColor(customColor);
+}
+
+void workingwindow::on_blueSlider_valueChanged(int value)
+{
+    int blue = value * colorFactor;\
+    customColor.setBlue(blue);
+    colorPreview.fill(customColor);
+    ui->COLORPREVIEW->setPixmap(QPixmap::fromImage(colorPreview));
+    thePen.setColor(customColor);
+
 }
