@@ -28,6 +28,8 @@
         <file>zoom_out.png</file>
         <file>zoom_out1.png</file>
         <file>color_wheel1.png</file>
+        <file>color_picker.png</file>
+        <file>color_picker1.png</file>
     </qresource>
     <qresource prefix="/Stickers"/>
 </RCC>

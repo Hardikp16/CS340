@@ -821,7 +821,7 @@ font: 75 8pt &quot;System&quot;;</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>774</width>
+           <width>784</width>
            <height>946</height>
           </rect>
          </property>
@@ -2046,8 +2046,32 @@ QPushButton {border-style: outset; border-width: 0px;}
       </item>
       <item>
        <widget class="QPushButton" name="colorSample">
+        <property name="minimumSize">
+         <size>
+          <width>45</width>
+          <height>45</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {image: url(:/Icon/color_picker.png);}
+QPushButton {border-style: outset; border-width: 0px;}
+
+ QPushButton:hover{
+ 
+	
+	color: rgb(25,205,255);
+
+ }
+ QPushButton::checked{
+ 
+	image: url(:/Icon/color_picker1.png);
+
+	color: rgb(25,205,255);
+
+ }</string>
+        </property>
         <property name="text">
-         <string>colorSample</string>
+         <string/>
         </property>
         <property name="checkable">
          <bool>true</bool>
