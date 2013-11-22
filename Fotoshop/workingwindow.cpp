@@ -42,6 +42,9 @@ workingwindow::workingwindow(QWidget *parent) :
 
     undofunc[0].push(loadedImage);
     undoVector.push_back(loadedImage);
+
+    thePen.setJoinStyle(Qt::RoundJoin);
+    thePen.setCapStyle(Qt::RoundCap);
 }
 
 workingwindow::~workingwindow()
@@ -387,18 +390,8 @@ void workingwindow::mousePressEvent(QMouseEvent *event)
             }
             if (brush = TRUE)
             {
-              /*  std::cout << "ENTERED COLOR CHOOSER MODE!";
-                //enter color chooser mode.
-                QPoint colorPoint = ui->colorWheel->mapFromGlobal(this->mapToGlobal(event->pos()));
-                int x,y;
-                x = colorPoint.x();
-                y = colorPoint.y();
-                x = qBound(0,x, ColorWheel.width());
-                y = qBound(0,y, ColorWheel.height());
-                QColor ChooseColor = QColor(ColorWheel.pixel(x,y));
-                thePen.setColor(ChooseColor);
-                */
-              }
+
+            }
         }
 
 }
@@ -424,6 +417,7 @@ void workingwindow::mouseReleaseEvent(QMouseEvent *event)
 {
     if(event->button() == Qt::LeftButton && drawing == TRUE){
         drawing = FALSE;
+        undofunc[currentImageNumber].push(loadedImage);
     }
 }
 
@@ -443,6 +437,7 @@ void workingwindow::on_Redo_clicked()
 {
     if (undofunc[currentImageNumber].hasPic == true)
         {
+        loadedImage = undofunc[currentImageNumber].currImg;
         ui->imageLabel->setPixmap(QPixmap::fromImage(undofunc[currentImageNumber].currImg));
         repaint();
         currentImageNumber++;
@@ -478,6 +473,7 @@ void workingwindow::on_lineEdit_returnPressed()
 {
     loadedImage = loadedImage.scaled(myInputSize * loadedImage.width(), myInputSize * loadedImage.height(), Qt::KeepAspectRatio, Qt::FastTransformation);
     ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
+    ui->imageLabel->adjustSize();
     repaint();
 }
 
