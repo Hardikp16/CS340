@@ -1,13 +1,20 @@
+/*! \headerfile DARKROOM Header File
+ *          function constructors for the Darkroom set of tools. */
+
 #include "includes.h"
 
-void saturate();
+int paintBucket(int x, int y, QColor toPaint, QColor desiredColor); /*!< Floodfill function*/
 
-void desaturate();
+void doBucket(QPoint colorStart); /*!<Function to initialize paint bucket */
 
-void warm();
+void saturate(); /*!<Function to saturate the image, takes 0 parameters*/
 
-void cool();
+void desaturate();/*!<Function to desaturate the image, takes 0 parameters*/
 
-void overExpose();
+void warm();/*!<Function to warm the image, takes 0 parameters*/
 
-void underExpose();
+void cool();/*!<Function to cool the image, takes 0 parameters*/
+
+void overExpose();/*!<Function to raise exposure, takes 0 parameters*/
+
+void underExpose();/*!<Function to lower exposure, takes 0 parameters*/

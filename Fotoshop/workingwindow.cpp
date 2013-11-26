@@ -11,10 +11,12 @@ workingwindow::workingwindow(QWidget *parent) :
     ui->imageLabel->installEventFilter(this);
     undofunc = new undoArr[256];
 
+    bucket = FALSE;
+
     /*! creating a proxy to edit with */
     if (isblank == 1)
         {
-        QImage image(1920, 1080, QImage::Format_RGB32);
+        QImage image(1600, 900, QImage::Format_RGB32);
             image.fill(Qt::white);
             loadedImage = image;
         }
@@ -45,6 +47,8 @@ workingwindow::workingwindow(QWidget *parent) :
 
     thePen.setJoinStyle(Qt::RoundJoin);
     thePen.setCapStyle(Qt::RoundCap);
+
+    ui->imageLabel->isMinimized();
 }
 
 workingwindow::~workingwindow()
@@ -346,52 +350,49 @@ void workingwindow::on_BrushButton_toggled(bool checked)
     }
 }
 
-void workingwindow::on_TextButton_toggled(bool checked)
-{
-
-    if (checked)
-    {
-        text = TRUE;
-    }
-    else
-    {
-        text = FALSE;
-    }
-}
-
 void workingwindow::mousePressEvent(QMouseEvent *event)
 {
-    //this->paintArea(event->x(), event->y());
     if(event->button() == Qt::LeftButton)
         {
-            //int pointx,pointy;
+            pointxy = ui->imageLabel->mapFromGlobal(this->mapToGlobal(event->pos()));
+
             if(pen == TRUE)
             {
-                pointxy = ui->imageLabel->mapFromGlobal(this->mapToGlobal(event->pos()));
                 drawing = TRUE;
             }
             if(eraser == TRUE)
             {
-                pointxy = ui->imageLabel->mapFromGlobal(this->mapToGlobal(event->pos()));
                 drawing = TRUE;
 
+            }
+            if (brush == TRUE)
+            {
+                thePen.setColor(Qt::black);
+                thePen.setWidth(5);
+                StaticXY = pointxy;
             }
             if(colorSampler == TRUE)
             {
 
-                QPoint colorPoint = ui->imageLabel->mapFromGlobal(this->mapToGlobal(event->pos()));
+                QPoint colorPoint = pointxy;
                 int x,y;
                 x = colorPoint.x();
                 y = colorPoint.y();
-                x = qBound(0,x, loadedImage.width());
-                y = qBound(0,y, loadedImage.height());
+                x = qBound(0,x, loadedImage.width()-1);
+                y = qBound(0,y, loadedImage.height()-1);
                 QColor Sample = QColor(loadedImage.pixel(x,y));
                 thePen.setColor(Sample);
             }
-            if (brush = TRUE)
-            {
 
+            if (bucket == TRUE)
+            {
+                QPoint colorStart = pointxy;
+                std::cout << "CALLING START BUCKET";
+                doBucket(colorStart);
+                ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
+                //undofunc[currentImageNumber].push(loadedImage);
             }
+
         }
 
 }
@@ -419,6 +420,16 @@ void workingwindow::mouseReleaseEvent(QMouseEvent *event)
         drawing = FALSE;
         undofunc[currentImageNumber].push(loadedImage);
     }
+
+    if(event->button() == Qt::LeftButton && brush == TRUE)
+    {
+        StaticXY2 = ui->imageLabel->mapFromGlobal(this->mapToGlobal(event->pos()));
+        brush == FALSE;
+        QPainter PixPaint (&loadedImage);
+        PixPaint.setPen(thePen);
+        PixPaint.drawLine(StaticXY, StaticXY2);
+        ui->imageLabel->setPixmap(QPixmap::fromImage(loadedImage));
+    }
 }
 
 void workingwindow::drawLine(QPoint &lastpoint)
@@ -426,7 +437,6 @@ void workingwindow::drawLine(QPoint &lastpoint)
     if(drawing == TRUE)
     {
         QPainter PixPaint(&loadedImage);
-        //QBrush brush(Qt::black, Qt::SolidPattern);
         PixPaint.setPen(thePen);
         PixPaint.drawLine(pointxy,lastpoint);
     }
@@ -492,7 +502,7 @@ void workingwindow::on_horizontalSlider_valueChanged(int value)
 
 void workingwindow::on_colorSample_toggled(bool checked)
 {
-    if (checked)
+    if (checked == TRUE)
     {
         colorSampler = TRUE;
     }
@@ -528,4 +538,16 @@ void workingwindow::on_blueSlider_valueChanged(int value)
     ui->COLORPREVIEW->setPixmap(QPixmap::fromImage(colorPreview));
     thePen.setColor(customColor);
 
+}
+
+void workingwindow::on_bucket_toggled(bool checked)
+{
+    if (checked == TRUE)
+    {
+        bucket = TRUE;
+    }
+    else
+    {
+        bucket = FALSE;
+    }
 }

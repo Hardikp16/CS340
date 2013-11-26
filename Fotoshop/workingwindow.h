@@ -1,13 +1,16 @@
+/*! \header Working Window
+ *          \brief Header file for the window that opens the image and the work area */
+
 #ifndef WORKINGWINDOW_H
 #define WORKINGWINDOW_H
 
 #include "includes.h"
 
-extern undoArr *undofunc;
+extern undoArr *undofunc; //! \var undoArr *undofunc \brief creates a new type of the undo class
 
 extern std::vector<QImage> undoVector;
 
-extern double myInputSize;
+extern double myInputSize; //! \var double myInputSize \brief size parameter for the resize tool
 
 namespace Ui {
 class workingwindow;
@@ -21,20 +24,25 @@ public:
     explicit workingwindow(QWidget *parent = 0);
     ~workingwindow();
 
-    QImage ColorWheel;
+    QImage ColorWheel; //! \image QImage ColorWheel \brief colorWheel for reference in the UI
 
-    bool colorSampler;
+    bool colorSampler; //! \var bool ColorSampler \brief tool to keep track of whether the sampler tool is active
 
-    double colorFactor;
+    double colorFactor; //! \var double colorFacotor \brief tool to translate percent values into rgb values between 1 - 255
 
-    QColor customColor;
+    QColor customColor; //! \var QColor cusotmColor \brief stores the custom rgb values for use with the pen
 
-    QImage colorPreview;
+    QImage colorPreview; //! \image QImage colorPreview \brief a window to display the current color selection
+
+    bool bucket; //! \var bool bucket \brief keep track of whether the bucket has been selected
+
+    QPoint StaticXY, StaticXY2; //! \var StaticXY \var StaticXY2 \brief QPoint holding a value for a simple line tool.
+
 
 
 private slots:
 
-
+    //! slots to keep track of all of the buttons that are checked or clicked in the work area
     void on_quitButton_clicked();
 
     void on_greyScale_clicked();
@@ -81,8 +89,6 @@ private slots:
 
     void on_BrushButton_toggled(bool checked);
 
-    void on_TextButton_toggled(bool checked);
-
     void mousePressEvent(QMouseEvent *event);
 
     void mouseMoveEvent(QMouseEvent *event);
@@ -110,6 +116,8 @@ private slots:
     void on_greenSlider_valueChanged(int value);
 
     void on_blueSlider_valueChanged(int value);
+
+    void on_bucket_toggled(bool checked);
 
 private:
     Ui::workingwindow *ui;
