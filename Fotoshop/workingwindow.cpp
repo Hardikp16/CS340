@@ -34,6 +34,17 @@ workingwindow::workingwindow(QWidget *parent) :
     colorFactor = 2.55;
 
     ui->horizontalSlider->setValue(25);
+
+    ui->CropFromDown->setValue(0);
+    ui->CropFromTop->setValue(100);
+    ui->CropFromLeft->setValue(0);
+    ui->CropFromRight->setValue(100);
+
+    topLinePos = 0;
+    bottomLinePos = loadedImage.height() -1;
+    rightLinePos = loadedImage.width() -1;
+    leftLinePos = 0;
+
     QImage temp(":/Icon/color_wheel1.png");
     ColorWheel = temp;
     ColorWheel = ColorWheel.scaled(screenwidth / 4, screenheight / 4, Qt::KeepAspectRatio, Qt::FastTransformation);
@@ -550,4 +561,81 @@ void workingwindow::on_bucket_toggled(bool checked)
     {
         bucket = FALSE;
     }
+}
+
+void workingwindow::on_CropFromLeft_valueChanged(int value)
+{
+    QImage proxy = loadedImage;
+    double LeftLineFactor = loadedImage.width() / 100;
+    leftLinePos = value * LeftLineFactor;
+    QPen CropDraw;
+    CropDraw.setWidth(10);
+    CropDraw.setColor(Qt::black);
+    QPainter PixPaint(&loadedImage);
+    PixPaint.setPen(thePen);
+    QPoint CropStart, CropEnd;
+    CropStart.setX(leftLinePos);
+    CropStart.setY(0);
+    CropEnd.setX(leftLinePos);
+    CropEnd.setY(loadedImage.height() -1);
+    PixPaint.drawLine(CropStart,CropEnd);
+    ui->imageLabel->setPixmap(QPixmap::fromImage(proxy));
+
+}
+
+void workingwindow::on_CropFromRight_valueChanged(int value)
+{
+    QImage proxy = loadedImage;
+    double LeftLineFactor = loadedImage.width() / 100;
+    rightLinePos = value * LeftLineFactor;
+    QPen CropDraw;
+    CropDraw.setWidth(10);
+    CropDraw.setColor(Qt::black);
+    QPainter PixPaint(&loadedImage);
+    PixPaint.setPen(thePen);
+    QPoint CropStart, CropEnd;
+    CropStart.setX(rightLinePos);
+    CropStart.setY(0);
+    CropEnd.setX(rightLinePos);
+    CropEnd.setY(loadedImage.height() -1);
+    PixPaint.drawLine(CropStart,CropEnd);
+    ui->imageLabel->setPixmap(QPixmap::fromImage(proxy));
+}
+
+void workingwindow::on_CropFromTop_valueChanged(int value)
+{
+    QImage proxy = loadedImage;
+    double LeftLineFactor = loadedImage.width() / 100;
+    topLinePos = value * LeftLineFactor;
+    QPen CropDraw;
+    CropDraw.setWidth(10);
+    CropDraw.setColor(Qt::black);
+    QPainter PixPaint(&loadedImage);
+    PixPaint.setPen(thePen);
+    QPoint CropStart, CropEnd;
+    CropStart.setX(0);
+    CropStart.setY(topLinePos);
+    CropEnd.setX(loadedImage.width()-1);
+    CropEnd.setY(topLinePos);
+    PixPaint.drawLine(CropStart,CropEnd);
+    ui->imageLabel->setPixmap(QPixmap::fromImage(proxy));
+}
+
+void workingwindow::on_CropFromDown_valueChanged(int value)
+{
+    QImage proxy = loadedImage;
+    double LeftLineFactor = loadedImage.width() / 100;
+    bottomLinePos = value * LeftLineFactor;
+    QPen CropDraw;
+    CropDraw.setWidth(10);
+    CropDraw.setColor(Qt::black);
+    QPainter PixPaint(&loadedImage);
+    PixPaint.setPen(thePen);
+    QPoint CropStart, CropEnd;
+    CropStart.setX(0);
+    CropStart.setY(bottomLinePos);
+    CropEnd.setX(loadedImage.width() - 1);
+    CropEnd.setY(bottomLinePos);
+    PixPaint.drawLine(CropStart,CropEnd);
+    ui->imageLabel->setPixmap(QPixmap::fromImage(proxy));
 }

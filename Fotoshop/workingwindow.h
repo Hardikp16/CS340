@@ -38,7 +38,7 @@ public:
 
     QPoint StaticXY, StaticXY2; //! \var StaticXY \var StaticXY2 \brief QPoint holding a value for a simple line tool.
 
-
+    double leftLinePos, rightLinePos, topLinePos, bottomLinePos;
 
 private slots:
 
@@ -118,6 +118,14 @@ private slots:
     void on_blueSlider_valueChanged(int value);
 
     void on_bucket_toggled(bool checked);
+
+    void on_CropFromLeft_valueChanged(int value);
+
+    void on_CropFromRight_valueChanged(int value);
+
+    void on_CropFromTop_valueChanged(int value);
+
+    void on_CropFromDown_valueChanged(int value);
 
 private:
     Ui::workingwindow *ui;
