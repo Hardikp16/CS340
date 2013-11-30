@@ -1,0 +1,215 @@
+\hypertarget{main_8cpp}{\section{C\-:/\-Users/ledio\-\_\-000/\-Documents/\-Git\-Hub/\-C\-S340/\-Fotoshop/main.cpp File Reference}
+\label{main_8cpp}\index{C\-:/\-Users/ledio\-\_\-000/\-Documents/\-Git\-Hub/\-C\-S340/\-Fotoshop/main.\-cpp@{C\-:/\-Users/ledio\-\_\-000/\-Documents/\-Git\-Hub/\-C\-S340/\-Fotoshop/main.\-cpp}}
+}
+
+
+main Cpp file for program  
+
+
+{\ttfamily \#include \char`\"{}mainwindow.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}workingwindow.\-h\char`\"{}}\\*
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{main_8cpp_af2606797deda70b5effbc50b2648d699}{opened} = 0
+\item 
+Q\-String \hyperlink{main_8cpp_aac274af37f5fbaaa2c47d19145cfd856}{filename}
+\item 
+int \hyperlink{main_8cpp_a6d3d83a893595720686405450535cc9d}{screenheight}
+\item 
+int \hyperlink{main_8cpp_a36a3b147d922caeca1e1b8c4c8bc5d30}{screenwidth}
+\item 
+Q\-Image \hyperlink{main_8cpp_a2d3f8fd16a46340cb7035a05f6bc58a1}{loaded\-Image}
+\item 
+Q\-Image \hyperlink{main_8cpp_a54f6c36b634ab76fedd1bea77ad15d71}{scaled\-Image}
+\item 
+double \hyperlink{main_8cpp_afe2a2955f945105d5e2fdc5010376f9d}{picsize}
+\item 
+int \hyperlink{main_8cpp_a7c4c91ec26a9ba612121c356eba88e4a}{current\-Image\-Number} = 0
+\item 
+int \hyperlink{main_8cpp_a8cd423670f1d4533a997ee2e39e52231}{isblank}
+\item 
+bool \hyperlink{main_8cpp_a29a859347809cdf7d4e9b74a9d1abd62}{pen} = \hyperlink{includes_8h_aa93f0eb578d23995850d61f7d61c55c1}{F\-A\-L\-S\-E}
+\item 
+bool \hyperlink{main_8cpp_aeefb08c4a72afbd9bd8a888996f1e426}{drawing} = \hyperlink{includes_8h_aa93f0eb578d23995850d61f7d61c55c1}{F\-A\-L\-S\-E}
+\item 
+bool \hyperlink{main_8cpp_af0f974376d2160d0b62ca0f76bd5b479}{eraser} = \hyperlink{includes_8h_aa93f0eb578d23995850d61f7d61c55c1}{F\-A\-L\-S\-E}
+\item 
+bool \hyperlink{main_8cpp_a642eb4bc30abc376e059892e3f1aeddd}{brush} = \hyperlink{includes_8h_aa93f0eb578d23995850d61f7d61c55c1}{F\-A\-L\-S\-E}
+\item 
+bool \hyperlink{main_8cpp_af200b2665cd1e147a6b3605044e85400}{text} = \hyperlink{includes_8h_aa93f0eb578d23995850d61f7d61c55c1}{F\-A\-L\-S\-E}
+\item 
+\hyperlink{classundo_arr}{undo\-Arr} $\ast$ \hyperlink{main_8cpp_a36e1a948f9e20da0c74fbacb15abe6ac}{undofunc}
+\begin{DoxyCompactList}\small\item\em Header file for the window that opens the image and the work area. \end{DoxyCompactList}\item 
+Q\-Point \hyperlink{main_8cpp_ad187f890191e7cabc4b69bca31dda0dc}{pointxy}
+\item 
+Q\-Point \hyperlink{main_8cpp_aedcaff6276ca6c671a05e2cab15c6d83}{pointxy2}
+\item 
+Q\-Pen \hyperlink{main_8cpp_a93e5739a0e7d284e317343f0c1ba57f3}{the\-Pen}
+\item 
+double \hyperlink{main_8cpp_a1879e240ffac70f1337bf86c77570d13}{my\-Input\-Size}
+\item 
+std\-::vector$<$ Q\-Image $>$ \hyperlink{main_8cpp_a66c3b28ae1545749cde174b5a046d25c}{undo\-Vector}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+main Cpp file for program \begin{DoxyVerb}                              FOTOSHOP                                     **
+\end{DoxyVerb}
+
+
+A lite but powerful painting and editing software written in C++ with Qt Creator This program is targeted towards home users looking to upgrade from paint but unwilling to invest in something like lightroom or photoshop
+
+A\-U\-T\-H\-O\-R \-: L\-E\-D\-I\-O S\-I\-N\-J\-A\-R\-I
+
+W\-R\-I\-T\-T\-E\-N F\-O\-R C\-S 340 -\/ F\-A\-L\-L 2013 I\-N\-S\-T\-R\-U\-C\-T\-O\-R L\-U\-C R\-E\-N\-A\-M\-B\-O\-T 
+
+Definition in file \hyperlink{main_8cpp_source}{main.\-cpp}.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{main_8cpp_a642eb4bc30abc376e059892e3f1aeddd}{\index{main.\-cpp@{main.\-cpp}!brush@{brush}}
+\index{brush@{brush}!main.cpp@{main.\-cpp}}
+\subsubsection[{brush}]{\setlength{\rightskip}{0pt plus 5cm}bool brush = {\bf F\-A\-L\-S\-E}}}\label{main_8cpp_a642eb4bc30abc376e059892e3f1aeddd}
+
+
+Definition at line 38 of file main.\-cpp.
+
+\hypertarget{main_8cpp_a7c4c91ec26a9ba612121c356eba88e4a}{\index{main.\-cpp@{main.\-cpp}!current\-Image\-Number@{current\-Image\-Number}}
+\index{current\-Image\-Number@{current\-Image\-Number}!main.cpp@{main.\-cpp}}
+\subsubsection[{current\-Image\-Number}]{\setlength{\rightskip}{0pt plus 5cm}int current\-Image\-Number = 0}}\label{main_8cpp_a7c4c91ec26a9ba612121c356eba88e4a}
+
+
+Definition at line 33 of file main.\-cpp.
+
+\hypertarget{main_8cpp_aeefb08c4a72afbd9bd8a888996f1e426}{\index{main.\-cpp@{main.\-cpp}!drawing@{drawing}}
+\index{drawing@{drawing}!main.cpp@{main.\-cpp}}
+\subsubsection[{drawing}]{\setlength{\rightskip}{0pt plus 5cm}bool drawing = {\bf F\-A\-L\-S\-E}}}\label{main_8cpp_aeefb08c4a72afbd9bd8a888996f1e426}
+
+
+Definition at line 36 of file main.\-cpp.
+
+\hypertarget{main_8cpp_af0f974376d2160d0b62ca0f76bd5b479}{\index{main.\-cpp@{main.\-cpp}!eraser@{eraser}}
+\index{eraser@{eraser}!main.cpp@{main.\-cpp}}
+\subsubsection[{eraser}]{\setlength{\rightskip}{0pt plus 5cm}bool eraser = {\bf F\-A\-L\-S\-E}}}\label{main_8cpp_af0f974376d2160d0b62ca0f76bd5b479}
+
+
+Definition at line 37 of file main.\-cpp.
+
+\hypertarget{main_8cpp_aac274af37f5fbaaa2c47d19145cfd856}{\index{main.\-cpp@{main.\-cpp}!filename@{filename}}
+\index{filename@{filename}!main.cpp@{main.\-cpp}}
+\subsubsection[{filename}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String filename}}\label{main_8cpp_aac274af37f5fbaaa2c47d19145cfd856}
+
+
+Definition at line 27 of file main.\-cpp.
+
+\hypertarget{main_8cpp_a8cd423670f1d4533a997ee2e39e52231}{\index{main.\-cpp@{main.\-cpp}!isblank@{isblank}}
+\index{isblank@{isblank}!main.cpp@{main.\-cpp}}
+\subsubsection[{isblank}]{\setlength{\rightskip}{0pt plus 5cm}int isblank}}\label{main_8cpp_a8cd423670f1d4533a997ee2e39e52231}
+
+
+Definition at line 34 of file main.\-cpp.
+
+\hypertarget{main_8cpp_a2d3f8fd16a46340cb7035a05f6bc58a1}{\index{main.\-cpp@{main.\-cpp}!loaded\-Image@{loaded\-Image}}
+\index{loaded\-Image@{loaded\-Image}!main.cpp@{main.\-cpp}}
+\subsubsection[{loaded\-Image}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Image loaded\-Image}}\label{main_8cpp_a2d3f8fd16a46340cb7035a05f6bc58a1}
+
+
+Definition at line 30 of file main.\-cpp.
+
+\hypertarget{main_8cpp_a1879e240ffac70f1337bf86c77570d13}{\index{main.\-cpp@{main.\-cpp}!my\-Input\-Size@{my\-Input\-Size}}
+\index{my\-Input\-Size@{my\-Input\-Size}!main.cpp@{main.\-cpp}}
+\subsubsection[{my\-Input\-Size}]{\setlength{\rightskip}{0pt plus 5cm}double my\-Input\-Size}}\label{main_8cpp_a1879e240ffac70f1337bf86c77570d13}
+
+
+Definition at line 45 of file main.\-cpp.
+
+\hypertarget{main_8cpp_af2606797deda70b5effbc50b2648d699}{\index{main.\-cpp@{main.\-cpp}!opened@{opened}}
+\index{opened@{opened}!main.cpp@{main.\-cpp}}
+\subsubsection[{opened}]{\setlength{\rightskip}{0pt plus 5cm}int opened = 0}}\label{main_8cpp_af2606797deda70b5effbc50b2648d699}
+
+
+Definition at line 26 of file main.\-cpp.
+
+\hypertarget{main_8cpp_a29a859347809cdf7d4e9b74a9d1abd62}{\index{main.\-cpp@{main.\-cpp}!pen@{pen}}
+\index{pen@{pen}!main.cpp@{main.\-cpp}}
+\subsubsection[{pen}]{\setlength{\rightskip}{0pt plus 5cm}bool pen = {\bf F\-A\-L\-S\-E}}}\label{main_8cpp_a29a859347809cdf7d4e9b74a9d1abd62}
+
+
+Definition at line 35 of file main.\-cpp.
+
+\hypertarget{main_8cpp_afe2a2955f945105d5e2fdc5010376f9d}{\index{main.\-cpp@{main.\-cpp}!picsize@{picsize}}
+\index{picsize@{picsize}!main.cpp@{main.\-cpp}}
+\subsubsection[{picsize}]{\setlength{\rightskip}{0pt plus 5cm}double picsize}}\label{main_8cpp_afe2a2955f945105d5e2fdc5010376f9d}
+
+
+Definition at line 32 of file main.\-cpp.
+
+\hypertarget{main_8cpp_ad187f890191e7cabc4b69bca31dda0dc}{\index{main.\-cpp@{main.\-cpp}!pointxy@{pointxy}}
+\index{pointxy@{pointxy}!main.cpp@{main.\-cpp}}
+\subsubsection[{pointxy}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Point pointxy}}\label{main_8cpp_ad187f890191e7cabc4b69bca31dda0dc}
+
+
+Definition at line 41 of file main.\-cpp.
+
+\hypertarget{main_8cpp_aedcaff6276ca6c671a05e2cab15c6d83}{\index{main.\-cpp@{main.\-cpp}!pointxy2@{pointxy2}}
+\index{pointxy2@{pointxy2}!main.cpp@{main.\-cpp}}
+\subsubsection[{pointxy2}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Point pointxy2}}\label{main_8cpp_aedcaff6276ca6c671a05e2cab15c6d83}
+
+
+Definition at line 42 of file main.\-cpp.
+
+\hypertarget{main_8cpp_a54f6c36b634ab76fedd1bea77ad15d71}{\index{main.\-cpp@{main.\-cpp}!scaled\-Image@{scaled\-Image}}
+\index{scaled\-Image@{scaled\-Image}!main.cpp@{main.\-cpp}}
+\subsubsection[{scaled\-Image}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Image scaled\-Image}}\label{main_8cpp_a54f6c36b634ab76fedd1bea77ad15d71}
+
+
+Definition at line 31 of file main.\-cpp.
+
+\hypertarget{main_8cpp_a6d3d83a893595720686405450535cc9d}{\index{main.\-cpp@{main.\-cpp}!screenheight@{screenheight}}
+\index{screenheight@{screenheight}!main.cpp@{main.\-cpp}}
+\subsubsection[{screenheight}]{\setlength{\rightskip}{0pt plus 5cm}int screenheight}}\label{main_8cpp_a6d3d83a893595720686405450535cc9d}
+
+
+Definition at line 28 of file main.\-cpp.
+
+\hypertarget{main_8cpp_a36a3b147d922caeca1e1b8c4c8bc5d30}{\index{main.\-cpp@{main.\-cpp}!screenwidth@{screenwidth}}
+\index{screenwidth@{screenwidth}!main.cpp@{main.\-cpp}}
+\subsubsection[{screenwidth}]{\setlength{\rightskip}{0pt plus 5cm}int screenwidth}}\label{main_8cpp_a36a3b147d922caeca1e1b8c4c8bc5d30}
+
+
+Definition at line 29 of file main.\-cpp.
+
+\hypertarget{main_8cpp_af200b2665cd1e147a6b3605044e85400}{\index{main.\-cpp@{main.\-cpp}!text@{text}}
+\index{text@{text}!main.cpp@{main.\-cpp}}
+\subsubsection[{text}]{\setlength{\rightskip}{0pt plus 5cm}bool text = {\bf F\-A\-L\-S\-E}}}\label{main_8cpp_af200b2665cd1e147a6b3605044e85400}
+
+
+Definition at line 39 of file main.\-cpp.
+
+\hypertarget{main_8cpp_a93e5739a0e7d284e317343f0c1ba57f3}{\index{main.\-cpp@{main.\-cpp}!the\-Pen@{the\-Pen}}
+\index{the\-Pen@{the\-Pen}!main.cpp@{main.\-cpp}}
+\subsubsection[{the\-Pen}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Pen the\-Pen}}\label{main_8cpp_a93e5739a0e7d284e317343f0c1ba57f3}
+
+
+Definition at line 43 of file main.\-cpp.
+
+\hypertarget{main_8cpp_a36e1a948f9e20da0c74fbacb15abe6ac}{\index{main.\-cpp@{main.\-cpp}!undofunc@{undofunc}}
+\index{undofunc@{undofunc}!main.cpp@{main.\-cpp}}
+\subsubsection[{undofunc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf undo\-Arr}$\ast$ undofunc}}\label{main_8cpp_a36e1a948f9e20da0c74fbacb15abe6ac}
+
+
+Header file for the window that opens the image and the work area. 
+
+Working Window 
+
+Definition at line 40 of file main.\-cpp.
+
+\hypertarget{main_8cpp_a66c3b28ae1545749cde174b5a046d25c}{\index{main.\-cpp@{main.\-cpp}!undo\-Vector@{undo\-Vector}}
+\index{undo\-Vector@{undo\-Vector}!main.cpp@{main.\-cpp}}
+\subsubsection[{undo\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$Q\-Image$>$ undo\-Vector}}\label{main_8cpp_a66c3b28ae1545749cde174b5a046d25c}
+
+
+Definition at line 47 of file main.\-cpp.
+

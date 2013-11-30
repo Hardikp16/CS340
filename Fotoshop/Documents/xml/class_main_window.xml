@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="class_main_window" kind="class" prot="public">
+    <compoundname>MainWindow</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QMainWindow</basecompoundref>
+    <includes refid="mainwindow_8h" local="no">mainwindow.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_main_window_1a35466a70ed47252a0191168126a352a5" prot="private" static="no" mutable="no">
+        <type>Ui::MainWindow *</type>
+        <definition>Ui::MainWindow* MainWindow::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/mainwindow.h" line="26" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/mainwindow.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1af3c53601b6e59ea7c43fd2635f4986fd" prot="private" static="no" mutable="no">
+        <type><ref refid="classworkingwindow" kindref="compound">workingwindow</ref> *</type>
+        <definition>workingwindow* MainWindow::editor</definition>
+        <argsstring></argsstring>
+        <name>editor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/mainwindow.h" line="27" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/mainwindow.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MainWindow::MainWindow</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>MainWindow</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/mainwindow.h" line="17" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/mainwindow.cpp" bodystart="7" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MainWindow::~MainWindow</definition>
+        <argsstring>()</argsstring>
+        <name>~MainWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/mainwindow.h" line="18" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/mainwindow.cpp" bodystart="14" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="class_main_window_1aff201c6deea655992a99b7841705c10b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_NewImageButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_NewImageButton_clicked</name>
+        <briefdescription>
+<para>slots for the new/open/exit pushbuttons. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>code flags the program to run a new image rather than loading one up</para><para>store screen width into global var</para><para>store screen height into global var</para><para>scale new window for full screen mode</para><para>scale new window for full screen mode </para>        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/mainwindow.h" line="21" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/mainwindow.cpp" bodystart="19" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a26e695e7debc56ff6ba0828bbeb83f85" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_OpenImageButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_OpenImageButton_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>flag second window to use filename string</para><para>collect directory of wanted image and store to string </para>        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/mainwindow.h" line="22" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/mainwindow.cpp" bodystart="37" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a3b3f9845da92bef1739da5842b89cc9e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_ExitButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_ExitButton_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/mainwindow.h" line="23" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/mainwindow.cpp" bodystart="57" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>QMainWindow</label>
+      </node>
+      <node id="0">
+        <label>MainWindow</label>
+        <link refid="class_main_window"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>QMainWindow</label>
+      </node>
+      <node id="2">
+        <label>MainWindow</label>
+        <link refid="class_main_window"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/mainwindow.h" line="13" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/mainwindow.h" bodystart="12" bodyend="29"/>
+    <listofallmembers>
+      <member refid="class_main_window_1af3c53601b6e59ea7c43fd2635f4986fd" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>editor</name></member>
+      <member refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>MainWindow</name></member>
+      <member refid="class_main_window_1a3b3f9845da92bef1739da5842b89cc9e" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_ExitButton_clicked</name></member>
+      <member refid="class_main_window_1aff201c6deea655992a99b7841705c10b" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_NewImageButton_clicked</name></member>
+      <member refid="class_main_window_1a26e695e7debc56ff6ba0828bbeb83f85" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_OpenImageButton_clicked</name></member>
+      <member refid="class_main_window_1a35466a70ed47252a0191168126a352a5" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>ui</name></member>
+      <member refid="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>~MainWindow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="namespace_ui" kind="namespace">
+    <compoundname>Ui</compoundname>
+    <briefdescription>
+<para>the header file for the small new / load / close window </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="class_main_window" kindref="compound">MainWindow</ref> </para>    </detaileddescription>
+    <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/mainwindow.h" line="8" column="1"/>
+  </compounddef>
+</doxygen>

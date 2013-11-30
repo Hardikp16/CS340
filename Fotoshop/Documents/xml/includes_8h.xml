@@ -1,0 +1,564 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="includes_8h" kind="file">
+    <compoundname>includes.h</compoundname>
+    <includes local="no">QFileDialog</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">QMainWindow</includes>
+    <includes local="no">QApplication</includes>
+    <includes local="no">QGraphicsView</includes>
+    <includes local="no">QGraphicsPixmapItem</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">QMessageBox</includes>
+    <includes local="no">QLabel</includes>
+    <includes local="no">string</includes>
+    <includes local="no">QImage</includes>
+    <includes local="no">QPixmap</includes>
+    <includes local="no">QDesktopWidget</includes>
+    <includes local="no">QStyle</includes>
+    <includes local="no">Qt</includes>
+    <includes local="no">QtMath</includes>
+    <includes local="no">QEvent</includes>
+    <includes local="no">QMouseEvent</includes>
+    <includes local="no">QPaintEvent</includes>
+    <includes local="no">QPen</includes>
+    <includes local="no">QBrush</includes>
+    <includes local="no">QColor</includes>
+    <includes local="no">QPoint</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="darkroom_8h" local="yes">C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/darkroom.h</includedby>
+    <includedby refid="filters_8h" local="yes">C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/filters.h</includedby>
+    <includedby refid="workingwindow_8h" local="yes">C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h</includedby>
+    <includedby refid="mainwindow_8h" local="yes">C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/mainwindow.h</includedby>
+    <includedby refid="_undo_array_8cpp" local="yes">C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/UndoArray.cpp</includedby>
+    <incdepgraph>
+      <node id="128">
+        <label>QMessageBox</label>
+      </node>
+      <node id="121">
+        <label>stdlib.h</label>
+      </node>
+      <node id="124">
+        <label>QGraphicsView</label>
+      </node>
+      <node id="137">
+        <label>QEvent</label>
+      </node>
+      <node id="141">
+        <label>QBrush</label>
+      </node>
+      <node id="130">
+        <label>string</label>
+      </node>
+      <node id="143">
+        <label>QPoint</label>
+      </node>
+      <node id="122">
+        <label>QMainWindow</label>
+      </node>
+      <node id="131">
+        <label>QImage</label>
+      </node>
+      <node id="135">
+        <label>Qt</label>
+      </node>
+      <node id="134">
+        <label>QStyle</label>
+      </node>
+      <node id="138">
+        <label>QMouseEvent</label>
+      </node>
+      <node id="120">
+        <label>QFileDialog</label>
+      </node>
+      <node id="123">
+        <label>QApplication</label>
+      </node>
+      <node id="136">
+        <label>QtMath</label>
+      </node>
+      <node id="133">
+        <label>QDesktopWidget</label>
+      </node>
+      <node id="144">
+        <label>vector</label>
+      </node>
+      <node id="142">
+        <label>QColor</label>
+      </node>
+      <node id="125">
+        <label>QGraphicsPixmapItem</label>
+      </node>
+      <node id="129">
+        <label>QLabel</label>
+      </node>
+      <node id="127">
+        <label>iostream</label>
+      </node>
+      <node id="140">
+        <label>QPen</label>
+      </node>
+      <node id="132">
+        <label>QPixmap</label>
+      </node>
+      <node id="119">
+        <label>C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h</label>
+        <link refid="includes.h"/>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>stdio.h</label>
+      </node>
+      <node id="139">
+        <label>QPaintEvent</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="153">
+        <label>C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="148">
+        <label>C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp</label>
+        <link refid="workingwindow_8cpp"/>
+      </node>
+      <node id="150">
+        <label>C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/filters.cpp</label>
+        <link refid="filters_8cpp"/>
+      </node>
+      <node id="155">
+        <label>C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/UndoArray.cpp</label>
+        <link refid="_undo_array_8cpp"/>
+      </node>
+      <node id="149">
+        <label>C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/filters.h</label>
+        <link refid="filters_8h"/>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+      </node>
+      <node id="147">
+        <label>C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/darkroom.cpp</label>
+        <link refid="darkroom_8cpp"/>
+      </node>
+      <node id="154">
+        <label>C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+      </node>
+      <node id="145">
+        <label>C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h</label>
+        <link refid="includes.h"/>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+      </node>
+      <node id="152">
+        <label>C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+      </node>
+      <node id="151">
+        <label>C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h</label>
+        <link refid="workingwindow_8h"/>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+      </node>
+      <node id="146">
+        <label>C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/darkroom.h</label>
+        <link refid="darkroom_8h"/>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classundo_arr" prot="public">undoArr</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="includes_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" prot="public" static="no">
+        <name>TRUE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>includes most of the global librarys and variables that are called in every function </para>        </briefdescription>
+        <detaileddescription>
+<para>General header </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h" line="34" column="9" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="includes_8h_1aa93f0eb578d23995850d61f7d61c55c1" prot="public" static="no">
+        <name>FALSE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h" line="35" column="9" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="includes_8h_1af2606797deda70b5effbc50b2648d699" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int opened</definition>
+        <argsstring></argsstring>
+        <name>opened</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h" line="36" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/main.cpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="includes_8h_1aac274af37f5fbaaa2c47d19145cfd856" prot="public" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString filename</definition>
+        <argsstring></argsstring>
+        <name>filename</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h" line="37" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/main.cpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="includes_8h_1a6d3d83a893595720686405450535cc9d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int screenheight</definition>
+        <argsstring></argsstring>
+        <name>screenheight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h" line="38" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/main.cpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="includes_8h_1a36a3b147d922caeca1e1b8c4c8bc5d30" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int screenwidth</definition>
+        <argsstring></argsstring>
+        <name>screenwidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h" line="39" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/main.cpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="includes_8h_1a2d3f8fd16a46340cb7035a05f6bc58a1" prot="public" static="no" mutable="no">
+        <type>QImage</type>
+        <definition>QImage loadedImage</definition>
+        <argsstring></argsstring>
+        <name>loadedImage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h" line="40" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/main.cpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="includes_8h_1a54f6c36b634ab76fedd1bea77ad15d71" prot="public" static="no" mutable="no">
+        <type>QImage</type>
+        <definition>QImage scaledImage</definition>
+        <argsstring></argsstring>
+        <name>scaledImage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h" line="41" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/main.cpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="includes_8h_1afe2a2955f945105d5e2fdc5010376f9d" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double picsize</definition>
+        <argsstring></argsstring>
+        <name>picsize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h" line="42" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/main.cpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="includes_8h_1a7c4c91ec26a9ba612121c356eba88e4a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int currentImageNumber</definition>
+        <argsstring></argsstring>
+        <name>currentImageNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h" line="43" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/main.cpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="includes_8h_1a8cd423670f1d4533a997ee2e39e52231" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int isblank</definition>
+        <argsstring></argsstring>
+        <name>isblank</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h" line="44" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/main.cpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="includes_8h_1a29a859347809cdf7d4e9b74a9d1abd62" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool pen</definition>
+        <argsstring></argsstring>
+        <name>pen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h" line="45" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/main.cpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="includes_8h_1af0f974376d2160d0b62ca0f76bd5b479" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool eraser</definition>
+        <argsstring></argsstring>
+        <name>eraser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h" line="46" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/main.cpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="includes_8h_1a642eb4bc30abc376e059892e3f1aeddd" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool brush</definition>
+        <argsstring></argsstring>
+        <name>brush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h" line="47" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/main.cpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="includes_8h_1af200b2665cd1e147a6b3605044e85400" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool text</definition>
+        <argsstring></argsstring>
+        <name>text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h" line="48" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/main.cpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="includes_8h_1aeefb08c4a72afbd9bd8a888996f1e426" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool drawing</definition>
+        <argsstring></argsstring>
+        <name>drawing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h" line="49" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/main.cpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="includes_8h_1ad187f890191e7cabc4b69bca31dda0dc" prot="public" static="no" mutable="no">
+        <type>QPoint</type>
+        <definition>QPoint pointxy</definition>
+        <argsstring></argsstring>
+        <name>pointxy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h" line="50" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/main.cpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="includes_8h_1aedcaff6276ca6c671a05e2cab15c6d83" prot="public" static="no" mutable="no">
+        <type>QPoint</type>
+        <definition>QPoint pointxy2</definition>
+        <argsstring></argsstring>
+        <name>pointxy2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h" line="51" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/main.cpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="includes_8h_1a93e5739a0e7d284e317343f0c1ba57f3" prot="public" static="no" mutable="no">
+        <type>QPen</type>
+        <definition>QPen thePen</definition>
+        <argsstring></argsstring>
+        <name>thePen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h" line="52" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/main.cpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="3"><highlight class="preprocessor">#ifndef<sp/>INCLUDES_H</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INCLUDES_H</highlight></codeline>
+<codeline lineno="5"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QFileDialog&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMainWindow&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QApplication&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QGraphicsView&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QGraphicsPixmapItem&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QFileDialog&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMessageBox&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QLabel&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QImage&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QPixmap&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QDesktopWidget&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QStyle&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Qt&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtMath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QEvent&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMouseEvent&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QPaintEvent&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QPen&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QBrush&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QColor&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QPoint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="includes_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRUE<sp/>1</highlight></codeline>
+<codeline lineno="35" refid="includes_8h_1aa93f0eb578d23995850d61f7d61c55c1" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FALSE<sp/>0</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="includes_8h_1af2606797deda70b5effbc50b2648d699" kindref="member">opened</ref>;<sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>QString<sp/><ref refid="includes_8h_1aac274af37f5fbaaa2c47d19145cfd856" kindref="member">filename</ref>;<sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="includes_8h_1a6d3d83a893595720686405450535cc9d" kindref="member">screenheight</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="includes_8h_1a36a3b147d922caeca1e1b8c4c8bc5d30" kindref="member">screenwidth</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>QImage<sp/><ref refid="includes_8h_1a2d3f8fd16a46340cb7035a05f6bc58a1" kindref="member">loadedImage</ref>;<sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>QImage<sp/><ref refid="includes_8h_1a54f6c36b634ab76fedd1bea77ad15d71" kindref="member">scaledImage</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="includes_8h_1afe2a2955f945105d5e2fdc5010376f9d" kindref="member">picsize</ref>;<sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="includes_8h_1a7c4c91ec26a9ba612121c356eba88e4a" kindref="member">currentImageNumber</ref>;<sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="includes_8h_1a8cd423670f1d4533a997ee2e39e52231" kindref="member">isblank</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="includes_8h_1a29a859347809cdf7d4e9b74a9d1abd62" kindref="member">pen</ref>;<sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="includes_8h_1af0f974376d2160d0b62ca0f76bd5b479" kindref="member">eraser</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="includes_8h_1a642eb4bc30abc376e059892e3f1aeddd" kindref="member">brush</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="includes_8h_1af200b2665cd1e147a6b3605044e85400" kindref="member">text</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="includes_8h_1aeefb08c4a72afbd9bd8a888996f1e426" kindref="member">drawing</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>QPoint<sp/><ref refid="includes_8h_1ad187f890191e7cabc4b69bca31dda0dc" kindref="member">pointxy</ref>;<sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>QPoint<sp/><ref refid="includes_8h_1aedcaff6276ca6c671a05e2cab15c6d83" kindref="member">pointxy2</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>QPen<sp/><ref refid="includes_8h_1a93e5739a0e7d284e317343f0c1ba57f3" kindref="member">thePen</ref>;<sp/></highlight></codeline>
+<codeline lineno="55" refid="classundo_arr" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classundo_arr" kindref="compound">undoArr</ref></highlight></codeline>
+<codeline lineno="56"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="59" refid="classundo_arr_1ac8927631ec42f0f4a56ccd66dfbfc732" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QImage<sp/><ref refid="classundo_arr_1ac8927631ec42f0f4a56ccd66dfbfc732" kindref="member">currImg</ref>;<sp/></highlight></codeline>
+<codeline lineno="60" refid="classundo_arr_1a73c53d3302242f3b5f2e504d9a79fde7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classundo_arr_1a73c53d3302242f3b5f2e504d9a79fde7" kindref="member">hasPic</ref>;<sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classundo_arr_1a55d5c4487ef355fa732fa6db7d57855d" kindref="member">push</ref>(QImage<sp/>file);<sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classundo_arr_1a16c74ec4a7e73d8852d634c190bcd51c" kindref="member">pop</ref>();</highlight></codeline>
+<codeline lineno="63" refid="classundo_arr_1a01b2d58c78f87f57f163702f565731a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classundo_arr_1a01b2d58c78f87f57f163702f565731a2" kindref="member">size</ref>;<sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>INCLUDES_H</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h"/>
+  </compounddef>
+</doxygen>

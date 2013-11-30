@@ -1,0 +1,920 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classworkingwindow" kind="class" prot="public">
+    <compoundname>workingwindow</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QMainWindow</basecompoundref>
+    <includes refid="workingwindow_8h" local="no">workingwindow.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classworkingwindow_1ab9ed1f2dafd42f388fc7b366d25db626" prot="public" static="no" mutable="no">
+        <type>QImage</type>
+        <definition>QImage workingwindow::ColorWheel</definition>
+        <argsstring></argsstring>
+        <name>ColorWheel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="27" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classworkingwindow_1ab1e5dc3b626cb9e28983e6abee34d10d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool workingwindow::colorSampler</definition>
+        <argsstring></argsstring>
+        <name>colorSampler</name>
+        <briefdescription>
+<para>colorWheel for reference in the UI </para>        </briefdescription>
+        <detaileddescription>
+<para>ColorWheel </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="29" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classworkingwindow_1aee9919c1cfad4526c7b66c5f09b8ce02" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double workingwindow::colorFactor</definition>
+        <argsstring></argsstring>
+        <name>colorFactor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="31" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classworkingwindow_1a44fa7af5c036e2686e55c31a3b69e81f" prot="public" static="no" mutable="no">
+        <type>QColor</type>
+        <definition>QColor workingwindow::customColor</definition>
+        <argsstring></argsstring>
+        <name>customColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="33" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classworkingwindow_1a470b6dd89240fb31393ee848cef5a358" prot="public" static="no" mutable="no">
+        <type>QImage</type>
+        <definition>QImage workingwindow::colorPreview</definition>
+        <argsstring></argsstring>
+        <name>colorPreview</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="35" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classworkingwindow_1a48d7fd2e19079e21a8474ae0519f0862" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool workingwindow::bucket</definition>
+        <argsstring></argsstring>
+        <name>bucket</name>
+        <briefdescription>
+<para>a window to display the current color selection </para>        </briefdescription>
+        <detaileddescription>
+<para>colorPreview </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="37" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classworkingwindow_1aa0c6e8030d9bb3b26324aaf737f2be62" prot="public" static="no" mutable="no">
+        <type>QPoint</type>
+        <definition>QPoint workingwindow::StaticXY</definition>
+        <argsstring></argsstring>
+        <name>StaticXY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="39" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classworkingwindow_1a0574618dfbe458eee7fac25620c2cf89" prot="public" static="no" mutable="no">
+        <type>QPoint</type>
+        <definition>QPoint workingwindow::StaticXY2</definition>
+        <argsstring></argsstring>
+        <name>StaticXY2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="39" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classworkingwindow_1a9e3b2de905cba0520347811c530958da" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double workingwindow::leftLinePos</definition>
+        <argsstring></argsstring>
+        <name>leftLinePos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="41" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classworkingwindow_1ad140ff2651f5e7993503d5d862e4d385" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double workingwindow::rightLinePos</definition>
+        <argsstring></argsstring>
+        <name>rightLinePos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="41" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classworkingwindow_1a1d4abbc294787013faaa0b6f2ee25a2d" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double workingwindow::topLinePos</definition>
+        <argsstring></argsstring>
+        <name>topLinePos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="41" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classworkingwindow_1a122ed0dce6353c78902353ceeda6bee0" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double workingwindow::bottomLinePos</definition>
+        <argsstring></argsstring>
+        <name>bottomLinePos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="41" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classworkingwindow_1a56d90866183deec5310e48223800f445" prot="private" static="no" mutable="no">
+        <type>Ui::workingwindow *</type>
+        <definition>Ui::workingwindow* workingwindow::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="131" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classworkingwindow_1a25b4ff6fe8b8cce836be4a4704132a68" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>workingwindow::workingwindow</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>workingwindow</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>creating a proxy to edit with</para><para>create a blank white image at 1600 x 900</para><para>fill it in blank white</para><para>set a blank Qlabel for ui design</para><para>fill the blank label with black</para><para>set a multiplier so sliders represent color values</para><para>set horizontal slider position</para><para>set second horizontal slider position</para><para>set first vertical slider position</para><para>set second vertical slider position</para><para>set an image as a color wheel for reference</para><para>scale the color wheel to fit the window</para><para>push the initial picture to the base of the stack</para><para>smooth out pen lines</para><para>round out the pen cap </para>        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="24" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="8" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classworkingwindow_1a0da6e75e764e958f1267c47dc4edf53c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>workingwindow::~workingwindow</definition>
+        <argsstring>()</argsstring>
+        <name>~workingwindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="25" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="67" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classworkingwindow_1a45d69a384860d756572b1fd6749c4dbe" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_quitButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_quitButton_clicked</name>
+        <briefdescription>
+<para>slots to keep track of all of the buttons that are checked or clicked in the work area </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="46" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="73" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1a2c55eef93e402695a24ec52f6e62911c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_greyScale_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_greyScale_clicked</name>
+        <briefdescription>
+<para>greyscale button clicked </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>set greyscale on loaded image </para>        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="48" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="79" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1adf389bb73b7ac24d48bdd73569bdc6b8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_PencilSketch_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_PencilSketch_clicked</name>
+        <briefdescription>
+<para>pencil sketch button clicked, set pencil effect on loaded image </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="50" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="90" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1ad1a0c00217129ec8bcdb8753f0272186" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_WarmifyButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_WarmifyButton_clicked</name>
+        <briefdescription>
+<para>warmify button clicked, set warmify </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="52" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="102" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1a1a02a965997681bf444244c2701bf25c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_coolButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_coolButton_clicked</name>
+        <briefdescription>
+<para>cool button clicked, set cool </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="54" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="112" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1aa0ed212ae7c208d255f32e46ede376ad" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_saturateButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_saturateButton_clicked</name>
+        <briefdescription>
+<para>saturation button clicked, set saturation </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="56" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="123" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1aaa7f9105576fa44cc33f0bbb5429642f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_DesaturateButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_DesaturateButton_clicked</name>
+        <briefdescription>
+<para>desaturation button clicked, set desaturation </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="58" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="134" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1adb0b46400c19baee95f6249692eb8b15" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_overExposeButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_overExposeButton_clicked</name>
+        <briefdescription>
+<para>over expose clicked, over expose the image </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="60" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="145" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1a0ff17c345a37bbb341524a15cca30350" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_underExposeButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_underExposeButton_clicked</name>
+        <briefdescription>
+<para>underexpose clicked, underexpose the image </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="62" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="156" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1a7419fb61fd0373e08c01045b7e0266ae" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_ContrastBoost_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_ContrastBoost_clicked</name>
+        <briefdescription>
+<para>contrast clicked, increase the contrast </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="64" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="166" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1a5496b44e63edf75c3750c412c0f5f973" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_ZoomIn_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_ZoomIn_clicked</name>
+        <briefdescription>
+<para>zoom in clicked, zoom image in </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>increase scale by 0.25 </para>        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="66" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="178" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1a1cdf755bd4501a557a071d14574161a9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_Save_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_Save_clicked</name>
+        <briefdescription>
+<para>save button clicked </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>open save dialogue </para>        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="68" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="199" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1a55a6070509aaf380be425ac600eeb95d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_ZoomOut_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_ZoomOut_clicked</name>
+        <briefdescription>
+<para>zoom out clicked </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>decrease scale by 0.25 </para>        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="70" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="187" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1a7bbd62ab96809703fb1f90550e8b53fb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_Undo_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_Undo_clicked</name>
+        <briefdescription>
+<para>undo button clicked </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>decrease stack position </para>        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="72" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="211" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1af710228e0ba208baf65f0f06c1393c06" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_SepiaButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_SepiaButton_clicked</name>
+        <briefdescription>
+<para>sepia button clicked, set sepia on loaded image </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="74" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="235" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1adefc06c84f7bf4b90143630040a3de15" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_PixelateButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_PixelateButton_clicked</name>
+        <briefdescription>
+<para>pixelate clicked, set pixelate on loaded image </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="76" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="245" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1a8c2d21f9e8c547feedc590b5dd226318" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_Rotate_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_Rotate_clicked</name>
+        <briefdescription>
+<para>rotate the image </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="78" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1a5b4f656be767303a5b0fa6647fdc9cba" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_updown_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_updown_clicked</name>
+        <briefdescription>
+<para>vertically mirror an image </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="80" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1ae53294a2da7941bb1ff5f769bb3af006" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_leftright_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_leftright_clicked</name>
+        <briefdescription>
+<para>mirror an image horizontally </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="82" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1aea2d8c351770648093fe1bd57176f727" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_edges_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_edges_clicked</name>
+        <briefdescription>
+<para>edge detection clicked, set edge detection </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="84" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="315" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1a17938480616874530c7019bbfca7e84f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_PenButton_toggled</definition>
+        <argsstring>(bool checked)</argsstring>
+        <name>on_PenButton_toggled</name>
+        <param>
+          <type>bool</type>
+          <declname>checked</declname>
+        </param>
+        <briefdescription>
+<para>activate pen button </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="86" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="324" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1acf1b01c85f91b07a7a6f9230b9f09435" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_EraserButton_toggled</definition>
+        <argsstring>(bool checked)</argsstring>
+        <name>on_EraserButton_toggled</name>
+        <param>
+          <type>bool</type>
+          <declname>checked</declname>
+        </param>
+        <briefdescription>
+<para>activate \ deactivate eraser button </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="88" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="338" bodyend="351"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1a576d22f4c3bb51dc5c1758164ca72fbb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_BrushButton_toggled</definition>
+        <argsstring>(bool checked)</argsstring>
+        <name>on_BrushButton_toggled</name>
+        <param>
+          <type>bool</type>
+          <declname>checked</declname>
+        </param>
+        <briefdescription>
+<para>activate \ deactivate brush button </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="90" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="353" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1a2987c2a4595362f35e8ee1a820dd5a91" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::mousePressEvent</definition>
+        <argsstring>(QMouseEvent *event)</argsstring>
+        <name>mousePressEvent</name>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>click the left mouse button </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>get the current cursor position on the image label</para><para>set the pen to black</para><para>set the width of the pen </para>        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="92" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="366" bodyend="411"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1ac14073ad5288fdfe373abd6d665be5f8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::mouseMoveEvent</definition>
+        <argsstring>(QMouseEvent *event)</argsstring>
+        <name>mouseMoveEvent</name>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>track mouse movement after it is clicked </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>track next point in the label</para><para>draw a line from mouse down to current point</para><para>set original point to the current value </para>        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="94" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="413" bodyend="428"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1aa5168a5acd94770f36979ced4a900fba" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::mouseReleaseEvent</definition>
+        <argsstring>(QMouseEvent *event)</argsstring>
+        <name>mouseReleaseEvent</name>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>release the mouse button </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>push the completed line and stop drawing </para>        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="96" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="430" bodyend="446"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1af5b12da335b6ca08098357f697ffab03" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::drawLine</definition>
+        <argsstring>(QPoint &amp;lastpoint)</argsstring>
+        <name>drawLine</name>
+        <param>
+          <type>QPoint &amp;</type>
+          <declname>lastpoint</declname>
+        </param>
+        <briefdescription>
+<para>draw a line </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="98" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="448" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1ab006f2aa2ef5bb822fd3be49e9208170" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_Redo_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_Redo_clicked</name>
+        <briefdescription>
+<para>redo action </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="100" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="459" bodyend="468"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1afb83ca6456795dba3ba2800840e322dd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_Negative_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_Negative_clicked</name>
+        <briefdescription>
+<para>negative button clicked, set negative </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="102" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="470" bodyend="479"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1ad4634c0a99ba0e5bcf02671c081c26c6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_OpenNew_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_OpenNew_clicked</name>
+        <briefdescription>
+<para>open a new image in the work area </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>open a new Q dialogue to find image</para>        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="104" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="482" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1adcca2b80014af953e2a1be299ff6ea3c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_lineEdit_returnPressed</definition>
+        <argsstring>()</argsstring>
+        <name>on_lineEdit_returnPressed</name>
+        <briefdescription>
+<para>enter pressed on size tool </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>change image scale </para>        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="106" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="495" bodyend="501"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1aa6c6282f79063de7f966e9bcc94c91f6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_lineEdit_textEdited</definition>
+        <argsstring>(const QString &amp;arg1)</argsstring>
+        <name>on_lineEdit_textEdited</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>arg1</declname>
+        </param>
+        <briefdescription>
+<para>tool clicked </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="108" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="503" bodyend="509"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1a74a51fe09d956aad6a1bf34ae31d44ff" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_horizontalSlider_valueChanged</definition>
+        <argsstring>(int value)</argsstring>
+        <name>on_horizontalSlider_valueChanged</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>horizontal slider values changed </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="110" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="511" bodyend="514"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1afd13dababe073e56f966678aac1099e9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_colorSample_toggled</definition>
+        <argsstring>(bool checked)</argsstring>
+        <name>on_colorSample_toggled</name>
+        <param>
+          <type>bool</type>
+          <declname>checked</declname>
+        </param>
+        <briefdescription>
+<para>color sample activated </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="112" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="516" bodyend="526"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1a2c1804968b4a0d1caa11dfe17e168184" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_redSlider_valueChanged</definition>
+        <argsstring>(int value)</argsstring>
+        <name>on_redSlider_valueChanged</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>red slider changed position </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="114" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="528" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1ab314d4c6efee43616a6f0ffb4e74e4bd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_greenSlider_valueChanged</definition>
+        <argsstring>(int value)</argsstring>
+        <name>on_greenSlider_valueChanged</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>green slider changed position </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="116" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="537" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1a6433a99714954a0727e7415ab3ff844e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_blueSlider_valueChanged</definition>
+        <argsstring>(int value)</argsstring>
+        <name>on_blueSlider_valueChanged</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>blue slider changed position </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="118" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="546" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1a61a736c2869aa311d4fba582b7db20ef" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_bucket_toggled</definition>
+        <argsstring>(bool checked)</argsstring>
+        <name>on_bucket_toggled</name>
+        <param>
+          <type>bool</type>
+          <declname>checked</declname>
+        </param>
+        <briefdescription>
+<para>activate \ deactivate bucket tool </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="120" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="556" bodyend="566"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1a10606e72391221a13ed866c7ffc24705" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_CropFromLeft_valueChanged</definition>
+        <argsstring>(int value)</argsstring>
+        <name>on_CropFromLeft_valueChanged</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>set ascpect ratio from the left </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="122" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="568" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1aa8dff534cb4516fc62333566809d94a0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_CropFromRight_valueChanged</definition>
+        <argsstring>(int value)</argsstring>
+        <name>on_CropFromRight_valueChanged</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>set ascpect ratio from the right </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="124" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="588" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1a0edb99c73de20a988d85328a33603ee0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_CropFromTop_valueChanged</definition>
+        <argsstring>(int value)</argsstring>
+        <name>on_CropFromTop_valueChanged</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>set crop marks from the top </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="126" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="607" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="slot" id="classworkingwindow_1a0238b64b643300e9f5e43342da225aa0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void workingwindow::on_CropFromDown_valueChanged</definition>
+        <argsstring>(int value)</argsstring>
+        <name>on_CropFromDown_valueChanged</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>set crop marks from the bottom </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="128" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp" bodystart="626" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="7">
+        <label>QMainWindow</label>
+      </node>
+      <node id="6">
+        <label>workingwindow</label>
+        <link refid="classworkingwindow"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>QMainWindow</label>
+      </node>
+      <node id="8">
+        <label>workingwindow</label>
+        <link refid="classworkingwindow"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="20" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" bodystart="19" bodyend="132"/>
+    <listofallmembers>
+      <member refid="classworkingwindow_1a122ed0dce6353c78902353ceeda6bee0" prot="public" virt="non-virtual"><scope>workingwindow</scope><name>bottomLinePos</name></member>
+      <member refid="classworkingwindow_1a48d7fd2e19079e21a8474ae0519f0862" prot="public" virt="non-virtual"><scope>workingwindow</scope><name>bucket</name></member>
+      <member refid="classworkingwindow_1aee9919c1cfad4526c7b66c5f09b8ce02" prot="public" virt="non-virtual"><scope>workingwindow</scope><name>colorFactor</name></member>
+      <member refid="classworkingwindow_1a470b6dd89240fb31393ee848cef5a358" prot="public" virt="non-virtual"><scope>workingwindow</scope><name>colorPreview</name></member>
+      <member refid="classworkingwindow_1ab1e5dc3b626cb9e28983e6abee34d10d" prot="public" virt="non-virtual"><scope>workingwindow</scope><name>colorSampler</name></member>
+      <member refid="classworkingwindow_1ab9ed1f2dafd42f388fc7b366d25db626" prot="public" virt="non-virtual"><scope>workingwindow</scope><name>ColorWheel</name></member>
+      <member refid="classworkingwindow_1a44fa7af5c036e2686e55c31a3b69e81f" prot="public" virt="non-virtual"><scope>workingwindow</scope><name>customColor</name></member>
+      <member refid="classworkingwindow_1af5b12da335b6ca08098357f697ffab03" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>drawLine</name></member>
+      <member refid="classworkingwindow_1a9e3b2de905cba0520347811c530958da" prot="public" virt="non-virtual"><scope>workingwindow</scope><name>leftLinePos</name></member>
+      <member refid="classworkingwindow_1ac14073ad5288fdfe373abd6d665be5f8" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>mouseMoveEvent</name></member>
+      <member refid="classworkingwindow_1a2987c2a4595362f35e8ee1a820dd5a91" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>mousePressEvent</name></member>
+      <member refid="classworkingwindow_1aa5168a5acd94770f36979ced4a900fba" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>mouseReleaseEvent</name></member>
+      <member refid="classworkingwindow_1a6433a99714954a0727e7415ab3ff844e" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_blueSlider_valueChanged</name></member>
+      <member refid="classworkingwindow_1a576d22f4c3bb51dc5c1758164ca72fbb" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_BrushButton_toggled</name></member>
+      <member refid="classworkingwindow_1a61a736c2869aa311d4fba582b7db20ef" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_bucket_toggled</name></member>
+      <member refid="classworkingwindow_1afd13dababe073e56f966678aac1099e9" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_colorSample_toggled</name></member>
+      <member refid="classworkingwindow_1a7419fb61fd0373e08c01045b7e0266ae" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_ContrastBoost_clicked</name></member>
+      <member refid="classworkingwindow_1a1a02a965997681bf444244c2701bf25c" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_coolButton_clicked</name></member>
+      <member refid="classworkingwindow_1a0238b64b643300e9f5e43342da225aa0" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_CropFromDown_valueChanged</name></member>
+      <member refid="classworkingwindow_1a10606e72391221a13ed866c7ffc24705" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_CropFromLeft_valueChanged</name></member>
+      <member refid="classworkingwindow_1aa8dff534cb4516fc62333566809d94a0" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_CropFromRight_valueChanged</name></member>
+      <member refid="classworkingwindow_1a0edb99c73de20a988d85328a33603ee0" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_CropFromTop_valueChanged</name></member>
+      <member refid="classworkingwindow_1aaa7f9105576fa44cc33f0bbb5429642f" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_DesaturateButton_clicked</name></member>
+      <member refid="classworkingwindow_1aea2d8c351770648093fe1bd57176f727" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_edges_clicked</name></member>
+      <member refid="classworkingwindow_1acf1b01c85f91b07a7a6f9230b9f09435" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_EraserButton_toggled</name></member>
+      <member refid="classworkingwindow_1ab314d4c6efee43616a6f0ffb4e74e4bd" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_greenSlider_valueChanged</name></member>
+      <member refid="classworkingwindow_1a2c55eef93e402695a24ec52f6e62911c" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_greyScale_clicked</name></member>
+      <member refid="classworkingwindow_1a74a51fe09d956aad6a1bf34ae31d44ff" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_horizontalSlider_valueChanged</name></member>
+      <member refid="classworkingwindow_1ae53294a2da7941bb1ff5f769bb3af006" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_leftright_clicked</name></member>
+      <member refid="classworkingwindow_1adcca2b80014af953e2a1be299ff6ea3c" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_lineEdit_returnPressed</name></member>
+      <member refid="classworkingwindow_1aa6c6282f79063de7f966e9bcc94c91f6" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_lineEdit_textEdited</name></member>
+      <member refid="classworkingwindow_1afb83ca6456795dba3ba2800840e322dd" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_Negative_clicked</name></member>
+      <member refid="classworkingwindow_1ad4634c0a99ba0e5bcf02671c081c26c6" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_OpenNew_clicked</name></member>
+      <member refid="classworkingwindow_1adb0b46400c19baee95f6249692eb8b15" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_overExposeButton_clicked</name></member>
+      <member refid="classworkingwindow_1a17938480616874530c7019bbfca7e84f" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_PenButton_toggled</name></member>
+      <member refid="classworkingwindow_1adf389bb73b7ac24d48bdd73569bdc6b8" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_PencilSketch_clicked</name></member>
+      <member refid="classworkingwindow_1adefc06c84f7bf4b90143630040a3de15" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_PixelateButton_clicked</name></member>
+      <member refid="classworkingwindow_1a45d69a384860d756572b1fd6749c4dbe" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_quitButton_clicked</name></member>
+      <member refid="classworkingwindow_1ab006f2aa2ef5bb822fd3be49e9208170" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_Redo_clicked</name></member>
+      <member refid="classworkingwindow_1a2c1804968b4a0d1caa11dfe17e168184" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_redSlider_valueChanged</name></member>
+      <member refid="classworkingwindow_1a8c2d21f9e8c547feedc590b5dd226318" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_Rotate_clicked</name></member>
+      <member refid="classworkingwindow_1aa0ed212ae7c208d255f32e46ede376ad" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_saturateButton_clicked</name></member>
+      <member refid="classworkingwindow_1a1cdf755bd4501a557a071d14574161a9" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_Save_clicked</name></member>
+      <member refid="classworkingwindow_1af710228e0ba208baf65f0f06c1393c06" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_SepiaButton_clicked</name></member>
+      <member refid="classworkingwindow_1a0ff17c345a37bbb341524a15cca30350" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_underExposeButton_clicked</name></member>
+      <member refid="classworkingwindow_1a7bbd62ab96809703fb1f90550e8b53fb" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_Undo_clicked</name></member>
+      <member refid="classworkingwindow_1a5b4f656be767303a5b0fa6647fdc9cba" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_updown_clicked</name></member>
+      <member refid="classworkingwindow_1ad1a0c00217129ec8bcdb8753f0272186" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_WarmifyButton_clicked</name></member>
+      <member refid="classworkingwindow_1a5496b44e63edf75c3750c412c0f5f973" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_ZoomIn_clicked</name></member>
+      <member refid="classworkingwindow_1a55a6070509aaf380be425ac600eeb95d" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>on_ZoomOut_clicked</name></member>
+      <member refid="classworkingwindow_1ad140ff2651f5e7993503d5d862e4d385" prot="public" virt="non-virtual"><scope>workingwindow</scope><name>rightLinePos</name></member>
+      <member refid="classworkingwindow_1aa0c6e8030d9bb3b26324aaf737f2be62" prot="public" virt="non-virtual"><scope>workingwindow</scope><name>StaticXY</name></member>
+      <member refid="classworkingwindow_1a0574618dfbe458eee7fac25620c2cf89" prot="public" virt="non-virtual"><scope>workingwindow</scope><name>StaticXY2</name></member>
+      <member refid="classworkingwindow_1a1d4abbc294787013faaa0b6f2ee25a2d" prot="public" virt="non-virtual"><scope>workingwindow</scope><name>topLinePos</name></member>
+      <member refid="classworkingwindow_1a56d90866183deec5310e48223800f445" prot="private" virt="non-virtual"><scope>workingwindow</scope><name>ui</name></member>
+      <member refid="classworkingwindow_1a25b4ff6fe8b8cce836be4a4704132a68" prot="public" virt="non-virtual"><scope>workingwindow</scope><name>workingwindow</name></member>
+      <member refid="classworkingwindow_1a0da6e75e764e958f1267c47dc4edf53c" prot="public" virt="non-virtual"><scope>workingwindow</scope><name>~workingwindow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

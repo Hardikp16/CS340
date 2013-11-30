@@ -1,4 +1,4 @@
-/*! \headerfile DARKROOM Header File
+/*! \header DARKROOM Header File
  *          function constructors for the Darkroom set of tools. */
 
 #include "includes.h"

@@ -1,0 +1,187 @@
+.TH "C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/main.cpp" 3 "Sat Nov 30 2013" "Fotoshop" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/main.cpp \- 
+.PP
+main Cpp file for program  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'mainwindow\&.h'\fP
+.br
+\fC#include 'workingwindow\&.h'\fP
+.br
+
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "int \fBopened\fP = 0"
+.br
+.ti -1c
+.RI "QString \fBfilename\fP"
+.br
+.ti -1c
+.RI "int \fBscreenheight\fP"
+.br
+.ti -1c
+.RI "int \fBscreenwidth\fP"
+.br
+.ti -1c
+.RI "QImage \fBloadedImage\fP"
+.br
+.ti -1c
+.RI "QImage \fBscaledImage\fP"
+.br
+.ti -1c
+.RI "double \fBpicsize\fP"
+.br
+.ti -1c
+.RI "int \fBcurrentImageNumber\fP = 0"
+.br
+.ti -1c
+.RI "int \fBisblank\fP"
+.br
+.ti -1c
+.RI "bool \fBpen\fP = \fBFALSE\fP"
+.br
+.ti -1c
+.RI "bool \fBdrawing\fP = \fBFALSE\fP"
+.br
+.ti -1c
+.RI "bool \fBeraser\fP = \fBFALSE\fP"
+.br
+.ti -1c
+.RI "bool \fBbrush\fP = \fBFALSE\fP"
+.br
+.ti -1c
+.RI "bool \fBtext\fP = \fBFALSE\fP"
+.br
+.ti -1c
+.RI "\fBundoArr\fP * \fBundofunc\fP"
+.br
+.RI "\fIHeader file for the window that opens the image and the work area\&. \fP"
+.ti -1c
+.RI "QPoint \fBpointxy\fP"
+.br
+.ti -1c
+.RI "QPoint \fBpointxy2\fP"
+.br
+.ti -1c
+.RI "QPen \fBthePen\fP"
+.br
+.ti -1c
+.RI "double \fBmyInputSize\fP"
+.br
+.ti -1c
+.RI "std::vector< QImage > \fBundoVector\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+main Cpp file for program 
+
+
+.PP
+.nf
+                              FOTOSHOP                                     **
+
+.fi
+.PP
+.PP
+A lite but powerful painting and editing software written in C++ with Qt Creator This program is targeted towards home users looking to upgrade from paint but unwilling to invest in something like lightroom or photoshop
+.PP
+AUTHOR : LEDIO SINJARI
+.PP
+WRITTEN FOR CS 340 - FALL 2013 INSTRUCTOR LUC RENAMBOT 
+.PP
+Definition in file \fBmain\&.cpp\fP\&.
+.SH "Variable Documentation"
+.PP 
+.SS "bool brush = \fBFALSE\fP"
+
+.PP
+Definition at line 38 of file main\&.cpp\&.
+.SS "int currentImageNumber = 0"
+
+.PP
+Definition at line 33 of file main\&.cpp\&.
+.SS "bool drawing = \fBFALSE\fP"
+
+.PP
+Definition at line 36 of file main\&.cpp\&.
+.SS "bool eraser = \fBFALSE\fP"
+
+.PP
+Definition at line 37 of file main\&.cpp\&.
+.SS "QString filename"
+
+.PP
+Definition at line 27 of file main\&.cpp\&.
+.SS "int isblank"
+
+.PP
+Definition at line 34 of file main\&.cpp\&.
+.SS "QImage loadedImage"
+
+.PP
+Definition at line 30 of file main\&.cpp\&.
+.SS "double myInputSize"
+
+.PP
+Definition at line 45 of file main\&.cpp\&.
+.SS "int opened = 0"
+
+.PP
+Definition at line 26 of file main\&.cpp\&.
+.SS "bool pen = \fBFALSE\fP"
+
+.PP
+Definition at line 35 of file main\&.cpp\&.
+.SS "double picsize"
+
+.PP
+Definition at line 32 of file main\&.cpp\&.
+.SS "QPoint pointxy"
+
+.PP
+Definition at line 41 of file main\&.cpp\&.
+.SS "QPoint pointxy2"
+
+.PP
+Definition at line 42 of file main\&.cpp\&.
+.SS "QImage scaledImage"
+
+.PP
+Definition at line 31 of file main\&.cpp\&.
+.SS "int screenheight"
+
+.PP
+Definition at line 28 of file main\&.cpp\&.
+.SS "int screenwidth"
+
+.PP
+Definition at line 29 of file main\&.cpp\&.
+.SS "bool text = \fBFALSE\fP"
+
+.PP
+Definition at line 39 of file main\&.cpp\&.
+.SS "QPen thePen"
+
+.PP
+Definition at line 43 of file main\&.cpp\&.
+.SS "\fBundoArr\fP* undofunc"
+
+.PP
+Header file for the window that opens the image and the work area\&. Working Window 
+.PP
+Definition at line 40 of file main\&.cpp\&.
+.SS "std::vector<QImage> undoVector"
+
+.PP
+Definition at line 47 of file main\&.cpp\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Fotoshop from the source code\&.

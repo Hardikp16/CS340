@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="dir_c32963bc21263fb345c7430aa9575f79" kind="dir">
+    <compoundname>C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop</compoundname>
+    <innerfile refid="darkroom_8cpp">darkroom.cpp</innerfile>
+    <innerfile refid="darkroom_8h">darkroom.h</innerfile>
+    <innerfile refid="filters_8cpp">filters.cpp</innerfile>
+    <innerfile refid="filters_8h">filters.h</innerfile>
+    <innerfile refid="includes_8h">includes.h</innerfile>
+    <innerfile refid="main_8cpp">main.cpp</innerfile>
+    <innerfile refid="mainwindow_8cpp">mainwindow.cpp</innerfile>
+    <innerfile refid="mainwindow_8h">mainwindow.h</innerfile>
+    <innerfile refid="_undo_array_8cpp">UndoArray.cpp</innerfile>
+    <innerfile refid="workingwindow_8cpp">workingwindow.cpp</innerfile>
+    <innerfile refid="workingwindow_8h">workingwindow.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/"/>
+  </compounddef>
+</doxygen>

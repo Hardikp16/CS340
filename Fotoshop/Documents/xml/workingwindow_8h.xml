@@ -1,0 +1,370 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="workingwindow_8h" kind="file">
+    <compoundname>workingwindow.h</compoundname>
+    <includes refid="includes_8h" local="yes">includes.h</includes>
+    <includedby refid="mainwindow_8h" local="yes">C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/mainwindow.h</includedby>
+    <includedby refid="main_8cpp" local="yes">C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/main.cpp</includedby>
+    <includedby refid="mainwindow_8cpp" local="yes">C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/mainwindow.cpp</includedby>
+    <includedby refid="_undo_array_8cpp" local="yes">C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/UndoArray.cpp</includedby>
+    <includedby refid="workingwindow_8cpp" local="yes">C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp</includedby>
+    <incdepgraph>
+      <node id="320">
+        <label>QMessageBox</label>
+      </node>
+      <node id="313">
+        <label>stdlib.h</label>
+      </node>
+      <node id="316">
+        <label>QGraphicsView</label>
+      </node>
+      <node id="329">
+        <label>QEvent</label>
+      </node>
+      <node id="333">
+        <label>QBrush</label>
+      </node>
+      <node id="322">
+        <label>string</label>
+      </node>
+      <node id="335">
+        <label>QPoint</label>
+      </node>
+      <node id="314">
+        <label>QMainWindow</label>
+      </node>
+      <node id="323">
+        <label>QImage</label>
+      </node>
+      <node id="327">
+        <label>Qt</label>
+      </node>
+      <node id="326">
+        <label>QStyle</label>
+      </node>
+      <node id="330">
+        <label>QMouseEvent</label>
+      </node>
+      <node id="312">
+        <label>QFileDialog</label>
+      </node>
+      <node id="315">
+        <label>QApplication</label>
+      </node>
+      <node id="328">
+        <label>QtMath</label>
+      </node>
+      <node id="325">
+        <label>QDesktopWidget</label>
+      </node>
+      <node id="336">
+        <label>vector</label>
+      </node>
+      <node id="334">
+        <label>QColor</label>
+      </node>
+      <node id="317">
+        <label>QGraphicsPixmapItem</label>
+      </node>
+      <node id="321">
+        <label>QLabel</label>
+      </node>
+      <node id="319">
+        <label>iostream</label>
+      </node>
+      <node id="332">
+        <label>QPen</label>
+      </node>
+      <node id="324">
+        <label>QPixmap</label>
+      </node>
+      <node id="311">
+        <label>includes.h</label>
+        <link refid="includes_8h"/>
+        <childnode refid="312" relation="include">
+        </childnode>
+        <childnode refid="313" relation="include">
+        </childnode>
+        <childnode refid="314" relation="include">
+        </childnode>
+        <childnode refid="315" relation="include">
+        </childnode>
+        <childnode refid="316" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+        <childnode refid="318" relation="include">
+        </childnode>
+        <childnode refid="319" relation="include">
+        </childnode>
+        <childnode refid="320" relation="include">
+        </childnode>
+        <childnode refid="321" relation="include">
+        </childnode>
+        <childnode refid="322" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="324" relation="include">
+        </childnode>
+        <childnode refid="325" relation="include">
+        </childnode>
+        <childnode refid="326" relation="include">
+        </childnode>
+        <childnode refid="327" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+        <childnode refid="329" relation="include">
+        </childnode>
+        <childnode refid="330" relation="include">
+        </childnode>
+        <childnode refid="331" relation="include">
+        </childnode>
+        <childnode refid="332" relation="include">
+        </childnode>
+        <childnode refid="333" relation="include">
+        </childnode>
+        <childnode refid="334" relation="include">
+        </childnode>
+        <childnode refid="335" relation="include">
+        </childnode>
+        <childnode refid="336" relation="include">
+        </childnode>
+      </node>
+      <node id="318">
+        <label>stdio.h</label>
+      </node>
+      <node id="331">
+        <label>QPaintEvent</label>
+      </node>
+      <node id="310">
+        <label>C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h</label>
+        <link refid="workingwindow.h"/>
+        <childnode refid="311" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="339">
+        <label>C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="342">
+        <label>C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.cpp</label>
+        <link refid="workingwindow_8cpp"/>
+      </node>
+      <node id="341">
+        <label>C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/UndoArray.cpp</label>
+        <link refid="_undo_array_8cpp"/>
+      </node>
+      <node id="340">
+        <label>C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+      </node>
+      <node id="338">
+        <label>C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="339" relation="include">
+        </childnode>
+        <childnode refid="340" relation="include">
+        </childnode>
+      </node>
+      <node id="337">
+        <label>C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h</label>
+        <link refid="workingwindow.h"/>
+        <childnode refid="338" relation="include">
+        </childnode>
+        <childnode refid="339" relation="include">
+        </childnode>
+        <childnode refid="340" relation="include">
+        </childnode>
+        <childnode refid="341" relation="include">
+        </childnode>
+        <childnode refid="342" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classworkingwindow" prot="public">workingwindow</innerclass>
+    <innernamespace refid="namespace_ui">Ui</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="workingwindow_8h_1a36e1a948f9e20da0c74fbacb15abe6ac" prot="public" static="no" mutable="no">
+        <type><ref refid="classundo_arr" kindref="compound">undoArr</ref> *</type>
+        <definition>undoArr* undofunc</definition>
+        <argsstring></argsstring>
+        <name>undofunc</name>
+        <briefdescription>
+<para>Header file for the window that opens the image and the work area. </para>        </briefdescription>
+        <detaileddescription>
+<para>Working Window </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="9" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/main.cpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="workingwindow_8h_1a66c3b28ae1545749cde174b5a046d25c" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; QImage &gt;</type>
+        <definition>std::vector&lt;QImage&gt; undoVector</definition>
+        <argsstring></argsstring>
+        <name>undoVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="11" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/main.cpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="workingwindow_8h_1a1879e240ffac70f1337bf86c77570d13" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double myInputSize</definition>
+        <argsstring></argsstring>
+        <name>myInputSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h" line="13" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/main.cpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="4"><highlight class="preprocessor">#ifndef<sp/>WORKINGWINDOW_H</highlight></codeline>
+<codeline lineno="5"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>WORKINGWINDOW_H</highlight></codeline>
+<codeline lineno="6"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="includes_8h" kindref="compound">includes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="classundo_arr" kindref="compound">undoArr</ref><sp/>*<ref refid="main_8cpp_1a36e1a948f9e20da0c74fbacb15abe6ac" kindref="member">undofunc</ref>;<sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>std::vector&lt;QImage&gt;<sp/><ref refid="main_8cpp_1a66c3b28ae1545749cde174b5a046d25c" kindref="member">undoVector</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a1879e240ffac70f1337bf86c77570d13" kindref="member">myInputSize</ref>;<sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Ui<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classworkingwindow" kindref="compound">workingwindow</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classworkingwindow" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classworkingwindow" kindref="compound">workingwindow</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QMainWindow</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classworkingwindow_1a25b4ff6fe8b8cce836be4a4704132a68" kindref="member">workingwindow</ref>(QWidget<sp/>*parent<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classworkingwindow_1a0da6e75e764e958f1267c47dc4edf53c" kindref="member">~workingwindow</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="classworkingwindow_1ab9ed1f2dafd42f388fc7b366d25db626" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QImage<sp/><ref refid="classworkingwindow_1ab9ed1f2dafd42f388fc7b366d25db626" kindref="member">ColorWheel</ref>;<sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="classworkingwindow_1ab1e5dc3b626cb9e28983e6abee34d10d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classworkingwindow_1ab1e5dc3b626cb9e28983e6abee34d10d" kindref="member">colorSampler</ref>;<sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="classworkingwindow_1aee9919c1cfad4526c7b66c5f09b8ce02" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classworkingwindow_1aee9919c1cfad4526c7b66c5f09b8ce02" kindref="member">colorFactor</ref>;<sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classworkingwindow_1a44fa7af5c036e2686e55c31a3b69e81f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QColor<sp/><ref refid="classworkingwindow_1a44fa7af5c036e2686e55c31a3b69e81f" kindref="member">customColor</ref>;<sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="classworkingwindow_1a470b6dd89240fb31393ee848cef5a358" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QImage<sp/><ref refid="classworkingwindow_1a470b6dd89240fb31393ee848cef5a358" kindref="member">colorPreview</ref>;<sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classworkingwindow_1a48d7fd2e19079e21a8474ae0519f0862" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classworkingwindow_1a48d7fd2e19079e21a8474ae0519f0862" kindref="member">bucket</ref>;<sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classworkingwindow_1a0574618dfbe458eee7fac25620c2cf89" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QPoint<sp/><ref refid="classworkingwindow_1aa0c6e8030d9bb3b26324aaf737f2be62" kindref="member">StaticXY</ref>,<sp/><ref refid="classworkingwindow_1a0574618dfbe458eee7fac25620c2cf89" kindref="member">StaticXY2</ref>;<sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="classworkingwindow_1a1d4abbc294787013faaa0b6f2ee25a2d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classworkingwindow_1a9e3b2de905cba0520347811c530958da" kindref="member">leftLinePos</ref>,<sp/><ref refid="classworkingwindow_1ad140ff2651f5e7993503d5d862e4d385" kindref="member">rightLinePos</ref>,<sp/><ref refid="classworkingwindow_1a1d4abbc294787013faaa0b6f2ee25a2d" kindref="member">topLinePos</ref>,<sp/><ref refid="classworkingwindow_1a122ed0dce6353c78902353ceeda6bee0" kindref="member">bottomLinePos</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_quitButton_clicked();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_greyScale_clicked();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_PencilSketch_clicked();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_WarmifyButton_clicked();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_coolButton_clicked();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_saturateButton_clicked();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_DesaturateButton_clicked();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_overExposeButton_clicked();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_underExposeButton_clicked();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_ContrastBoost_clicked();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_ZoomIn_clicked();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_Save_clicked();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_ZoomOut_clicked();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_Undo_clicked();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_SepiaButton_clicked();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_PixelateButton_clicked();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_Rotate_clicked();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_updown_clicked();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_leftright_clicked();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_edges_clicked();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_PenButton_toggled(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>checked);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_EraserButton_toggled(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>checked);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_BrushButton_toggled(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>checked);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mousePressEvent(QMouseEvent<sp/>*event);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mouseMoveEvent(QMouseEvent<sp/>*event);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mouseReleaseEvent(QMouseEvent<sp/>*event);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>drawLine(QPoint<sp/>&amp;lastpoint);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_Redo_clicked();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_Negative_clicked();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_OpenNew_clicked();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_lineEdit_returnPressed();</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_lineEdit_textEdited(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/>&amp;arg1);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_horizontalSlider_valueChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_colorSample_toggled(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>checked);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_redSlider_valueChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_greenSlider_valueChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_blueSlider_valueChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_bucket_toggled(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>checked);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_CropFromLeft_valueChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_CropFromRight_valueChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_CropFromTop_valueChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_CropFromDown_valueChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>Ui::workingwindow<sp/>*ui;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>WORKINGWINDOW_H</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/workingwindow.h"/>
+  </compounddef>
+</doxygen>

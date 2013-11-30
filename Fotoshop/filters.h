@@ -1,4 +1,4 @@
-/*! \headerfile Header for the photofilters */
+/*! \header Header for the photofilters */
 
 #include "includes.h"
 

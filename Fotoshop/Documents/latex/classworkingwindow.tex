@@ -1,0 +1,208 @@
+\hypertarget{classworkingwindow}{\section{workingwindow Class Reference}
+\label{classworkingwindow}\index{workingwindow@{workingwindow}}
+}
+
+
+{\ttfamily \#include $<$workingwindow.\-h$>$}
+
+Inheritance diagram for workingwindow\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classworkingwindow}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classworkingwindow_a25b4ff6fe8b8cce836be4a4704132a68}{workingwindow} (Q\-Widget $\ast$parent=0)
+\item 
+\hyperlink{classworkingwindow_a0da6e75e764e958f1267c47dc4edf53c}{$\sim$workingwindow} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\-Image \hyperlink{classworkingwindow_ab9ed1f2dafd42f388fc7b366d25db626}{Color\-Wheel}
+\item 
+bool \hyperlink{classworkingwindow_ab1e5dc3b626cb9e28983e6abee34d10d}{color\-Sampler}
+\begin{DoxyCompactList}\small\item\em color\-Wheel for reference in the U\-I \end{DoxyCompactList}\item 
+double \hyperlink{classworkingwindow_aee9919c1cfad4526c7b66c5f09b8ce02}{color\-Factor}
+\item 
+Q\-Color \hyperlink{classworkingwindow_a44fa7af5c036e2686e55c31a3b69e81f}{custom\-Color}
+\item 
+Q\-Image \hyperlink{classworkingwindow_a470b6dd89240fb31393ee848cef5a358}{color\-Preview}
+\item 
+bool \hyperlink{classworkingwindow_a48d7fd2e19079e21a8474ae0519f0862}{bucket}
+\begin{DoxyCompactList}\small\item\em a window to display the current color selection \end{DoxyCompactList}\item 
+Q\-Point \hyperlink{classworkingwindow_aa0c6e8030d9bb3b26324aaf737f2be62}{Static\-X\-Y}
+\item 
+Q\-Point \hyperlink{classworkingwindow_a0574618dfbe458eee7fac25620c2cf89}{Static\-X\-Y2}
+\item 
+double \hyperlink{classworkingwindow_a9e3b2de905cba0520347811c530958da}{left\-Line\-Pos}
+\item 
+double \hyperlink{classworkingwindow_ad140ff2651f5e7993503d5d862e4d385}{right\-Line\-Pos}
+\item 
+double \hyperlink{classworkingwindow_a1d4abbc294787013faaa0b6f2ee25a2d}{top\-Line\-Pos}
+\item 
+double \hyperlink{classworkingwindow_a122ed0dce6353c78902353ceeda6bee0}{bottom\-Line\-Pos}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file workingwindow.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classworkingwindow_a25b4ff6fe8b8cce836be4a4704132a68}{\index{workingwindow@{workingwindow}!workingwindow@{workingwindow}}
+\index{workingwindow@{workingwindow}!workingwindow@{workingwindow}}
+\subsubsection[{workingwindow}]{\setlength{\rightskip}{0pt plus 5cm}workingwindow\-::workingwindow (
+\begin{DoxyParamCaption}
+\item[{Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classworkingwindow_a25b4ff6fe8b8cce836be4a4704132a68}
+creating a proxy to edit with
+
+create a blank white image at 1600 x 900
+
+fill it in blank white
+
+set a blank Qlabel for ui design
+
+fill the blank label with black
+
+set a multiplier so sliders represent color values
+
+set horizontal slider position
+
+set second horizontal slider position
+
+set first vertical slider position
+
+set second vertical slider position
+
+set an image as a color wheel for reference
+
+scale the color wheel to fit the window
+
+push the initial picture to the base of the stack
+
+smooth out pen lines
+
+round out the pen cap 
+
+Definition at line 8 of file workingwindow.\-cpp.
+
+\hypertarget{classworkingwindow_a0da6e75e764e958f1267c47dc4edf53c}{\index{workingwindow@{workingwindow}!$\sim$workingwindow@{$\sim$workingwindow}}
+\index{$\sim$workingwindow@{$\sim$workingwindow}!workingwindow@{workingwindow}}
+\subsubsection[{$\sim$workingwindow}]{\setlength{\rightskip}{0pt plus 5cm}workingwindow\-::$\sim$workingwindow (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classworkingwindow_a0da6e75e764e958f1267c47dc4edf53c}
+
+
+Definition at line 67 of file workingwindow.\-cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classworkingwindow_a122ed0dce6353c78902353ceeda6bee0}{\index{workingwindow@{workingwindow}!bottom\-Line\-Pos@{bottom\-Line\-Pos}}
+\index{bottom\-Line\-Pos@{bottom\-Line\-Pos}!workingwindow@{workingwindow}}
+\subsubsection[{bottom\-Line\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}double workingwindow\-::bottom\-Line\-Pos}}\label{classworkingwindow_a122ed0dce6353c78902353ceeda6bee0}
+
+
+Definition at line 41 of file workingwindow.\-h.
+
+\hypertarget{classworkingwindow_a48d7fd2e19079e21a8474ae0519f0862}{\index{workingwindow@{workingwindow}!bucket@{bucket}}
+\index{bucket@{bucket}!workingwindow@{workingwindow}}
+\subsubsection[{bucket}]{\setlength{\rightskip}{0pt plus 5cm}bool workingwindow\-::bucket}}\label{classworkingwindow_a48d7fd2e19079e21a8474ae0519f0862}
+
+
+a window to display the current color selection 
+
+color\-Preview 
+
+Definition at line 37 of file workingwindow.\-h.
+
+\hypertarget{classworkingwindow_aee9919c1cfad4526c7b66c5f09b8ce02}{\index{workingwindow@{workingwindow}!color\-Factor@{color\-Factor}}
+\index{color\-Factor@{color\-Factor}!workingwindow@{workingwindow}}
+\subsubsection[{color\-Factor}]{\setlength{\rightskip}{0pt plus 5cm}double workingwindow\-::color\-Factor}}\label{classworkingwindow_aee9919c1cfad4526c7b66c5f09b8ce02}
+
+
+Definition at line 31 of file workingwindow.\-h.
+
+\hypertarget{classworkingwindow_a470b6dd89240fb31393ee848cef5a358}{\index{workingwindow@{workingwindow}!color\-Preview@{color\-Preview}}
+\index{color\-Preview@{color\-Preview}!workingwindow@{workingwindow}}
+\subsubsection[{color\-Preview}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Image workingwindow\-::color\-Preview}}\label{classworkingwindow_a470b6dd89240fb31393ee848cef5a358}
+
+
+Definition at line 35 of file workingwindow.\-h.
+
+\hypertarget{classworkingwindow_ab1e5dc3b626cb9e28983e6abee34d10d}{\index{workingwindow@{workingwindow}!color\-Sampler@{color\-Sampler}}
+\index{color\-Sampler@{color\-Sampler}!workingwindow@{workingwindow}}
+\subsubsection[{color\-Sampler}]{\setlength{\rightskip}{0pt plus 5cm}bool workingwindow\-::color\-Sampler}}\label{classworkingwindow_ab1e5dc3b626cb9e28983e6abee34d10d}
+
+
+color\-Wheel for reference in the U\-I 
+
+Color\-Wheel 
+
+Definition at line 29 of file workingwindow.\-h.
+
+\hypertarget{classworkingwindow_ab9ed1f2dafd42f388fc7b366d25db626}{\index{workingwindow@{workingwindow}!Color\-Wheel@{Color\-Wheel}}
+\index{Color\-Wheel@{Color\-Wheel}!workingwindow@{workingwindow}}
+\subsubsection[{Color\-Wheel}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Image workingwindow\-::\-Color\-Wheel}}\label{classworkingwindow_ab9ed1f2dafd42f388fc7b366d25db626}
+
+
+Definition at line 27 of file workingwindow.\-h.
+
+\hypertarget{classworkingwindow_a44fa7af5c036e2686e55c31a3b69e81f}{\index{workingwindow@{workingwindow}!custom\-Color@{custom\-Color}}
+\index{custom\-Color@{custom\-Color}!workingwindow@{workingwindow}}
+\subsubsection[{custom\-Color}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Color workingwindow\-::custom\-Color}}\label{classworkingwindow_a44fa7af5c036e2686e55c31a3b69e81f}
+
+
+Definition at line 33 of file workingwindow.\-h.
+
+\hypertarget{classworkingwindow_a9e3b2de905cba0520347811c530958da}{\index{workingwindow@{workingwindow}!left\-Line\-Pos@{left\-Line\-Pos}}
+\index{left\-Line\-Pos@{left\-Line\-Pos}!workingwindow@{workingwindow}}
+\subsubsection[{left\-Line\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}double workingwindow\-::left\-Line\-Pos}}\label{classworkingwindow_a9e3b2de905cba0520347811c530958da}
+
+
+Definition at line 41 of file workingwindow.\-h.
+
+\hypertarget{classworkingwindow_ad140ff2651f5e7993503d5d862e4d385}{\index{workingwindow@{workingwindow}!right\-Line\-Pos@{right\-Line\-Pos}}
+\index{right\-Line\-Pos@{right\-Line\-Pos}!workingwindow@{workingwindow}}
+\subsubsection[{right\-Line\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}double workingwindow\-::right\-Line\-Pos}}\label{classworkingwindow_ad140ff2651f5e7993503d5d862e4d385}
+
+
+Definition at line 41 of file workingwindow.\-h.
+
+\hypertarget{classworkingwindow_aa0c6e8030d9bb3b26324aaf737f2be62}{\index{workingwindow@{workingwindow}!Static\-X\-Y@{Static\-X\-Y}}
+\index{Static\-X\-Y@{Static\-X\-Y}!workingwindow@{workingwindow}}
+\subsubsection[{Static\-X\-Y}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Point workingwindow\-::\-Static\-X\-Y}}\label{classworkingwindow_aa0c6e8030d9bb3b26324aaf737f2be62}
+
+
+Definition at line 39 of file workingwindow.\-h.
+
+\hypertarget{classworkingwindow_a0574618dfbe458eee7fac25620c2cf89}{\index{workingwindow@{workingwindow}!Static\-X\-Y2@{Static\-X\-Y2}}
+\index{Static\-X\-Y2@{Static\-X\-Y2}!workingwindow@{workingwindow}}
+\subsubsection[{Static\-X\-Y2}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Point workingwindow\-::\-Static\-X\-Y2}}\label{classworkingwindow_a0574618dfbe458eee7fac25620c2cf89}
+
+
+Definition at line 39 of file workingwindow.\-h.
+
+\hypertarget{classworkingwindow_a1d4abbc294787013faaa0b6f2ee25a2d}{\index{workingwindow@{workingwindow}!top\-Line\-Pos@{top\-Line\-Pos}}
+\index{top\-Line\-Pos@{top\-Line\-Pos}!workingwindow@{workingwindow}}
+\subsubsection[{top\-Line\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}double workingwindow\-::top\-Line\-Pos}}\label{classworkingwindow_a1d4abbc294787013faaa0b6f2ee25a2d}
+
+
+Definition at line 41 of file workingwindow.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/ledio\-\_\-000/\-Documents/\-Git\-Hub/\-C\-S340/\-Fotoshop/\hyperlink{workingwindow_8h}{workingwindow.\-h}\item 
+C\-:/\-Users/ledio\-\_\-000/\-Documents/\-Git\-Hub/\-C\-S340/\-Fotoshop/\hyperlink{workingwindow_8cpp}{workingwindow.\-cpp}\end{DoxyCompactItemize}

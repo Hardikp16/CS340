@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classundo_arr" kind="class" prot="public">
+    <compoundname>undoArr</compoundname>
+    <includes refid="includes_8h" local="no">includes.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classundo_arr_1ac8927631ec42f0f4a56ccd66dfbfc732" prot="public" static="no" mutable="no">
+        <type>QImage</type>
+        <definition>QImage undoArr::currImg</definition>
+        <argsstring></argsstring>
+        <name>currImg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h" line="59" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classundo_arr_1a73c53d3302242f3b5f2e504d9a79fde7" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool undoArr::hasPic</definition>
+        <argsstring></argsstring>
+        <name>hasPic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h" line="60" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classundo_arr_1a01b2d58c78f87f57f163702f565731a2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int undoArr::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h" line="63" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classundo_arr_1a55d5c4487ef355fa732fa6db7d57855d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void undoArr::push</definition>
+        <argsstring>(QImage file)</argsstring>
+        <name>push</name>
+        <param>
+          <type>QImage</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h" line="61" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/UndoArray.cpp" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="classundo_arr_1a16c74ec4a7e73d8852d634c190bcd51c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void undoArr::pop</definition>
+        <argsstring>()</argsstring>
+        <name>pop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h" line="62" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Undo Class </para>    </detaileddescription>
+    <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h" line="56" column="1" bodyfile="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/includes.h" bodystart="55" bodyend="64"/>
+    <listofallmembers>
+      <member refid="classundo_arr_1ac8927631ec42f0f4a56ccd66dfbfc732" prot="public" virt="non-virtual"><scope>undoArr</scope><name>currImg</name></member>
+      <member refid="classundo_arr_1a73c53d3302242f3b5f2e504d9a79fde7" prot="public" virt="non-virtual"><scope>undoArr</scope><name>hasPic</name></member>
+      <member refid="classundo_arr_1a16c74ec4a7e73d8852d634c190bcd51c" prot="public" virt="non-virtual"><scope>undoArr</scope><name>pop</name></member>
+      <member refid="classundo_arr_1a55d5c4487ef355fa732fa6db7d57855d" prot="public" virt="non-virtual"><scope>undoArr</scope><name>push</name></member>
+      <member refid="classundo_arr_1a01b2d58c78f87f57f163702f565731a2" prot="public" virt="non-virtual"><scope>undoArr</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

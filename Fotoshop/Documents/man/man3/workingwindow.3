@@ -1,0 +1,163 @@
+.TH "workingwindow" 3 "Sat Nov 30 2013" "Fotoshop" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+workingwindow \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <workingwindow\&.h>\fP
+.PP
+Inherits QMainWindow\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBworkingwindow\fP (QWidget *parent=0)"
+.br
+.ti -1c
+.RI "\fB~workingwindow\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "QImage \fBColorWheel\fP"
+.br
+.ti -1c
+.RI "bool \fBcolorSampler\fP"
+.br
+.RI "\fIcolorWheel for reference in the UI \fP"
+.ti -1c
+.RI "double \fBcolorFactor\fP"
+.br
+.ti -1c
+.RI "QColor \fBcustomColor\fP"
+.br
+.ti -1c
+.RI "QImage \fBcolorPreview\fP"
+.br
+.ti -1c
+.RI "bool \fBbucket\fP"
+.br
+.RI "\fIa window to display the current color selection \fP"
+.ti -1c
+.RI "QPoint \fBStaticXY\fP"
+.br
+.ti -1c
+.RI "QPoint \fBStaticXY2\fP"
+.br
+.ti -1c
+.RI "double \fBleftLinePos\fP"
+.br
+.ti -1c
+.RI "double \fBrightLinePos\fP"
+.br
+.ti -1c
+.RI "double \fBtopLinePos\fP"
+.br
+.ti -1c
+.RI "double \fBbottomLinePos\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 19 of file workingwindow\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "workingwindow::workingwindow (QWidget *parent = \fC0\fP)\fC [explicit]\fP"
+creating a proxy to edit with
+.PP
+create a blank white image at 1600 x 900
+.PP
+fill it in blank white
+.PP
+set a blank Qlabel for ui design
+.PP
+fill the blank label with black
+.PP
+set a multiplier so sliders represent color values
+.PP
+set horizontal slider position
+.PP
+set second horizontal slider position
+.PP
+set first vertical slider position
+.PP
+set second vertical slider position
+.PP
+set an image as a color wheel for reference
+.PP
+scale the color wheel to fit the window
+.PP
+push the initial picture to the base of the stack
+.PP
+smooth out pen lines
+.PP
+round out the pen cap 
+.PP
+Definition at line 8 of file workingwindow\&.cpp\&.
+.SS "workingwindow::~workingwindow ()"
+
+.PP
+Definition at line 67 of file workingwindow\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "double workingwindow::bottomLinePos"
+
+.PP
+Definition at line 41 of file workingwindow\&.h\&.
+.SS "bool workingwindow::bucket"
+
+.PP
+a window to display the current color selection colorPreview 
+.PP
+Definition at line 37 of file workingwindow\&.h\&.
+.SS "double workingwindow::colorFactor"
+
+.PP
+Definition at line 31 of file workingwindow\&.h\&.
+.SS "QImage workingwindow::colorPreview"
+
+.PP
+Definition at line 35 of file workingwindow\&.h\&.
+.SS "bool workingwindow::colorSampler"
+
+.PP
+colorWheel for reference in the UI ColorWheel 
+.PP
+Definition at line 29 of file workingwindow\&.h\&.
+.SS "QImage workingwindow::ColorWheel"
+
+.PP
+Definition at line 27 of file workingwindow\&.h\&.
+.SS "QColor workingwindow::customColor"
+
+.PP
+Definition at line 33 of file workingwindow\&.h\&.
+.SS "double workingwindow::leftLinePos"
+
+.PP
+Definition at line 41 of file workingwindow\&.h\&.
+.SS "double workingwindow::rightLinePos"
+
+.PP
+Definition at line 41 of file workingwindow\&.h\&.
+.SS "QPoint workingwindow::StaticXY"
+
+.PP
+Definition at line 39 of file workingwindow\&.h\&.
+.SS "QPoint workingwindow::StaticXY2"
+
+.PP
+Definition at line 39 of file workingwindow\&.h\&.
+.SS "double workingwindow::topLinePos"
+
+.PP
+Definition at line 41 of file workingwindow\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Fotoshop from the source code\&.

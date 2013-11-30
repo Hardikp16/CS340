@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="mainwindow_8h" kind="file">
+    <compoundname>mainwindow.h</compoundname>
+    <includes refid="workingwindow_8h" local="yes">workingwindow.h</includes>
+    <includes refid="includes_8h" local="yes">includes.h</includes>
+    <includedby refid="main_8cpp" local="yes">C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/main.cpp</includedby>
+    <includedby refid="mainwindow_8cpp" local="yes">C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/mainwindow.cpp</includedby>
+    <incdepgraph>
+      <node id="229">
+        <label>QMessageBox</label>
+      </node>
+      <node id="222">
+        <label>stdlib.h</label>
+      </node>
+      <node id="225">
+        <label>QGraphicsView</label>
+      </node>
+      <node id="238">
+        <label>QEvent</label>
+      </node>
+      <node id="242">
+        <label>QBrush</label>
+      </node>
+      <node id="231">
+        <label>string</label>
+      </node>
+      <node id="244">
+        <label>QPoint</label>
+      </node>
+      <node id="223">
+        <label>QMainWindow</label>
+      </node>
+      <node id="232">
+        <label>QImage</label>
+      </node>
+      <node id="236">
+        <label>Qt</label>
+      </node>
+      <node id="235">
+        <label>QStyle</label>
+      </node>
+      <node id="239">
+        <label>QMouseEvent</label>
+      </node>
+      <node id="221">
+        <label>QFileDialog</label>
+      </node>
+      <node id="224">
+        <label>QApplication</label>
+      </node>
+      <node id="237">
+        <label>QtMath</label>
+      </node>
+      <node id="234">
+        <label>QDesktopWidget</label>
+      </node>
+      <node id="245">
+        <label>vector</label>
+      </node>
+      <node id="243">
+        <label>QColor</label>
+      </node>
+      <node id="226">
+        <label>QGraphicsPixmapItem</label>
+      </node>
+      <node id="230">
+        <label>QLabel</label>
+      </node>
+      <node id="228">
+        <label>iostream</label>
+      </node>
+      <node id="241">
+        <label>QPen</label>
+      </node>
+      <node id="233">
+        <label>QPixmap</label>
+      </node>
+      <node id="220">
+        <label>includes.h</label>
+        <link refid="includes_8h"/>
+        <childnode refid="221" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="225" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="231" relation="include">
+        </childnode>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="233" relation="include">
+        </childnode>
+        <childnode refid="234" relation="include">
+        </childnode>
+        <childnode refid="235" relation="include">
+        </childnode>
+        <childnode refid="236" relation="include">
+        </childnode>
+        <childnode refid="237" relation="include">
+        </childnode>
+        <childnode refid="238" relation="include">
+        </childnode>
+        <childnode refid="239" relation="include">
+        </childnode>
+        <childnode refid="240" relation="include">
+        </childnode>
+        <childnode refid="241" relation="include">
+        </childnode>
+        <childnode refid="242" relation="include">
+        </childnode>
+        <childnode refid="243" relation="include">
+        </childnode>
+        <childnode refid="244" relation="include">
+        </childnode>
+        <childnode refid="245" relation="include">
+        </childnode>
+      </node>
+      <node id="218">
+        <label>C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/mainwindow.h</label>
+        <link refid="mainwindow.h"/>
+        <childnode refid="219" relation="include">
+        </childnode>
+        <childnode refid="220" relation="include">
+        </childnode>
+      </node>
+      <node id="227">
+        <label>stdio.h</label>
+      </node>
+      <node id="240">
+        <label>QPaintEvent</label>
+      </node>
+      <node id="219">
+        <label>workingwindow.h</label>
+        <link refid="workingwindow_8h"/>
+        <childnode refid="220" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="247">
+        <label>C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="248">
+        <label>C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+      </node>
+      <node id="246">
+        <label>C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/mainwindow.h</label>
+        <link refid="mainwindow.h"/>
+        <childnode refid="247" relation="include">
+        </childnode>
+        <childnode refid="248" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_main_window" prot="public">MainWindow</innerclass>
+    <innernamespace refid="namespace_ui">Ui</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="3"><highlight class="preprocessor">#ifndef<sp/>MAINWINDOW_H</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MAINWINDOW_H</highlight></codeline>
+<codeline lineno="5"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="workingwindow_8h" kindref="compound">workingwindow.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="includes_8h" kindref="compound">includes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="namespace_ui" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Ui<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_main_window" kindref="compound">MainWindow</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_main_window" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_main_window" kindref="compound">MainWindow</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QMainWindow</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" kindref="member">MainWindow</ref>(QWidget<sp/>*parent<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" kindref="member">~MainWindow</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_NewImageButton_clicked();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_OpenImageButton_clicked();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_ExitButton_clicked();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>Ui::MainWindow<sp/>*ui;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classworkingwindow" kindref="compound">workingwindow</ref><sp/>*editor;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>MAINWINDOW_H</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop/mainwindow.h"/>
+  </compounddef>
+</doxygen>

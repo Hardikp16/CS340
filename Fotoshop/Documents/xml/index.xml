@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.5">
+  <compound refid="class_main_window" kind="class"><name>MainWindow</name>
+    <member refid="class_main_window_1a35466a70ed47252a0191168126a352a5" kind="variable"><name>ui</name></member>
+    <member refid="class_main_window_1af3c53601b6e59ea7c43fd2635f4986fd" kind="variable"><name>editor</name></member>
+    <member refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" kind="function"><name>MainWindow</name></member>
+    <member refid="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" kind="function"><name>~MainWindow</name></member>
+    <member refid="class_main_window_1aff201c6deea655992a99b7841705c10b" kind="slot"><name>on_NewImageButton_clicked</name></member>
+    <member refid="class_main_window_1a26e695e7debc56ff6ba0828bbeb83f85" kind="slot"><name>on_OpenImageButton_clicked</name></member>
+    <member refid="class_main_window_1a3b3f9845da92bef1739da5842b89cc9e" kind="slot"><name>on_ExitButton_clicked</name></member>
+  </compound>
+  <compound refid="classundo_arr" kind="class"><name>undoArr</name>
+    <member refid="classundo_arr_1ac8927631ec42f0f4a56ccd66dfbfc732" kind="variable"><name>currImg</name></member>
+    <member refid="classundo_arr_1a73c53d3302242f3b5f2e504d9a79fde7" kind="variable"><name>hasPic</name></member>
+    <member refid="classundo_arr_1a01b2d58c78f87f57f163702f565731a2" kind="variable"><name>size</name></member>
+    <member refid="classundo_arr_1a55d5c4487ef355fa732fa6db7d57855d" kind="function"><name>push</name></member>
+    <member refid="classundo_arr_1a16c74ec4a7e73d8852d634c190bcd51c" kind="function"><name>pop</name></member>
+  </compound>
+  <compound refid="classworkingwindow" kind="class"><name>workingwindow</name>
+    <member refid="classworkingwindow_1ab9ed1f2dafd42f388fc7b366d25db626" kind="variable"><name>ColorWheel</name></member>
+    <member refid="classworkingwindow_1ab1e5dc3b626cb9e28983e6abee34d10d" kind="variable"><name>colorSampler</name></member>
+    <member refid="classworkingwindow_1aee9919c1cfad4526c7b66c5f09b8ce02" kind="variable"><name>colorFactor</name></member>
+    <member refid="classworkingwindow_1a44fa7af5c036e2686e55c31a3b69e81f" kind="variable"><name>customColor</name></member>
+    <member refid="classworkingwindow_1a470b6dd89240fb31393ee848cef5a358" kind="variable"><name>colorPreview</name></member>
+    <member refid="classworkingwindow_1a48d7fd2e19079e21a8474ae0519f0862" kind="variable"><name>bucket</name></member>
+    <member refid="classworkingwindow_1aa0c6e8030d9bb3b26324aaf737f2be62" kind="variable"><name>StaticXY</name></member>
+    <member refid="classworkingwindow_1a0574618dfbe458eee7fac25620c2cf89" kind="variable"><name>StaticXY2</name></member>
+    <member refid="classworkingwindow_1a9e3b2de905cba0520347811c530958da" kind="variable"><name>leftLinePos</name></member>
+    <member refid="classworkingwindow_1ad140ff2651f5e7993503d5d862e4d385" kind="variable"><name>rightLinePos</name></member>
+    <member refid="classworkingwindow_1a1d4abbc294787013faaa0b6f2ee25a2d" kind="variable"><name>topLinePos</name></member>
+    <member refid="classworkingwindow_1a122ed0dce6353c78902353ceeda6bee0" kind="variable"><name>bottomLinePos</name></member>
+    <member refid="classworkingwindow_1a56d90866183deec5310e48223800f445" kind="variable"><name>ui</name></member>
+    <member refid="classworkingwindow_1a25b4ff6fe8b8cce836be4a4704132a68" kind="function"><name>workingwindow</name></member>
+    <member refid="classworkingwindow_1a0da6e75e764e958f1267c47dc4edf53c" kind="function"><name>~workingwindow</name></member>
+    <member refid="classworkingwindow_1a45d69a384860d756572b1fd6749c4dbe" kind="slot"><name>on_quitButton_clicked</name></member>
+    <member refid="classworkingwindow_1a2c55eef93e402695a24ec52f6e62911c" kind="slot"><name>on_greyScale_clicked</name></member>
+    <member refid="classworkingwindow_1adf389bb73b7ac24d48bdd73569bdc6b8" kind="slot"><name>on_PencilSketch_clicked</name></member>
+    <member refid="classworkingwindow_1ad1a0c00217129ec8bcdb8753f0272186" kind="slot"><name>on_WarmifyButton_clicked</name></member>
+    <member refid="classworkingwindow_1a1a02a965997681bf444244c2701bf25c" kind="slot"><name>on_coolButton_clicked</name></member>
+    <member refid="classworkingwindow_1aa0ed212ae7c208d255f32e46ede376ad" kind="slot"><name>on_saturateButton_clicked</name></member>
+    <member refid="classworkingwindow_1aaa7f9105576fa44cc33f0bbb5429642f" kind="slot"><name>on_DesaturateButton_clicked</name></member>
+    <member refid="classworkingwindow_1adb0b46400c19baee95f6249692eb8b15" kind="slot"><name>on_overExposeButton_clicked</name></member>
+    <member refid="classworkingwindow_1a0ff17c345a37bbb341524a15cca30350" kind="slot"><name>on_underExposeButton_clicked</name></member>
+    <member refid="classworkingwindow_1a7419fb61fd0373e08c01045b7e0266ae" kind="slot"><name>on_ContrastBoost_clicked</name></member>
+    <member refid="classworkingwindow_1a5496b44e63edf75c3750c412c0f5f973" kind="slot"><name>on_ZoomIn_clicked</name></member>
+    <member refid="classworkingwindow_1a1cdf755bd4501a557a071d14574161a9" kind="slot"><name>on_Save_clicked</name></member>
+    <member refid="classworkingwindow_1a55a6070509aaf380be425ac600eeb95d" kind="slot"><name>on_ZoomOut_clicked</name></member>
+    <member refid="classworkingwindow_1a7bbd62ab96809703fb1f90550e8b53fb" kind="slot"><name>on_Undo_clicked</name></member>
+    <member refid="classworkingwindow_1af710228e0ba208baf65f0f06c1393c06" kind="slot"><name>on_SepiaButton_clicked</name></member>
+    <member refid="classworkingwindow_1adefc06c84f7bf4b90143630040a3de15" kind="slot"><name>on_PixelateButton_clicked</name></member>
+    <member refid="classworkingwindow_1a8c2d21f9e8c547feedc590b5dd226318" kind="slot"><name>on_Rotate_clicked</name></member>
+    <member refid="classworkingwindow_1a5b4f656be767303a5b0fa6647fdc9cba" kind="slot"><name>on_updown_clicked</name></member>
+    <member refid="classworkingwindow_1ae53294a2da7941bb1ff5f769bb3af006" kind="slot"><name>on_leftright_clicked</name></member>
+    <member refid="classworkingwindow_1aea2d8c351770648093fe1bd57176f727" kind="slot"><name>on_edges_clicked</name></member>
+    <member refid="classworkingwindow_1a17938480616874530c7019bbfca7e84f" kind="slot"><name>on_PenButton_toggled</name></member>
+    <member refid="classworkingwindow_1acf1b01c85f91b07a7a6f9230b9f09435" kind="slot"><name>on_EraserButton_toggled</name></member>
+    <member refid="classworkingwindow_1a576d22f4c3bb51dc5c1758164ca72fbb" kind="slot"><name>on_BrushButton_toggled</name></member>
+    <member refid="classworkingwindow_1a2987c2a4595362f35e8ee1a820dd5a91" kind="slot"><name>mousePressEvent</name></member>
+    <member refid="classworkingwindow_1ac14073ad5288fdfe373abd6d665be5f8" kind="slot"><name>mouseMoveEvent</name></member>
+    <member refid="classworkingwindow_1aa5168a5acd94770f36979ced4a900fba" kind="slot"><name>mouseReleaseEvent</name></member>
+    <member refid="classworkingwindow_1af5b12da335b6ca08098357f697ffab03" kind="slot"><name>drawLine</name></member>
+    <member refid="classworkingwindow_1ab006f2aa2ef5bb822fd3be49e9208170" kind="slot"><name>on_Redo_clicked</name></member>
+    <member refid="classworkingwindow_1afb83ca6456795dba3ba2800840e322dd" kind="slot"><name>on_Negative_clicked</name></member>
+    <member refid="classworkingwindow_1ad4634c0a99ba0e5bcf02671c081c26c6" kind="slot"><name>on_OpenNew_clicked</name></member>
+    <member refid="classworkingwindow_1adcca2b80014af953e2a1be299ff6ea3c" kind="slot"><name>on_lineEdit_returnPressed</name></member>
+    <member refid="classworkingwindow_1aa6c6282f79063de7f966e9bcc94c91f6" kind="slot"><name>on_lineEdit_textEdited</name></member>
+    <member refid="classworkingwindow_1a74a51fe09d956aad6a1bf34ae31d44ff" kind="slot"><name>on_horizontalSlider_valueChanged</name></member>
+    <member refid="classworkingwindow_1afd13dababe073e56f966678aac1099e9" kind="slot"><name>on_colorSample_toggled</name></member>
+    <member refid="classworkingwindow_1a2c1804968b4a0d1caa11dfe17e168184" kind="slot"><name>on_redSlider_valueChanged</name></member>
+    <member refid="classworkingwindow_1ab314d4c6efee43616a6f0ffb4e74e4bd" kind="slot"><name>on_greenSlider_valueChanged</name></member>
+    <member refid="classworkingwindow_1a6433a99714954a0727e7415ab3ff844e" kind="slot"><name>on_blueSlider_valueChanged</name></member>
+    <member refid="classworkingwindow_1a61a736c2869aa311d4fba582b7db20ef" kind="slot"><name>on_bucket_toggled</name></member>
+    <member refid="classworkingwindow_1a10606e72391221a13ed866c7ffc24705" kind="slot"><name>on_CropFromLeft_valueChanged</name></member>
+    <member refid="classworkingwindow_1aa8dff534cb4516fc62333566809d94a0" kind="slot"><name>on_CropFromRight_valueChanged</name></member>
+    <member refid="classworkingwindow_1a0edb99c73de20a988d85328a33603ee0" kind="slot"><name>on_CropFromTop_valueChanged</name></member>
+    <member refid="classworkingwindow_1a0238b64b643300e9f5e43342da225aa0" kind="slot"><name>on_CropFromDown_valueChanged</name></member>
+  </compound>
+  <compound refid="namespace_ui" kind="namespace"><name>Ui</name>
+  </compound>
+  <compound refid="darkroom_8cpp" kind="file"><name>darkroom.cpp</name>
+  </compound>
+  <compound refid="darkroom_8h" kind="file"><name>darkroom.h</name>
+    <member refid="darkroom_8h_1a913629ef832d39704db2e668c2c87f06" kind="function"><name>paintBucket</name></member>
+    <member refid="darkroom_8h_1a2b2de327c50157ed4ed42051b5a67041" kind="function"><name>doBucket</name></member>
+    <member refid="darkroom_8h_1a1955bf195ad757ef85ebd252445c647f" kind="function"><name>saturate</name></member>
+    <member refid="darkroom_8h_1aaddbeff144a3368ee57f0b0def6ca7b0" kind="function"><name>desaturate</name></member>
+    <member refid="darkroom_8h_1a87e6f2715aad77c8cc05a70550c8c248" kind="function"><name>warm</name></member>
+    <member refid="darkroom_8h_1ae344c9ea533cd8ec952ec9d7cd0ebdba" kind="function"><name>cool</name></member>
+    <member refid="darkroom_8h_1a3805314812f1bfef5da6ed8538d8d805" kind="function"><name>overExpose</name></member>
+    <member refid="darkroom_8h_1a47cd836d15f0759e1afd0d09a6ed2de9" kind="function"><name>underExpose</name></member>
+  </compound>
+  <compound refid="filters_8cpp" kind="file"><name>filters.cpp</name>
+  </compound>
+  <compound refid="filters_8h" kind="file"><name>filters.h</name>
+    <member refid="filters_8h_1abfe7ec44615ede88acbaffd8677080de" kind="function"><name>greyscale</name></member>
+    <member refid="filters_8h_1a55d97ab13b622f943d58d77a6f7df869" kind="function"><name>pencil</name></member>
+    <member refid="filters_8h_1ad0980daf1b60ee1163aab07b87413367" kind="function"><name>negative</name></member>
+    <member refid="filters_8h_1abaacd6268dc58625cf723fb5272aca94" kind="function"><name>Boost</name></member>
+    <member refid="filters_8h_1aaf14d20487bb1d292920fc9815cadac3" kind="function"><name>sepia</name></member>
+    <member refid="filters_8h_1aa43077dbbf4ade6ef5e2e814a553f597" kind="function"><name>edgeDetect</name></member>
+    <member refid="filters_8h_1a7ff2045e892991d06d20538675e76142" kind="function"><name>pixelate</name></member>
+  </compound>
+  <compound refid="includes_8h" kind="file"><name>includes.h</name>
+    <member refid="includes_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" kind="define"><name>TRUE</name></member>
+    <member refid="includes_8h_1aa93f0eb578d23995850d61f7d61c55c1" kind="define"><name>FALSE</name></member>
+    <member refid="includes_8h_1af2606797deda70b5effbc50b2648d699" kind="variable"><name>opened</name></member>
+    <member refid="includes_8h_1aac274af37f5fbaaa2c47d19145cfd856" kind="variable"><name>filename</name></member>
+    <member refid="includes_8h_1a6d3d83a893595720686405450535cc9d" kind="variable"><name>screenheight</name></member>
+    <member refid="includes_8h_1a36a3b147d922caeca1e1b8c4c8bc5d30" kind="variable"><name>screenwidth</name></member>
+    <member refid="includes_8h_1a2d3f8fd16a46340cb7035a05f6bc58a1" kind="variable"><name>loadedImage</name></member>
+    <member refid="includes_8h_1a54f6c36b634ab76fedd1bea77ad15d71" kind="variable"><name>scaledImage</name></member>
+    <member refid="includes_8h_1afe2a2955f945105d5e2fdc5010376f9d" kind="variable"><name>picsize</name></member>
+    <member refid="includes_8h_1a7c4c91ec26a9ba612121c356eba88e4a" kind="variable"><name>currentImageNumber</name></member>
+    <member refid="includes_8h_1a8cd423670f1d4533a997ee2e39e52231" kind="variable"><name>isblank</name></member>
+    <member refid="includes_8h_1a29a859347809cdf7d4e9b74a9d1abd62" kind="variable"><name>pen</name></member>
+    <member refid="includes_8h_1af0f974376d2160d0b62ca0f76bd5b479" kind="variable"><name>eraser</name></member>
+    <member refid="includes_8h_1a642eb4bc30abc376e059892e3f1aeddd" kind="variable"><name>brush</name></member>
+    <member refid="includes_8h_1af200b2665cd1e147a6b3605044e85400" kind="variable"><name>text</name></member>
+    <member refid="includes_8h_1aeefb08c4a72afbd9bd8a888996f1e426" kind="variable"><name>drawing</name></member>
+    <member refid="includes_8h_1ad187f890191e7cabc4b69bca31dda0dc" kind="variable"><name>pointxy</name></member>
+    <member refid="includes_8h_1aedcaff6276ca6c671a05e2cab15c6d83" kind="variable"><name>pointxy2</name></member>
+    <member refid="includes_8h_1a93e5739a0e7d284e317343f0c1ba57f3" kind="variable"><name>thePen</name></member>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1af2606797deda70b5effbc50b2648d699" kind="variable"><name>opened</name></member>
+    <member refid="main_8cpp_1aac274af37f5fbaaa2c47d19145cfd856" kind="variable"><name>filename</name></member>
+    <member refid="main_8cpp_1a6d3d83a893595720686405450535cc9d" kind="variable"><name>screenheight</name></member>
+    <member refid="main_8cpp_1a36a3b147d922caeca1e1b8c4c8bc5d30" kind="variable"><name>screenwidth</name></member>
+    <member refid="main_8cpp_1a2d3f8fd16a46340cb7035a05f6bc58a1" kind="variable"><name>loadedImage</name></member>
+    <member refid="main_8cpp_1a54f6c36b634ab76fedd1bea77ad15d71" kind="variable"><name>scaledImage</name></member>
+    <member refid="main_8cpp_1afe2a2955f945105d5e2fdc5010376f9d" kind="variable"><name>picsize</name></member>
+    <member refid="main_8cpp_1a7c4c91ec26a9ba612121c356eba88e4a" kind="variable"><name>currentImageNumber</name></member>
+    <member refid="main_8cpp_1a8cd423670f1d4533a997ee2e39e52231" kind="variable"><name>isblank</name></member>
+    <member refid="main_8cpp_1a29a859347809cdf7d4e9b74a9d1abd62" kind="variable"><name>pen</name></member>
+    <member refid="main_8cpp_1aeefb08c4a72afbd9bd8a888996f1e426" kind="variable"><name>drawing</name></member>
+    <member refid="main_8cpp_1af0f974376d2160d0b62ca0f76bd5b479" kind="variable"><name>eraser</name></member>
+    <member refid="main_8cpp_1a642eb4bc30abc376e059892e3f1aeddd" kind="variable"><name>brush</name></member>
+    <member refid="main_8cpp_1af200b2665cd1e147a6b3605044e85400" kind="variable"><name>text</name></member>
+    <member refid="main_8cpp_1a36e1a948f9e20da0c74fbacb15abe6ac" kind="variable"><name>undofunc</name></member>
+    <member refid="main_8cpp_1ad187f890191e7cabc4b69bca31dda0dc" kind="variable"><name>pointxy</name></member>
+    <member refid="main_8cpp_1aedcaff6276ca6c671a05e2cab15c6d83" kind="variable"><name>pointxy2</name></member>
+    <member refid="main_8cpp_1a93e5739a0e7d284e317343f0c1ba57f3" kind="variable"><name>thePen</name></member>
+    <member refid="main_8cpp_1a1879e240ffac70f1337bf86c77570d13" kind="variable"><name>myInputSize</name></member>
+    <member refid="main_8cpp_1a66c3b28ae1545749cde174b5a046d25c" kind="variable"><name>undoVector</name></member>
+  </compound>
+  <compound refid="mainwindow_8cpp" kind="file"><name>mainwindow.cpp</name>
+  </compound>
+  <compound refid="mainwindow_8h" kind="file"><name>mainwindow.h</name>
+  </compound>
+  <compound refid="_undo_array_8cpp" kind="file"><name>UndoArray.cpp</name>
+  </compound>
+  <compound refid="workingwindow_8cpp" kind="file"><name>workingwindow.cpp</name>
+  </compound>
+  <compound refid="workingwindow_8h" kind="file"><name>workingwindow.h</name>
+    <member refid="workingwindow_8h_1a36e1a948f9e20da0c74fbacb15abe6ac" kind="variable"><name>undofunc</name></member>
+    <member refid="workingwindow_8h_1a66c3b28ae1545749cde174b5a046d25c" kind="variable"><name>undoVector</name></member>
+    <member refid="workingwindow_8h_1a1879e240ffac70f1337bf86c77570d13" kind="variable"><name>myInputSize</name></member>
+  </compound>
+  <compound refid="dir_5367650f41ba3863bdbd74b559e1702e" kind="dir"><name>C:/Users/ledio_000/Documents/GitHub/CS340</name>
+  </compound>
+  <compound refid="dir_678df256e6a6956905d4c2392bc2fd5f" kind="dir"><name>C:/Users/ledio_000/Documents</name>
+  </compound>
+  <compound refid="dir_c32963bc21263fb345c7430aa9575f79" kind="dir"><name>C:/Users/ledio_000/Documents/GitHub/CS340/Fotoshop</name>
+  </compound>
+  <compound refid="dir_8ec29386f8f1ee0efae30868063e1134" kind="dir"><name>C:/Users/ledio_000/Documents/GitHub</name>
+  </compound>
+  <compound refid="dir_9db92c5ea9acd00b1ada24a9e48dacd0" kind="dir"><name>C:/Users/ledio_000</name>
+  </compound>
+  <compound refid="dir_8ceffd4ee35c3518d4e8bdc7e638efe8" kind="dir"><name>C:/Users</name>
+  </compound>
+</doxygenindex>

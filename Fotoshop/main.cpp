@@ -58,6 +58,6 @@ int main(int argc, char *argv[]) //! \fn main \par argc \par argv[]
     MainWindow w;
     w.show();
 
-    return a.exec();
+    return a.exec(); //! \return run the UI
 }
 

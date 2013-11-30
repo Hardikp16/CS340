@@ -1,4 +1,4 @@
-/*! \headerfile General header \brief includes most of the global librarys and variables that are called in every function */
+/*! \header General header \brief includes most of the global librarys and variables that are called in every function */
 
 #ifndef INCLUDES_H
 #define INCLUDES_H
